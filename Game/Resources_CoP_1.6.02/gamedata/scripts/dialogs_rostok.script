@@ -1,0 +1,1117 @@
+function give_task_a5(first_speaker, second_speaker)
+   task_manager.get_task_manager():give_task("rostok_a5_poltergeist_task")
+end
+
+function give_task_a6(first_speaker, second_speaker)
+   task_manager.get_task_manager():give_task("rostok_a6_kalancha_task")
+end
+
+function relocate_vodka(first_speaker, second_speaker)
+		dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "vodka")
+end
+	
+function actor_got_vodka()
+	if db.actor:object("vodka") then
+		return true
+	end
+		return false
+	end
+	
+function actor_got_yan_guider_pda()
+	if db.actor:object("yan_provodnik_pda") then
+		return true
+	end
+		return false
+end
+
+function relocate_yan_provodnik_pda(first_speaker, second_speaker)
+		dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "yan_provodnik_pda")
+		dialogs.relocate_money_to_actor(first_speaker, second_speaker, 1500)
+end
+
+	
+function actor_got_drel_pda()
+	if db.actor:object("rost_b47_drel_pda") then
+		return true
+	end
+		return false
+end
+
+function actor_got_vasiliev_pda()
+	if db.actor:object("yan_vasiliev_pda") then
+		return true
+	end
+		return false
+end
+
+function actor_got_mil_docs()
+	if db.actor:object("agr_a12_documents") then
+		return true
+	end
+		return false
+end
+
+function actor_got_guider_pda()
+	if db.actor:object("agru_guider_pda") then
+		return true
+	end
+		return false
+end
+
+function actor_got_vydras_message()
+	if db.actor:object("agru_vydras_message") then
+		return true
+	end
+		return false
+end
+
+function transfer_vydras_message_zob(first_speaker, second_speaker)
+		dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "agru_vydras_message")
+end
+
+function transfer_guider_pda_zob(first_speaker, second_speaker)
+		dialogs.relocate_money_to_actor(first_speaker, second_speaker, 2000)
+		dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "agru_guider_pda")
+end
+
+function transfer_mil_docs_zob(first_speaker, second_speaker)
+		dialogs.relocate_money_to_actor(first_speaker, second_speaker, 8000)
+		dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "agr_a12_documents")
+end
+
+
+function transfer_vasiliev_pda_zob(first_speaker, second_speaker)
+		dialogs.relocate_money_to_actor(first_speaker, second_speaker, 4000)
+		dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "yan_vasiliev_pda")
+end
+
+function mil_pavlik_pda(first_speaker, second_speaker)
+		dialogs.relocate_money_to_actor(first_speaker, second_speaker, 3000)
+		dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "mil_pavlik_pda")
+end
+
+function transfer_drel_pda_zob(first_speaker, second_speaker)
+		dialogs.relocate_money_to_actor(first_speaker, second_speaker, 4500)
+		dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "rost_b47_drel_pda")
+end
+
+function transfer_drel_pda_moro(first_speaker, second_speaker)
+		dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "rost_b47_drel_pda")
+end
+
+function transfer_drel_pda_osv(first_speaker, second_speaker)
+		dialogs.relocate_money_to_actor(first_speaker, second_speaker, 6000)
+		dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "rost_b47_drel_pda")
+end
+
+function give_task_b65(first_speaker, second_speaker)
+   task_manager.get_task_manager():give_task("rostok_b65_talk_to_voronin")
+end
+	
+function give_task_b66(first_speaker, second_speaker)
+   task_manager.get_task_manager():give_task("rostok_b66_voennaya_kampaniya")
+end
+
+function transfer_vintorez_and_money(first_speaker, second_speaker)
+		dialogs.relocate_money_to_actor(first_speaker, second_speaker, 3000)
+		dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "wpn_vintorez")
+end
+
+function transfer_documents_from_actor(first_speaker, second_speaker)
+		dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "work_b66_documents_x17")
+		dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "work_b66_documents_x5")
+		dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "work_b66_documents_other")
+end
+
+function transfer_10000(first_speaker, second_speaker)
+		dialogs.relocate_money_from_actor(first_speaker, second_speaker, 10000)
+end
+
+function transfer_20000(first_speaker, second_speaker)
+		dialogs.relocate_money_from_actor(first_speaker, second_speaker, 20000)
+end
+
+function transfer_25000(first_speaker, second_speaker)
+		dialogs.relocate_money_from_actor(first_speaker, second_speaker, 25000)
+end
+
+function give_task_b47(first_speaker, second_speaker)
+   task_manager.get_task_manager():give_task("rostok_b47_nechestni_biznes")
+end
+
+function transfer_device_b47(first_speaker, second_speaker)
+		dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "rost_b47_device_proslushka")
+end
+
+function transfer_b47_device_from_actor(first_speaker, second_speaker)
+		dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "rost_b47_device_proslushka")
+end
+
+function transfer_b47_vintovka_from_zob(first_speaker, second_speaker)
+		dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "wpn_fn2000")
+end
+
+function transfer_deneg_b47(first_speaker, second_speaker)
+		dialogs.relocate_money_to_actor(first_speaker, second_speaker, 4000)
+end
+
+function transer_b47_pda_drel(first_speaker, second_speaker)
+		dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "rost_b47_drel_pda")
+end
+
+function transer_b47_pda_payalnik(first_speaker, second_speaker)
+		dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "rost_b47_payalnik_pda")
+end
+
+function give_task_b15(first_speaker, second_speaker)
+   task_manager.get_task_manager():give_task("rostok_b15_okonchatelni_pokoy")
+end
+
+function give_task_a6_second(first_speaker, second_speaker)
+   task_manager.get_task_manager():give_task("rostok_a6_talk_to_freedom")
+end
+
+function give_task_b75(first_speaker, second_speaker)
+   task_manager.get_task_manager():give_task("rostok_b75_lost_gun")
+end
+
+function transfer_vintovka_b75(first_speaker, second_speaker)
+		dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "wpn_toz34_famil")
+end
+
+function transfer_money_b75(first_speaker, second_speaker)
+		dialogs.relocate_money_to_actor(first_speaker, second_speaker, 3500)
+end
+
+function give_task_b35(first_speaker, second_speaker)
+   task_manager.get_task_manager():give_task("rostok_b34_find_toolkit")
+end
+
+function give_task_b202(first_speaker, second_speaker)
+   task_manager.get_task_manager():give_task("rostok_b202_medusa")
+end
+
+function transfer_toolkit_1(first_speaker, second_speaker)
+		dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "toolkit_1")
+end
+
+function transfer_toolkit_2(first_speaker, second_speaker)
+		dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "toolkit_2")
+end
+
+function transfer_toolkit_3(first_speaker, second_speaker)
+		dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "toolkit_3")
+end
+
+function transfer_deneg_b35_1(first_speaker, second_speaker)
+		dialogs.relocate_money_to_actor(first_speaker, second_speaker, 2000)
+end
+
+function transfer_deneg_b35_2(first_speaker, second_speaker)
+		dialogs.relocate_money_to_actor(first_speaker, second_speaker, 3000)
+end
+
+function transfer_deneg_b35_3(first_speaker, second_speaker)
+		dialogs.relocate_money_to_actor(first_speaker, second_speaker, 4000)
+end
+
+function actor_got_toolkit_1()
+	if db.actor:object("toolkit_1") then
+		return true
+	end
+		return false
+	end
+	
+function actor_got_toolkit_2()
+	if db.actor:object("toolkit_2") then
+		return true
+	end
+		return false
+	end
+
+function actor_got_toolkit_3()
+	if db.actor:object("toolkit_3") then
+		return true
+	end
+		return false
+	end
+
+function give_task_a12(first_speaker, second_speaker)
+   task_manager.get_task_manager():give_task("rostok_a12_talk_again_to_kalancha")
+end	
+
+function give_task_a12_saharov(first_speaker, second_speaker)
+   task_manager.get_task_manager():give_task("rostok_a12_talk_to_saharov")
+end
+
+function give_task_b109(first_speaker, second_speaker)
+   task_manager.get_task_manager():give_task("rostok_b91_shron")
+end	
+
+function transfer_key_b109(first_speaker, second_speaker)
+		dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "rost_b109_key")
+end
+
+function transfer_naim(first_speaker, second_speaker)
+--		dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "stalker_naim_outfit")
+end
+
+function actor_has_5000_money(first_speaker, second_speaker)
+	return db.actor:money() > 4999
+end
+
+function actor_has_10000_money(first_speaker, second_speaker)
+	return db.actor:money() > 9999
+end
+
+function actor_has_15000_money(first_speaker, second_speaker)
+	return db.actor:money() > 14999
+end
+
+function actor_has_20000_money(first_speaker, second_speaker)
+	return db.actor:money() > 19999
+end
+
+function actor_has_25000_money(first_speaker, second_speaker)
+	return db.actor:money() > 24999
+end
+
+function actor_has_8000_money(first_speaker, second_speaker)
+	return db.actor:money() > 7999
+end
+
+function actor_has_14000_money(first_speaker, second_speaker)
+	return db.actor:money() > 13999
+end
+
+function actor_has_20000_money(first_speaker, second_speaker)
+	return db.actor:money() > 19999
+end
+
+function actor_has_32000_money(first_speaker, second_speaker)
+	return db.actor:money() > 31999
+end
+
+function actor_has_12000_money(first_speaker, second_speaker)
+	return db.actor:money() > 11999
+end
+
+function actor_has_4000_money(first_speaker, second_speaker)
+	return db.actor:money() > 3999
+end
+
+function actor_has_3000_money(first_speaker, second_speaker)
+	return db.actor:money() > 2999
+end
+
+function actor_has_2000_money(first_speaker, second_speaker)
+	return db.actor:money() > 1999
+end
+
+function actor_has_1500_money(first_speaker, second_speaker)
+	return db.actor:money() > 1499
+end
+
+function actor_has_1500_money(first_speaker, second_speaker)
+	return db.actor:money() > 1499
+end
+
+function actor_has_1400_money(first_speaker, second_speaker)
+	return db.actor:money() > 1399
+end
+
+function actor_has_700_money(first_speaker, second_speaker)
+	return db.actor:money() > 699
+end
+
+function transfer_deneg_15000_from(first_speaker, second_speaker)
+		dialogs.relocate_money_from_actor(first_speaker, second_speaker, 15000)
+end
+
+function transfer_deneg_500_to(first_speaker, second_speaker)
+		dialogs.relocate_money_to_actor(first_speaker, second_speaker, 500)
+end
+
+function transfer_deneg_700_from(first_speaker, second_speaker)
+		dialogs.relocate_money_from_actor(first_speaker, second_speaker, 700)
+end
+
+function transfer_deneg_20000_from(first_speaker, second_speaker)
+		dialogs.relocate_money_from_actor(first_speaker, second_speaker, 20000)
+end
+
+function transfer_deneg_6000(first_speaker, second_speaker)
+		dialogs.relocate_money_to_actor(first_speaker, second_speaker, 6000)
+end
+
+function transfer_deneg_8000_from(first_speaker, second_speaker)
+		dialogs.relocate_money_from_actor(first_speaker, second_speaker, 8000)
+end
+
+function transfer_deneg_14000_from(first_speaker, second_speaker)
+		dialogs.relocate_money_from_actor(first_speaker, second_speaker, 14000)
+end
+
+function transfer_deneg_12000_from(first_speaker, second_speaker)
+		dialogs.relocate_money_from_actor(first_speaker, second_speaker, 14000)
+end
+
+function transfer_deneg_6000_from(first_speaker, second_speaker)
+		dialogs.relocate_money_from_actor(first_speaker, second_speaker, 6000)
+end
+
+function transfer_deneg_5000(first_speaker, second_speaker)
+		dialogs.relocate_money_to_actor(first_speaker, second_speaker, 5000)
+end
+
+function transfer_deneg_5000_from(first_speaker, second_speaker)
+		dialogs.relocate_money_from_actor(first_speaker, second_speaker, 5000)
+end
+
+function transfer_deneg_4000(first_speaker, second_speaker)
+		dialogs.relocate_money_to_actor(first_speaker, second_speaker, 4000)
+end
+
+function transfer_deneg_4000_from(first_speaker, second_speaker)
+		dialogs.relocate_money_from_actor(first_speaker, second_speaker, 4000)
+end
+
+function transfer_deneg_3000(first_speaker, second_speaker)
+		dialogs.relocate_money_to_actor(first_speaker, second_speaker, 3000)
+end
+
+function transfer_deneg_32000_from(first_speaker, second_speaker)
+		dialogs.relocate_money_from_actor(first_speaker, second_speaker, 32000)
+end
+
+function transfer_deneg_3000_from(first_speaker, second_speaker)
+		dialogs.relocate_money_from_actor(first_speaker, second_speaker, 3000)
+end
+
+function transfer_deneg_2000(first_speaker, second_speaker)
+		dialogs.relocate_money_to_actor(first_speaker, second_speaker, 2000)
+end
+
+function transfer_deneg_2000_from(first_speaker, second_speaker)
+		dialogs.relocate_money_from_actor(first_speaker, second_speaker, 2000)
+end
+
+function transfer_deneg_1500(first_speaker, second_speaker)
+		dialogs.relocate_money_to_actor(first_speaker, second_speaker, 1500)
+end
+
+function transfer_deneg_1500_from(first_speaker, second_speaker)
+		dialogs.relocate_money_from_actor(first_speaker, second_speaker, 1500)
+end
+
+function transfer_deneg_1400_from(first_speaker, second_speaker)
+		dialogs.relocate_money_from_actor(first_speaker, second_speaker, 1400)
+end
+
+function transfer_deneg_1000(first_speaker, second_speaker)
+		dialogs.relocate_money_to_actor(first_speaker, second_speaker, 1000)
+end
+
+function actor_got_drel_pda()
+	if db.actor:object("rost_b47_drel_pda") then
+		return true
+	end
+		return false
+	end
+	
+function actor_got_payalnik_pda()
+	if db.actor:object("rost_b47_payalnik_pda") then
+		return true
+	end
+		return false
+	end
+	
+function actor_got_merc_pda()
+	if db.actor:object("mil_b66_merc_pda") then
+		return true
+	end
+		return false
+	end
+
+function actor_got_psina_pda()
+	if db.actor:object("yan_psina_pda") then
+		return true
+	end
+		return false
+	end
+	
+function actor_got_brevno_pda()
+	if db.actor:object("rost_b109_brevno_pda") then
+		return true
+	end
+		return false
+	end
+	
+function actor_got_crazy_pda()
+	if db.actor:object("mil_b210_pda") then
+		return true
+	end
+		return false
+	end
+	
+function actor_got_b47_pda()
+	if db.actor:object("rost_b47_drel_pda") then
+		return true
+	end
+		return false
+end
+
+function actor_got_kozlovskii_pda()
+	if db.actor:object("lim_kozlovskii_pda") then
+		return true
+	end
+		return false
+end
+
+function actor_got_boot_pda()
+	if db.actor:object("red_sapog_pda") then
+		return true
+	end
+		return false
+end
+
+function transer_af_bat(first_speaker, second_speaker)
+		dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "af_bat")
+end
+
+function transer_kozel_pda(first_speaker, second_speaker)
+		dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "lim_kozlovskii_pda")
+end
+
+function transer_boot_pda(first_speaker, second_speaker)
+		dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "red_sapog_pda")
+		dialogs.relocate_money_to_actor(first_speaker, second_speaker, 400)
+end
+	
+function transer_merc_pda(first_speaker, second_speaker)
+		dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "rost_b47_drel_pda")
+end
+
+function transer_psina_pda(first_speaker, second_speaker)
+		dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "yan_psina_pda")
+end
+
+function transer_brevno_pda(first_speaker, second_speaker)
+		dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "rost_b109_brevno_pda")
+end
+
+function transer_crazy_pda(first_speaker, second_speaker)
+		dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "mil_b210_pda")
+end
+
+function give_task_b110(first_speaker, second_speaker)
+   task_manager.get_task_manager():give_task("rostok_b110_stvol")
+end
+
+function give_task_b200(first_speaker, second_speaker)
+   task_manager.get_task_manager():give_task("rostok_b200_plant")
+end
+
+function give_task_b201(first_speaker, second_speaker)
+   task_manager.get_task_manager():give_task("rostok_b201_scaners")
+end
+
+function give_task_b203(first_speaker, second_speaker)
+   task_manager.get_task_manager():give_task("rostok_b203_oscilograff")
+end
+
+function transfer_b200_plant(first_speaker, second_speaker)
+		dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "jup_b206_plant")
+end
+
+function actor_got_medusa()
+	if db.actor:object("af_medusa") then
+		return true
+	end
+		return false
+	end
+
+function transfer_scaners_b201(first_speaker, second_speaker)
+   dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "jup_b32_scanner_device", 2)
+end
+
+function transfer_medusa_b202(first_speaker, second_speaker)
+   dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "af_medusa")
+   dialogs.relocate_money_to_actor(first_speaker, second_speaker, 5000)
+   db.actor:give_info_portion("rost_b202_task_done")
+end
+
+function transfer_b203_pribor(first_speaker, second_speaker)
+		dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "rost_b202_oscilograff")
+end
+
+function transfer_b203_pribor_back(first_speaker, second_speaker)
+		dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "rost_b202_oscilograff")
+end
+
+function transfer_b203_pribor_back_barman(first_speaker, second_speaker)
+		dialogs.relocate_item_section_from_actor_silent(first_speaker, second_speaker, "rost_b202_oscilograff")
+end
+
+function actor_got_b110_wpn()
+	if db.actor:object("wpn_svu_nimble") then
+		return true
+	end
+		return false
+	end
+	
+function transfer_b110_wpn(first_speaker, second_speaker)
+		dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "wpn_svu_nimble")
+end
+
+function transfer_b98_key(first_speaker, second_speaker)
+		dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "rost_b98_key")
+end
+
+function give_task_b51(first_speaker, second_speaker)
+   task_manager.get_task_manager():give_task("rost_b51_kill_diodor")
+end
+
+function rost_b98_actor_has_good_suit(first_speaker, second_speaker)
+	local actor_true = false
+	local suits_tbl = {
+						["scientific_outfit"] = true,
+						["military_outfit"] = true,
+						["dolg_heavy_outfit"] = true,
+						["merc_exo_outfit"] = true,
+						["svoboda_heavy_outfit"] = true,
+						["cs_heavy_outfit"] = true,
+						["protection_outfit"] = true,
+						["exo_outfit"] = true,
+						["svoboda_exo_outfit"] = true,
+						}
+
+	local helmets_tbl = {
+						["helm_battle"] = true,
+						["helm_tactic"] = true,
+						["helm_protective"] = true,
+						}
+
+	if db.actor:item_in_slot(7) ~= nil and suits_tbl[db.actor:item_in_slot(7):section()] then
+		actor_true = true
+	end
+
+	if db.actor:item_in_slot(12) ~= nil and helmets_tbl[db.actor:item_in_slot(12):section()] then
+		actor_true = true
+	end
+
+	return actor_true
+end
+
+function rost_b98_actor_do_not_has_good_suit(first_speaker, second_speaker)
+	return not rost_b98_actor_has_good_suit(first_speaker, second_speaker)
+end
+
+function give_task_b98(first_speaker, second_speaker)
+   task_manager.get_task_manager():give_task("rost_b98_task")
+end
+
+function give_task_b99(first_speaker, second_speaker)
+   task_manager.get_task_manager():give_task("rostok_b99_osvedomitel")
+end
+
+function actor_got_x19_doc_1()
+	if db.actor:object("x19_document_1") then
+		return true
+	end
+		return false
+end
+
+function actor_got_x19_doc_2()
+	if db.actor:object("x19_document_2") then
+		return true
+	end
+		return false
+end
+
+function actor_got_x19_doc_3()
+	if db.actor:object("x19_document_3") then
+		return true
+	end
+		return false
+end
+
+function actor_got_x19_doc_4()
+	if db.actor:object("x19_document_4") then
+		return true
+	end
+		return false
+end
+
+function actor_got_x19_doc_5()
+	if db.actor:object("x19_document_5") then
+		return true
+	end
+		return false
+end
+
+function actor_got_x19_doc_6()
+	if db.actor:object("x19_document_6") then
+		return true
+	end
+		return false
+end
+
+function actor_got_x19_docs()
+	if db.actor:object("x19_document_1") and db.actor:object("x19_document_2") and db.actor:object("x19_document_3") and db.actor:object("x19_document_4") then
+		return true
+	end
+		return false
+end
+
+function transfer_all_docs(first_speaker, second_speaker)
+		dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "x19_document_1")
+		dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "x19_document_2")
+		dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "x19_document_3")
+		dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "x19_document_4")
+		dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "af_cell")
+end
+
+function transfer_b98_doc_1(first_speaker, second_speaker)
+		dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "x19_document_1")
+end
+
+function transfer_b98_doc_2(first_speaker, second_speaker)
+		dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "x19_document_2")
+end
+
+function transfer_b98_doc_3(first_speaker, second_speaker)
+		dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "x19_document_3")
+end
+
+function transfer_b98_doc_4(first_speaker, second_speaker)
+		dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "x19_document_4")
+end
+
+function transfer_b98_doc_5(first_speaker, second_speaker)
+		dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "x19_document_5")
+end
+
+function transfer_b98_doc_6(first_speaker, second_speaker)
+		dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "x19_document_6")
+end
+
+function transfer_exo_flash(first_speaker, second_speaker)
+		dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "rost_cepa_flash")
+end
+
+function actor_got_cepa_flash()
+	if db.actor:object("rost_cepa_flash") then
+		return true
+	end
+		return false
+end
+
+function actor_got_cepa_pda()
+	if db.actor:object("rost_cepa_pda") then
+		return true
+	end
+		return false
+end
+
+function transfer_cepa_pda(first_speaker, second_speaker)
+		dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "rost_cepa_pda")
+end
+
+
+--'\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+-- B203
+
+function actor_got_info_b203()
+	if has_alife_info("rost_b203_actor_returned_pribor") then
+		return true
+	end
+		return false
+end
+
+function actor_got_no_info_b203()
+	if has_alife_info("rost_b203_actor_returned_pribor") then
+		return false
+	end
+		return true
+end
+
+function b203_reward(first_speaker, second_speaker)
+		dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "medkit", 3)
+		dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "antirad", 2)
+		dialogs.relocate_money_to_actor(first_speaker, second_speaker, 4000)
+		db.actor:give_info_portion("rost_b203_task_done")
+end
+
+			
+			
+-- B204
+function give_task_b204(first_speaker, second_speaker)
+   task_manager.get_task_manager():give_task("rostok_b204_boar")
+end
+
+function actor_got_item_b204()
+	if db.actor:object("mutant_boar_leg") then
+		return true
+	end
+		return false
+end
+
+function actor_got_no_item_b204()
+	if db.actor:object("mutant_boar_leg") then
+		return false
+	end
+		return true
+end
+
+function transfer_b204(first_speaker, second_speaker)
+		dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "mutant_boar_leg")
+		dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "medkit", 2)
+		dialogs.relocate_money_to_actor(first_speaker, second_speaker, 2000)
+		db.actor:give_info_portion("rost_b204_task_done")
+end
+
+--'\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+-- B205
+function give_task_b205(first_speaker, second_speaker)
+   task_manager.get_task_manager():give_task("rostok_b205_pseudodog")
+end
+
+function actor_got_item_b205()
+	if db.actor:object("mutant_pseudodog_tail") then
+		return true
+	end
+		return false
+end
+
+function actor_got_no_item_b205()
+	if db.actor:object("mutant_pseudodog_tail") then
+		return false
+	end
+		return true
+end
+
+function transfer_b205(first_speaker, second_speaker)
+		dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "mutant_pseudodog_tail")
+		dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "antirad", 1)
+		dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "vodka", 1)
+		dialogs.relocate_money_to_actor(first_speaker, second_speaker, 2500)
+		db.actor:give_info_portion("rost_b205_task_done")
+end
+
+--'\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+-- B206
+function give_task_b206(first_speaker, second_speaker)
+   task_manager.get_task_manager():give_task("rostok_b206_bloodsucker")
+end
+
+function actor_got_item_b206()
+	if db.actor:object("mutant_krovosos_jaw") then
+		return true
+	end
+		return false
+end
+
+function actor_got_no_item_b206()
+	if db.actor:object("mutant_krovosos_jaw") then
+		return false
+	end
+		return true
+end
+
+function transfer_b206(first_speaker, second_speaker)
+		dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "mutant_krovosos_jaw")
+		dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "bread", 5)
+		dialogs.relocate_money_to_actor(first_speaker, second_speaker, 6000)
+		db.actor:give_info_portion("rost_b206_task_done")
+end
+
+--'\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+--'B207
+
+function give_task_b207(first_speaker, second_speaker)
+   task_manager.get_task_manager():give_task("rostok_b207_meat")
+end
+
+function actor_got_item_b207()
+	if db.actor:object("af_mincer_meat") then
+		return true
+	end
+		return false
+end
+
+function actor_got_no_item_b207()
+	if db.actor:object("af_mincer_meat") then
+		return false
+	end
+		return true
+end
+
+function transfer_b207(first_speaker, second_speaker)
+		dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "af_mincer_meat")
+		dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "bread", 5)
+		dialogs.relocate_money_to_actor(first_speaker, second_speaker, 6000)
+		db.actor:give_info_portion("rost_b207_task_done")
+end
+
+function transfer_b110_small(first_speaker, second_speaker)
+dialogs.relocate_money_to_actor(first_speaker, second_speaker, 8000)
+end
+
+function transfer_b110_large(first_speaker, second_speaker)
+		dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "af_barhat", 1)
+		dialogs.relocate_money_to_actor(first_speaker, second_speaker, 5000)
+end
+
+function transfer_b110_kill(first_speaker, second_speaker)
+		dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "af_barhat", 1)
+end
+
+function give_task_c6(first_speaker, second_speaker)
+   task_manager.get_task_manager():give_task("rostok_b208_chipsi")
+end
+
+
+--'\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+--'B208
+
+function give_task_b208(first_speaker, second_speaker)
+   task_manager.get_task_manager():give_task("rostok_b208_chipse")
+end
+
+function actor_got_item_b208()
+	if db.actor:object("af_chipsi") then
+		return true
+	end
+		return false
+end
+
+function actor_got_no_item_b208()
+	if db.actor:object("af_chipsi") then
+		return false
+	end
+		return true
+end
+
+function transfer_b208(first_speaker, second_speaker)
+		dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "af_chipsi")
+		dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "bread", 5)
+		dialogs.relocate_money_to_actor(first_speaker, second_speaker, 6000)
+		db.actor:give_info_portion("rost_b208_task_done")
+end
+
+function transfer_c4(first_speaker, second_speaker)
+		dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "af_chipsi")
+		dialogs.relocate_money_to_actor(first_speaker, second_speaker, 10000)
+end
+
+function actor_got_no_item_b202()
+	if db.actor:object("af_medusa") then
+		return false
+	end
+		return true
+end
+
+function show_tasks_barman(first_speaker, second_speaker)
+		local news_caption = ""
+		local news_text = ""
+	if db.actor:is_talking() then		
+		if not has_alife_info("rost_b203_actor_got_task") then
+			news_caption = game.translate_string("tm_zavod")
+			news_text = ""
+			db.actor:give_talk_message2(news_caption, "", "ui_inGame2_Radiopomehi", "iconed_answer_item")
+		end
+		
+		if not has_alife_info("rost_b204_actor_got_task") then
+			news_caption = game.translate_string("tm_bring_item")
+			news_text = game.translate_string("mutant_boar_leg")
+			db.actor:give_talk_message2(news_caption, news_text, "ui_inGame2_bring_monster", "iconed_answer_item")
+		end
+		
+		if has_alife_info("rost_b204_task_done") and not has_alife_info("rost_b205_actor_got_task") then
+			news_caption = game.translate_string("tm_bring_item")
+			news_text = game.translate_string("mutant_pseudodog_tail")
+			db.actor:give_talk_message2(news_caption, news_text, "ui_inGame2_bring_monster", "iconed_answer_item")
+		end
+		
+		if has_alife_info("rost_b205_task_done") and not has_alife_info("rost_b206_actor_got_task") then
+			news_caption = game.translate_string("tm_bring_item")
+			news_text = game.translate_string("mutant_krovosos_jaw")
+			db.actor:give_talk_message2(news_caption, news_text, "ui_inGame2_bring_monster", "iconed_answer_item")
+		end
+		
+		if not has_alife_info("rost_b202_actor_got_task") then
+			news_caption = game.translate_string("tm_bring_artefact")
+			news_text = game.translate_string("st_af_medusa_name")
+		db.actor:give_talk_message2(news_caption, news_text, "ui_inGame2_B202_task", "iconed_answer_item")
+		end
+		
+		if has_alife_info("rost_b202_task_done") and not has_alife_info("rost_b207_actor_got_task") then
+			news_caption = game.translate_string("tm_bring_artefact")
+			news_text = game.translate_string("st_af_mincer_meat_name")
+		db.actor:give_talk_message2(news_caption, news_text, "ui_inGame2_B202_task", "iconed_answer_item")
+		end
+		if has_alife_info("rost_b207_task_done") and not has_alife_info("rost_b208_actor_got_task") then
+			news_caption = game.translate_string("tm_bring_artefact")
+			news_text = game.translate_string("st_af_chipsi_name")
+			db.actor:give_talk_message2(news_caption, news_text, "ui_inGame2_B202_task", "iconed_answer_item")
+		end
+	end
+end
+
+function has_active_barmen_task(first_speaker, second_speaker)
+    local tasks = {
+        {"rostok_b202_medusa", "rost_b202"},
+        {"rostok_b204_boar", "rost_b204"},
+        {"rostok_b205_pseudodog", "rost_b205"},
+        {"rostok_b206_bloodsucker", "rost_b206"},
+        {"rostok_b207_meat", "rost_b207"},
+        {"rostok_b208_chipse", "rost_b208"},
+        {"rostok_b203_oscilograff", "rost_b203"}
+    }
+    for _, task in ipairs(tasks) do
+        local prefix = task[2]
+        if db.actor:get_task(task[1], true)
+            and has_alife_info(prefix .. "_actor_got_task")
+            and not has_alife_info(prefix .. "_task_done")
+            and not has_alife_info(prefix .. "_task_reverse") then
+            return true
+        end
+    end
+    return false
+end
+
+function no_active_barmen_task(first_speaker, second_speaker)
+    return not has_active_barmen_task(first_speaker, second_speaker)
+end
+
+function hasnt_active_barmen_task_nabor(first_speaker, second_speaker)
+
+	local task_tbl = {
+						[1] = "rostok_b202_medusa",
+						[2] = "rostok_b204_boar",
+						[3] = "rostok_b205_pseudodog",
+						[4] = "rostok_b206_bloodsucker",
+						[5] = "rostok_b207_meat",
+						[6] = "rostok_b208_chipse",
+						[7] = "rostok_b203_oscilograff",
+						}
+						
+	for k,v in pairs(task_tbl) do
+				local task1 = db.actor:get_task(task_tbl[1], true)
+				local task2 = db.actor:get_task(task_tbl[2], true)
+				local task3 = db.actor:get_task(task_tbl[3], true)
+				local task4 = db.actor:get_task(task_tbl[4], true)
+				local task5 = db.actor:get_task(task_tbl[5], true)
+				local task6 = db.actor:get_task(task_tbl[6], true)
+				local task7 = db.actor:get_task(task_tbl[7], true)
+					if task1 and task2 then return false end
+					if task1 and task3 then return false end
+					if task1 and task4 then return false end
+					if task1 and task7 then return false end
+					if task2 and task1 then return false end
+					if task2 and task5 then return false end
+					if task2 and task6 then return false end
+					if task2 and task7 then return false end
+					if task3 and task1 then return false end
+					if task3 and task5 then return false end
+					if task3 and task6 then return false end
+					if task3 and task7 then return false end
+					if task4 and task1 then return false end
+					if task4 and task5 then return false end
+					if task4 and task6 then return false end
+					if task4 and task7 then return false end
+					if task5 and task2 then return false end
+					if task5 and task3 then return false end
+					if task5 and task4 then return false end
+					if task5 and task7 then return false end
+					if task6 and task2 then return false end
+					if task6 and task3 then return false end
+					if task6 and task4 then return false end
+					if task6 and task7 then return false end
+					
+					
+	end
+				return true
+end
+
+function has_active_barmen_task_nabor(first_speaker, second_speaker)
+
+	local task_tbl = {
+						[1] = "rostok_b202_medusa",
+						[2] = "rostok_b204_boar",
+						[3] = "rostok_b205_pseudodog",
+						[4] = "rostok_b206_bloodsucker",
+						[5] = "rostok_b207_meat",
+						[6] = "rostok_b208_chipse",
+						[7] = "rostok_b203_oscilograff",
+						}
+						
+	for k,v in pairs(task_tbl) do
+				local task1 = db.actor:get_task(task_tbl[1], true)
+				local task2 = db.actor:get_task(task_tbl[2], true)
+				local task3 = db.actor:get_task(task_tbl[3], true)
+				local task4 = db.actor:get_task(task_tbl[4], true)
+				local task5 = db.actor:get_task(task_tbl[5], true)
+				local task6 = db.actor:get_task(task_tbl[6], true)
+				local task7 = db.actor:get_task(task_tbl[7], true)
+					if task1 and task2 then return true end
+					if task1 and task3 then return true end
+					if task1 and task4 then return true end
+					if task1 and task7 then return true end
+					if task2 and task1 then return true end
+					if task2 and task5 then return true end
+					if task2 and task6 then return true end
+					if task2 and task7 then return true end
+					if task3 and task1 then return true end
+					if task3 and task5 then return true end
+					if task3 and task6 then return true end
+					if task3 and task7 then return true end
+					if task4 and task1 then return true end
+					if task4 and task5 then return true end
+					if task4 and task6 then return true end
+					if task4 and task7 then return true end
+					if task5 and task2 then return true end
+					if task5 and task3 then return true end
+					if task5 and task4 then return true end
+					if task5 and task7 then return true end
+					if task6 and task2 then return true end
+					if task6 and task3 then return true end
+					if task6 and task4 then return true end
+					if task6 and task7 then return true end
+					
+	end
+				return false
+end
+
+function transfer_all_of_medkits(first_speaker, second_speaker)
+		dialogs.relocate_item_section_from_actor_silent(first_speaker, second_speaker, "medkit", all)
+		dialogs.relocate_item_section_from_actor_silent(first_speaker, second_speaker, "medkit_army", all)
+		dialogs.relocate_item_section_from_actor_silent(first_speaker, second_speaker, "medkit_scientic", all)
+		dialogs.relocate_item_section_from_actor_silent(first_speaker, second_speaker, "bandage", all)
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

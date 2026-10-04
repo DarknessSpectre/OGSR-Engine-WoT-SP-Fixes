@@ -1,0 +1,4286 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?>
+<game_dialogs>
+    <dialog id="rost_b35_find_toolkit_3">
+        <precondition>dialogs_rostok.actor_got_toolkit_3</precondition>
+        <dont_has_info>tenhik_bar_got_toolkit_3</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>rost_b35_find_toolkit_3_1</text>
+                <action>dialogs_rostok.transfer_toolkit_3</action>
+                <action>dialogs_rostok.transfer_deneg_b35_3</action>
+                <give_info>tenhik_bar_got_toolkit_3</give_info>
+                <give_info>tehnik_bar_instrument_3_brought</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>rost_b35_find_toolkit_3_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_b201_german_finish_dialog">
+        <has_info>rost_b201_scaner_2_placed</has_info>
+        <dont_has_info>rost_b201_task_done</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>rost_b201_german_finish_dialog_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>rost_b201_german_finish_dialog_1</text>
+                <action>dialogs_rostok.transfer_deneg_3000</action>
+                <give_info>rost_b201_task_done</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_b35_find_toolkit_1">
+        <precondition>dialogs_rostok.actor_got_toolkit_1</precondition>
+        <dont_has_info>tenhik_bar_got_toolkit_1</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>rost_b35_find_toolkit_1_1</text>
+                <action>dialogs_rostok.transfer_toolkit_1</action>
+                <action>dialogs_rostok.transfer_deneg_b35_1</action>
+                <give_info>tenhik_bar_got_toolkit_1</give_info>
+                <give_info>tehnik_bar_instrument_1_brought</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>rost_b35_find_toolkit_1_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_merc_exo_novikov_dialog">
+        <precondition>dialogs_rostok.actor_got_cepa_flash</precondition>
+        <dont_has_info>rost_novikov_got_flesh</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>rost_merc_exo_novikov_dialog_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>rost_merc_exo_novikov_dialog_1</text>
+                <action>dialogs_rostok.transfer_exo_flash</action>
+                <action>dialogs_rostok.transfer_deneg_1500</action>
+                <give_info>rost_novikov_got_flesh</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_merc_exo_furgon_dialog">
+        <dont_has_info>tech_gave_info_about_exo</dont_has_info>
+        <precondition>dialogs_rostok.actor_got_cepa_flash</precondition>
+        <phrase_list>
+            <phrase id="0">
+                <text>rost_merc_exo_furgon_dialog_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>rost_merc_exo_furgon_dialog_1</text>
+                <give_info>tech_gave_info_about_exo</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_novikov_talk_dialog">
+        <phrase_list>
+            <phrase id="1">
+                <text>rost_novikov_talk_dialog_1</text>
+                <dont_has_info>rost_b201_task_done</dont_has_info>
+            </phrase>
+            <phrase id="2">
+                <text>rost_novikov_talk_dialog_2</text>
+                <has_info>rost_b201_task_done</has_info>
+            </phrase>
+            <phrase id="4">
+                <text>rost_novikov_talk_dialog_4</text>
+                <has_info>rost_b98_task_done</has_info>
+            </phrase>
+            <phrase id="3">
+                <text>rost_novikov_talk_dialog_3</text>
+                <has_info>rost_b98_german_got_all_docs</has_info>
+            </phrase>
+            <phrase id="0">
+                <text>rost_novikov_talk_dialog_0</text>
+                <next>1</next>
+                <next>2</next>
+                <next>3</next>
+                <next>4</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_novikov_start">
+        <phrase_list>
+            <phrase id="0">
+                <text />
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text />
+                <next>11</next>
+                <next>12</next>
+                <next>13</next>
+                <next>14</next>
+            </phrase>
+            <phrase id="13">
+                <text>rost_novikov_start_13</text>
+                <has_info>rost_b98_german_got_all_docs</has_info>
+            </phrase>
+            <phrase id="12">
+                <text>rost_novikov_start_12</text>
+                <has_info>rost_b98_task_done</has_info>
+            </phrase>
+            <phrase id="14">
+                <text>rost_novikov_start_14</text>
+                <dont_has_info>rost_b98_task_done</dont_has_info>
+                <has_info>rost_novikov_prologue_done</has_info>
+            </phrase>
+            <phrase id="11">
+                <text>rost_novikov_start_11</text>
+                <dont_has_info>rost_novikov_prologue</dont_has_info>
+                <give_info>rost_novikov_prologue</give_info>
+                <give_info>rost_novikov_prologue_done</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_trader_suit_start">
+        <phrase_list>
+            <phrase id="0">
+                <text />
+                <next>1</next>
+                <next>2</next>
+            </phrase>
+            <phrase id="1">
+                <text>rost_trader_suit_start_1</text>
+                <dont_has_info>rost_timoha_start</dont_has_info>
+                <give_info>rost_timoha_start</give_info>
+            </phrase>
+            <phrase id="2">
+                <text>rost_trader_suit_start_2</text>
+                <has_info>rost_timoha_start</has_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_b202_barmen_finish_dialog">
+        <precondition>dialogs_rostok.actor_got_medusa</precondition>
+        <has_info>rost_b202_actor_took_quest</has_info>
+        <dont_has_info>rost_b202_task_done</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>rost_b202_barmen_finish_dialog_0</text>
+                <precondition>dialogs_rostok.actor_got_medusa</precondition>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>rost_b202_barmen_finish_dialog_1</text>
+                <action>dialogs_rostok.transfer_medusa_b202</action>
+                <action>dialogs_rostok.transfer_deneg_4000</action>
+                <give_info>rost_b202_task_done</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_b203_barmen_start_dialog">
+        <has_info>rost_b202_task_done</has_info>
+        <dont_has_info>rost_b203_actor_got_task</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>rost_b203_barmen_start_dialog_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>rost_b203_barmen_start_dialog_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="0">
+                <text>rost_b203_barmen_start_dialog_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="3">
+                <text>rost_b203_barmen_start_dialog_3</text>
+                <action>dialogs_rostok.give_task_b203</action>
+                <give_info>rost_b203_actor_got_task</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_ozero_start_dialog">
+        <phrase_list>
+            <phrase id="0">
+                <text>rost_ozero_start_dialog_0</text>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_osvedomitel_talk_dialog">
+        <phrase_list>
+            <phrase id="1">
+                <text>rost_osvedomitel_talk_dialog_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="3">
+                <text />
+                <next>31</next>
+                <next>32</next>
+                <next>33</next>
+                <next>34</next>
+            </phrase>
+            <phrase id="4">
+                <text>rost_osvedomitel_talk_dialog_4</text>
+            </phrase>
+            <phrase id="32">
+                <text>rost_osvedomitel_talk_dialog_32</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="5">
+                <text>rost_osvedomitel_talk_dialog_5</text>
+            </phrase>
+            <phrase id="31">
+                <text>rost_osvedomitel_talk_dialog_31</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="6">
+                <text>rost_osvedomitel_talk_dialog_6</text>
+            </phrase>
+            <phrase id="33">
+                <text>rost_osvedomitel_talk_dialog_33</text>
+                <next>6</next>
+            </phrase>
+            <phrase id="34">
+                <text>rost_osvedomitel_talk_dialog_34</text>
+            </phrase>
+            <phrase id="2">
+                <text />
+                <next>3</next>
+            </phrase>
+            <phrase id="0">
+                <text>rost_osvedomitel_talk_dialog_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_osvedomitel_start">
+        <phrase_list>
+            <phrase id="0">
+                <text />
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text />
+                <next>3</next>
+                <next>4</next>
+            </phrase>
+            <phrase id="3">
+                <text>rost_osvedomitel_start_3</text>
+                <dont_has_info>rost_osvedomitel_start</dont_has_info>
+                <give_info>rost_osvedomitel_start</give_info>
+            </phrase>
+            <phrase id="4">
+                <text>rost_osvedomitel_start_4</text>
+                <has_info>rost_osvedomitel_start</has_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_b200_german_start_dialog">
+        <has_info>disable_task_no_info</has_info>
+        <dont_has_info>rost_b200_german_start_dialog_done</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>rost_b200_german_start_dialog_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>rost_b200_german_start_dialog_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="41">
+                <text>rost_b200_german_start_dialog_41</text>
+            </phrase>
+            <phrase id="3">
+                <text>rost_b200_german_start_dialog_3</text>
+                <next>4</next>
+                <next>41</next>
+            </phrase>
+            <phrase id="0">
+                <text>rost_b200_german_start_dialog_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="4">
+                <text>rost_b200_german_start_dialog_4</text>
+                <action>dialogs_rostok.give_task_b200</action>
+                <give_info>rost_b200_german_start_dialog_done</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_b201_german_start_dialog">
+        <has_info>rost_b200_task_done</has_info>
+        <dont_has_info>rost_b201_task_started</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>rost_b201_german_start_dialog_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>rost_b201_german_start_dialog_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="0">
+                <text>rost_b201_german_start_dialog_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="41">
+                <text>rost_b201_german_start_dialog_41</text>
+            </phrase>
+            <phrase id="3">
+                <text>rost_b201_german_start_dialog_3</text>
+                <next>4</next>
+                <next>41</next>
+            </phrase>
+            <phrase id="4">
+                <text>rost_b201_german_start_dialog_4</text>
+                <action>dialogs_rostok.give_task_b201</action>
+                <give_info>rost_b201_task_started</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_b66_voronin_dialog">
+        <has_info>rost_military_is_open</has_info>
+        <dont_has_info>rost_b66_voronin_dialog_done</dont_has_info>
+        <dont_has_info>rost_b66_voronin_new_dialog_done</dont_has_info>
+        <phrase_list>
+            <phrase id="4">
+                <text>rost_b66_voronin_dialog_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="5">
+                <text>rost_b66_voronin_dialog_5</text>
+                <action>dialogs_rostok.give_task_b66</action>
+                <next>6</next>
+            </phrase>
+            <phrase id="6">
+                <text>rost_b66_voronin_dialog_6</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>rost_b66_voronin_dialog_done</give_info>
+            </phrase>
+            <phrase id="3">
+                <text>rost_b66_voronin_dialog_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="0">
+                <text>rost_b66_voronin_dialog_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="7">
+                <text>rost_b66_voronin_dialog_7</text>
+            </phrase>
+            <phrase id="2">
+                <text>rost_b66_voronin_dialog_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="1">
+                <text>rost_b66_voronin_dialog_1</text>
+                <next>2</next>
+                <next>7</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_b66_workout_zulus_dialog">
+        <has_info>work_b66_actor_got_docs</has_info>
+        <dont_has_info>work_b66_dialog_zulus_done</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>rost_b66_workout_zulus_dialog_1</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>work_b66_dialog_zulus_done</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>rost_b66_workout_zulus_dialog_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_side_barman">
+        <phrase_list>
+            <phrase id="26">
+                <text>rost_side_barman_26</text>
+            </phrase>
+            <phrase id="32">
+                <text>rost_side_barman_32</text>
+            </phrase>
+            <phrase id="35">
+                <text>rost_side_barman_35</text>
+            </phrase>
+            <phrase id="41">
+                <text>rost_side_barman_41</text>
+            </phrase>
+            <phrase id="38">
+                <text>rost_side_barman_38</text>
+            </phrase>
+            <phrase id="30">
+                <text>rost_side_barman_30</text>
+                <next>31</next>
+                <next>32</next>
+            </phrase>
+            <phrase id="33">
+                <text>rost_side_barman_33</text>
+                <next>34</next>
+                <next>35</next>
+            </phrase>
+            <phrase id="36">
+                <text>rost_side_barman_36</text>
+                <next>37</next>
+                <next>38</next>
+            </phrase>
+            <phrase id="23">
+                <text>rost_side_barman_23</text>
+            </phrase>
+            <phrase id="34">
+                <text>rost_side_barman_34</text>
+                <action>dialogs_rostok.give_task_b202</action>
+                <give_info>rost_b202_actor_got_task</give_info>
+            </phrase>
+            <phrase id="40">
+                <text>rost_side_barman_40</text>
+                <action>dialogs_rostok.give_task_b208</action>
+                <give_info>rost_b208_actor_got_task</give_info>
+            </phrase>
+            <phrase id="24">
+                <text>rost_side_barman_24</text>
+                <next>25</next>
+                <next>26</next>
+            </phrase>
+            <phrase id="37">
+                <text>rost_side_barman_37</text>
+                <action>dialogs_rostok.give_task_b207</action>
+                <give_info>rost_b207_actor_got_task</give_info>
+            </phrase>
+            <phrase id="21">
+                <text>rost_side_barman_21</text>
+                <next>22</next>
+                <next>23</next>
+            </phrase>
+            <phrase id="39">
+                <text>rost_side_barman_39</text>
+                <next>40</next>
+                <next>41</next>
+            </phrase>
+            <phrase id="27">
+                <text>rost_side_barman_27</text>
+                <next>28</next>
+                <next>29</next>
+            </phrase>
+            <phrase id="31">
+                <text>rost_side_barman_31</text>
+                <action>dialogs_rostok.give_task_b206</action>
+                <give_info>rost_b206_actor_got_task</give_info>
+            </phrase>
+            <phrase id="29">
+                <text>rost_side_barman_29</text>
+            </phrase>
+            <phrase id="28">
+                <text>rost_side_barman_28</text>
+                <action>dialogs_rostok.give_task_b205</action>
+                <give_info>rost_b205_actor_got_task</give_info>
+            </phrase>
+            <phrase id="12">
+                <text>rost_side_barman_12</text>
+                <dont_has_info>rost_b204_actor_got_task</dont_has_info>
+                <next>24</next>
+            </phrase>
+            <phrase id="13">
+                <text>rost_side_barman_13</text>
+                <dont_has_info>rost_b205_actor_got_task</dont_has_info>
+                <has_info>rost_b204_task_done</has_info>
+                <next>27</next>
+            </phrase>
+            <phrase id="17">
+                <text>rost_side_barman_17</text>
+                <dont_has_info>rost_b208_actor_got_task</dont_has_info>
+                <has_info>rost_b207_task_done</has_info>
+                <next>39</next>
+            </phrase>
+            <phrase id="16">
+                <text>rost_side_barman_16</text>
+                <dont_has_info>rost_b207_actor_got_task</dont_has_info>
+                <has_info>rost_b202_task_done</has_info>
+                <next>36</next>
+            </phrase>
+            <phrase id="15">
+                <text>rost_side_barman_15</text>
+                <dont_has_info>rost_b202_actor_got_task</dont_has_info>
+                <next>33</next>
+            </phrase>
+            <phrase id="14">
+                <text>rost_side_barman_14</text>
+                <dont_has_info>rost_b206_actor_got_task</dont_has_info>
+                <has_info>rost_b205_task_done</has_info>
+                <next>30</next>
+            </phrase>
+            <phrase id="18">
+                <text>rost_side_barman_18</text>
+            </phrase>
+            <phrase id="25">
+                <text>rost_side_barman_25</text>
+                <action>dialogs_rostok.give_task_b204</action>
+                <give_info>rost_b204_actor_got_task</give_info>
+            </phrase>
+            <phrase id="22">
+                <text>rost_side_barman_22</text>
+                <action>dialogs_rostok.give_task_b203</action>
+                <give_info>rost_b203_actor_got_task</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>rost_side_barman_0</text>
+                <next>1</next>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>rost_side_barman_2</text>
+                <precondition>dialogs_rostok.has_active_barmen_task_nabor</precondition>
+            </phrase>
+            <phrase id="11">
+                <text>rost_side_barman_11</text>
+                <dont_has_info>rost_b203_actor_got_task</dont_has_info>
+                <next>21</next>
+            </phrase>
+            <phrase id="1">
+                <text>rost_side_barman_1</text>
+                <precondition>dialogs_rostok.hasnt_active_barmen_task_nabor</precondition>
+                <action>dialogs_rostok.show_tasks_barman</action>
+                <next>11</next>
+                <next>12</next>
+                <next>13</next>
+                <next>14</next>
+                <next>15</next>
+                <next>16</next>
+                <next>17</next>
+                <next>18</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_start_barmen">
+        <phrase_list>
+            <phrase id="0">
+                <text>rost_start_barmen_0</text>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_start_voronin">
+        <phrase_list>
+            <phrase id="0">
+                <text>rost_start_voronin_0</text>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_start_medik">
+        <phrase_list>
+            <phrase id="0">
+                <text>rost_start_medik_0</text>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_start_ivancov">
+        <phrase_list>
+            <phrase id="0">
+                <text>rost_start_ivancov_0</text>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_start_furgon">
+        <phrase_list>
+            <phrase id="0">
+                <text>rost_start_furgon_0</text>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_b47_tehnik_return_apparat_dialog">
+        <has_info>rost_b47_messages_received</has_info>
+        <dont_has_info>rost_b47_apparat_returned</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>rost_b47_tehnik_return_apparat_dialog_0</text>
+                <action>dialogs_rostok.transfer_b47_device_from_actor</action>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>rost_b47_tehnik_return_apparat_dialog_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>rost_b47_tehnik_return_apparat_dialog_2</text>
+                <give_info>rost_b47_apparat_returned</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="tm_barman_dialog" priority="-1">
+        <phrase_list>
+            <phrase id="" />
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_b47_robbery_dialog">
+        <has_info>mil_b47_drel_1_talked</has_info>
+        <dont_has_info>rost_b47_found_killers</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>rost_b47_robbery_dialog_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>rost_b47_robbery_dialog_1</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>rost_b47_found_killers</give_info>
+                <give_info>rost_b47_actor_knew_info_from_osvedomitel</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_b47_timoha_dialog">
+        <has_info>rost_b47_zob_1_talked</has_info>
+        <dont_has_info>mil_drel_dead</dont_has_info>
+        <dont_has_info>rost_b47_furgon_apeared</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>rost_b47_timoha_dialog_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>rost_b47_timoha_dialog_1</text>
+                <give_info>rost_b47_furgon_apeared</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_b51_informer_reason_dialog">
+        <has_info>mil_b52_actor_lied</has_info>
+        <dont_has_info>rost_b51_inf_didnt_help</dont_has_info>
+        <dont_has_info>mil_b52_actor_angry</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>rost_b51_informer_reason_dialog_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>rost_b51_informer_reason_dialog_1</text>
+                <give_info>rost_b51_inf_didnt_help</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_start_timoha">
+        <phrase_list>
+            <phrase id="0">
+                <text />
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text />
+                <next>2</next>
+                <next>3</next>
+            </phrase>
+            <phrase id="2">
+                <text>rost_start_timoha_2</text>
+                <dont_has_info>rost_timoha_started</dont_has_info>
+                <give_info>rost_timoha_started</give_info>
+            </phrase>
+            <phrase id="3">
+                <text>rost_start_timoha_3</text>
+                <has_info>rost_timoha_started</has_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_start_moro">
+        <phrase_list>
+            <phrase id="1">
+                <text />
+                <next>2</next>
+                <next>3</next>
+            </phrase>
+            <phrase id="2">
+                <text>rost_start_moro_2</text>
+                <dont_has_info>rost_moro_started</dont_has_info>
+                <give_info>rost_moro_started</give_info>
+            </phrase>
+            <phrase id="3">
+                <text>rost_start_moro_3</text>
+                <has_info>rost_moro_started</has_info>
+            </phrase>
+            <phrase id="0">
+                <text />
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_b47_zob_knew_about_pda_gone">
+        <has_info>rost_b47_zob_already_knows_about_pda_sold</has_info>
+        <dont_has_info>rost_b47_zob_is_displeased</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>rost_b47_zob_knew_about_pda_gone_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>rost_b47_zob_knew_about_pda_gone_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>rost_b47_zob_knew_about_pda_gone_2</text>
+                <give_info>rost_b47_zob_is_displeased</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_start_bariga">
+        <phrase_list>
+            <phrase id="0">
+                <text />
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text />
+                <next>2</next>
+                <next>3</next>
+                <next>4</next>
+            </phrase>
+            <phrase id="2">
+                <text>rost_start_bariga_2</text>
+                <dont_has_info>rost_zob_started</dont_has_info>
+                <give_info>rost_zob_started</give_info>
+            </phrase>
+            <phrase id="3">
+                <text>rost_start_bariga_3</text>
+                <dont_has_info>rost_b47_zob_is_displeased</dont_has_info>
+                <has_info>rost_zob_started</has_info>
+            </phrase>
+            <phrase id="4">
+                <text>rost_start_bariga_4</text>
+                <has_info>rost_b47_zob_is_displeased</has_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_side_barmen_complete">
+        <precondition>dialogs_rostok.has_active_barmen_task</precondition>
+        <phrase_list>
+            <phrase id="28">
+                <text>rost_side_barmen_complete_28</text>
+                <give_info>rost_b206_task_reverse</give_info>
+            </phrase>
+            <phrase id="31">
+                <text>rost_side_barmen_complete_31</text>
+                <give_info>rost_b202_task_reverse</give_info>
+            </phrase>
+            <phrase id="34">
+                <text>rost_side_barmen_complete_34</text>
+                <give_info>rost_b207_task_reverse</give_info>
+            </phrase>
+            <phrase id="23">
+                <text>rost_side_barmen_complete_23</text>
+            </phrase>
+            <phrase id="29">
+                <text>rost_side_barmen_complete_29</text>
+            </phrase>
+            <phrase id="32">
+                <text>rost_side_barmen_complete_32</text>
+            </phrase>
+            <phrase id="25">
+                <text>rost_side_barmen_complete_25</text>
+                <give_info>rost_b205_task_reverse</give_info>
+            </phrase>
+            <phrase id="24">
+                <text>rost_side_barmen_complete_24</text>
+                <precondition>dialogs_rostok.actor_got_no_item_b205</precondition>
+                <next>25</next>
+                <next>26</next>
+            </phrase>
+            <phrase id="27">
+                <text>rost_side_barmen_complete_27</text>
+                <precondition>dialogs_rostok.actor_got_no_item_b206</precondition>
+                <next>28</next>
+                <next>29</next>
+            </phrase>
+            <phrase id="33">
+                <text>rost_side_barmen_complete_33</text>
+                <precondition>dialogs_rostok.actor_got_no_item_b207</precondition>
+                <next>34</next>
+                <next>35</next>
+            </phrase>
+            <phrase id="26">
+                <text>rost_side_barmen_complete_26</text>
+            </phrase>
+            <phrase id="35">
+                <text>rost_side_barmen_complete_35</text>
+            </phrase>
+            <phrase id="21">
+                <text>rost_side_barmen_complete_21</text>
+                <precondition>dialogs_rostok.actor_got_no_item_b204</precondition>
+                <next>22</next>
+                <next>23</next>
+            </phrase>
+            <phrase id="39">
+                <text>rost_side_barmen_complete_39</text>
+                <precondition>dialogs_rostok.actor_got_item_b204</precondition>
+                <action>dialogs_rostok.transfer_b204</action>
+                <dont_has_info>rost_b204_task_done</dont_has_info>
+                <has_info>rost_b204_actor_got_task</has_info>
+            </phrase>
+            <phrase id="40">
+                <text>rost_side_barmen_complete_40</text>
+                <precondition>dialogs_rostok.actor_got_item_b205</precondition>
+                <action>dialogs_rostok.transfer_b205</action>
+                <dont_has_info>rost_b205_task_done</dont_has_info>
+                <has_info>rost_b205_actor_got_task</has_info>
+            </phrase>
+            <phrase id="41">
+                <text>rost_side_barmen_complete_41</text>
+                <precondition>dialogs_rostok.actor_got_item_b206</precondition>
+                <action>dialogs_rostok.transfer_b206</action>
+                <dont_has_info>rost_b206_task_done</dont_has_info>
+                <has_info>rost_b206_actor_got_task</has_info>
+            </phrase>
+            <phrase id="43">
+                <text>rost_side_barmen_complete_43</text>
+                <precondition>dialogs_rostok.actor_got_item_b207</precondition>
+                <action>dialogs_rostok.transfer_b207</action>
+                <dont_has_info>rost_b207_task_done</dont_has_info>
+                <has_info>rost_b207_actor_got_task</has_info>
+            </phrase>
+            <phrase id="30">
+                <text>rost_side_barmen_complete_30</text>
+                <precondition>dialogs_rostok.actor_got_no_item_b202</precondition>
+                <next>31</next>
+                <next>32</next>
+            </phrase>
+            <phrase id="42">
+                <text>rost_side_barmen_complete_42</text>
+                <precondition>dialogs_rostok.actor_got_medusa</precondition>
+                <action>dialogs_rostok.transfer_medusa_b202</action>
+                <dont_has_info>rost_b202_task_done</dont_has_info>
+                <has_info>rost_b202_actor_got_task</has_info>
+            </phrase>
+            <phrase id="5">
+                <text />
+                <precondition>dialogs_rostok.actor_got_item_b205</precondition>
+                <action>dialogs_rostok.transfer_b205</action>
+                <disable_info>rost_b205_actor_got_task</disable_info>
+                <has_info>rost_b205_actor_got_task</has_info>
+            </phrase>
+            <phrase id="6">
+                <text />
+                <precondition>dialogs_rostok.actor_got_item_b206</precondition>
+                <action>dialogs_rostok.transfer_b206</action>
+                <disable_info>rost_b206_actor_got_task</disable_info>
+                <has_info>rost_b206_actor_got_task</has_info>
+            </phrase>
+            <phrase id="7">
+                <text />
+                <precondition>dialogs_rostok.actor_got_item_b207</precondition>
+                <action>dialogs_rostok.transfer_b207</action>
+                <disable_info>rost_b207_actor_got_task</disable_info>
+                <has_info>rost_b207_actor_got_task</has_info>
+            </phrase>
+            <phrase id="8">
+                <text />
+                <precondition>dialogs_rostok.actor_got_item_b208</precondition>
+                <action>dialogs_rostok.transfer_b208</action>
+                <disable_info>rost_b208_actor_got_task</disable_info>
+                <has_info>rost_b208_actor_got_task</has_info>
+            </phrase>
+            <phrase id="9">
+                <text />
+                <precondition>dialogs_rostok.actor_got_medusa</precondition>
+                <action>dialogs_rostok.transfer_medusa_b202</action>
+                <disable_info>rost_b202_actor_got_task</disable_info>
+                <has_info>rost_b202_actor_got_task</has_info>
+            </phrase>
+            <phrase id="15">
+                <text>rost_side_barmen_complete_15</text>
+                <dont_has_info>rost_b207_task_done</dont_has_info>
+                <has_info>rost_b207_actor_got_task</has_info>
+                <next>33</next>
+                <next>43</next>
+            </phrase>
+            <phrase id="14">
+                <text>rost_side_barmen_complete_14</text>
+                <dont_has_info>rost_b202_task_done</dont_has_info>
+                <has_info>rost_b202_actor_got_task</has_info>
+                <next>30</next>
+                <next>42</next>
+            </phrase>
+            <phrase id="13">
+                <text>rost_side_barmen_complete_13</text>
+                <dont_has_info>rost_b206_task_done</dont_has_info>
+                <has_info>rost_b206_actor_got_task</has_info>
+                <next>27</next>
+                <next>41</next>
+            </phrase>
+            <phrase id="2">
+                <text>rost_side_barmen_complete_2</text>
+                <has_info>inactive_segment</has_info>
+                <next>3</next>
+            </phrase>
+            <phrase id="22">
+                <text>rost_side_barmen_complete_22</text>
+                <give_info>rost_b204_task_reverse</give_info>
+            </phrase>
+            <phrase id="11">
+                <text>rost_side_barmen_complete_11</text>
+                <dont_has_info>rost_b204_task_done</dont_has_info>
+                <has_info>rost_b204_actor_got_task</has_info>
+                <next>21</next>
+                <next>39</next>
+            </phrase>
+            <phrase id="12">
+                <text>rost_side_barmen_complete_12</text>
+                <dont_has_info>rost_b205_task_done</dont_has_info>
+                <has_info>rost_b205_actor_got_task</has_info>
+                <next>24</next>
+                <next>40</next>
+            </phrase>
+            <phrase id="38">
+                <text>rost_side_barmen_complete_38</text>
+            </phrase>
+            <phrase id="3">
+                <text />
+                <next>4</next>
+                <next>5</next>
+                <next>6</next>
+                <next>7</next>
+                <next>8</next>
+                <next>9</next>
+            </phrase>
+            <phrase id="91">
+                <text>rost_side_barmen_complete_91</text>
+                <precondition>dialogs_rostok.actor_got_no_info_b203</precondition>
+                <next>92</next>
+                <next>93</next>
+            </phrase>
+            <phrase id="36">
+                <text>rost_side_barmen_complete_36</text>
+                <precondition>dialogs_rostok.actor_got_no_item_b208</precondition>
+                <next>37</next>
+                <next>38</next>
+            </phrase>
+            <phrase id="44">
+                <text>rost_side_barmen_complete_44</text>
+                <precondition>dialogs_rostok.actor_got_item_b208</precondition>
+                <action>dialogs_rostok.transfer_b208</action>
+                <dont_has_info>rost_b208_task_done</dont_has_info>
+                <has_info>rost_b208_actor_got_task</has_info>
+            </phrase>
+            <phrase id="37">
+                <text>rost_side_barmen_complete_37</text>
+                <give_info>rost_b208_task_reverse</give_info>
+            </phrase>
+            <phrase id="93">
+                <text>rost_side_barmen_complete_93</text>
+            </phrase>
+            <phrase id="92">
+                <text>rost_side_barmen_complete_92</text>
+                <action>dialogs_rostok.transfer_b203_pribor_back_barman</action>
+                <give_info>rost_b203_task_reverse</give_info>
+            </phrase>
+            <phrase id="1">
+                <text>rost_side_barmen_complete_1</text>
+                <precondition>dialogs_rostok.has_active_barmen_task</precondition>
+                <next>11</next>
+                <next>12</next>
+                <next>13</next>
+                <next>14</next>
+                <next>15</next>
+                <next>16</next>
+                <next>90</next>
+                <next>999</next>
+            </phrase>
+            <phrase id="94">
+                <text>rost_side_barmen_complete_94</text>
+                <precondition>dialogs_rostok.actor_got_info_b203</precondition>
+                <action>dialogs_rostok.b203_reward</action>
+                <dont_has_info>rost_b203_task_done</dont_has_info>
+                <has_info>rost_b203_actor_got_task</has_info>
+            </phrase>
+            <phrase id="0">
+                <text>rost_side_barmen_complete_0</text>
+                <next>1</next>
+                <next>2</next>
+                <next>999</next>
+            </phrase>
+            <phrase id="4">
+                <text />
+                <precondition>dialogs_rostok.actor_got_item_b204</precondition>
+                <action>dialogs_rostok.transfer_b204</action>
+                <disable_info>rost_b204_actor_got_task</disable_info>
+                <has_info>rost_b204_actor_got_task</has_info>
+            </phrase>
+            <phrase id="16">
+                <text>rost_side_barmen_complete_16</text>
+                <dont_has_info>rost_b208_task_done</dont_has_info>
+                <has_info>rost_b208_actor_got_task</has_info>
+                <next>36</next>
+                <next>44</next>
+            </phrase>
+            <phrase id="90">
+                <text>rost_side_barmen_complete_90</text>
+                <dont_has_info>rost_b203_task_done</dont_has_info>
+                <has_info>rost_b203_actor_got_task</has_info>
+                <next>91</next>
+                <next>94</next>
+            </phrase>
+            <phrase id="999">
+                <text>wot_barmen_no_pending_task</text>
+                <precondition>dialogs_rostok.no_active_barmen_task</precondition>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="zat_bandit_medic_dialog">
+        <phrase_list>
+            <phrase id="2">
+                <text>zat_bandit_medic_dialog_2</text>
+                <action>dialogs.medic_magic_potion</action>
+                <next>3</next>
+            </phrase>
+            <phrase id="4">
+                <text>zat_bandit_medic_dialog_4</text>
+                <precondition>dialogs.actor_is_damn_healthy</precondition>
+            </phrase>
+            <phrase id="3">
+                <text>zat_bandit_medic_dialog_3</text>
+            </phrase>
+            <phrase id="0">
+                <text>zat_bandit_medic_dialog_0</text>
+                <next>1</next>
+                <next>4</next>
+            </phrase>
+            <phrase id="1">
+                <text>zat_bandit_medic_dialog_1</text>
+                <precondition>dialogs.actor_needs_bless</precondition>
+                <next>2</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="tm_barman_reward" priority="0">
+        <precondition>task_manager_side.has_active_vendor_task</precondition>
+        <phrase_list>
+            <phrase id="" />
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_zulus_start">
+        <phrase_list>
+            <phrase id="0">
+                <text>rost_zulus_start_0</text>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_trader_weapon_music_turning_back">
+        <has_info>rost_turn_off_music_trader_weapon</has_info>
+        <dont_has_info>rost_play_again_music_trader_weapon</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>rost_trader_weapon_music_turning_back_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>rost_trader_weapon_music_turning_back_1</text>
+                <give_info>rost_play_again_music_trader_weapon</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_trader_weapon_start">
+        <phrase_list>
+            <phrase id="2">
+                <text>rost_trader_weapon_start_2</text>
+                <has_info>rost_moro_start</has_info>
+            </phrase>
+            <phrase id="0">
+                <text />
+                <next>1</next>
+                <next>2</next>
+            </phrase>
+            <phrase id="1">
+                <text>rost_trader_weapon_start_1</text>
+                <dont_has_info>rost_moro_start</dont_has_info>
+                <give_info>rost_moro_start</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_trader_weapon_music_turning">
+        <dont_has_info>rost_turn_off_music_trader_weapon</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>rost_trader_weapon_music_turning_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>rost_trader_weapon_music_turning_1</text>
+                <give_info>rost_turn_off_music_trader_weapon</give_info>
+                <disable_info>rost_play_again_music_trader_weapon</disable_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_a3_security_door_speak">
+        <phrase_list>
+            <phrase id="1">
+                <text>rost_a3_security_door_speak_1</text>
+                <has_info>yan_task_group_done</has_info>
+                <next>3</next>
+            </phrase>
+            <phrase id="2">
+                <text>rost_a3_security_door_speak_2</text>
+                <action>dialogs.break_dialog</action>
+                <dont_has_info>yan_task_group_done</dont_has_info>
+            </phrase>
+            <phrase id="4">
+                <text>rost_a3_security_door_speak_4</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>rost_a3_open_door_closed</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>rost_a3_security_door_speak_0</text>
+                <next>1</next>
+                <next>2</next>
+            </phrase>
+            <phrase id="3">
+                <text>rost_a3_security_door_speak_3</text>
+                <give_info>rost_a3_open_door</give_info>
+                <next>4</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_zulus_boltovnya">
+        <phrase_list>
+            <phrase id="7">
+                <text>rost_zulus_boltovnya_7</text>
+            </phrase>
+            <phrase id="1">
+                <text>rost_zulus_boltovnya_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text />
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text />
+                <next>4</next>
+                <next>5</next>
+                <next>7</next>
+            </phrase>
+            <phrase id="4">
+                <text>rost_zulus_boltovnya_4</text>
+                <next>8</next>
+            </phrase>
+            <phrase id="8">
+                <text>rost_zulus_boltovnya_8</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="9">
+                <text>rost_zulus_boltovnya_9</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="5">
+                <text>rost_zulus_boltovnya_5</text>
+                <next>9</next>
+            </phrase>
+            <phrase id="0">
+                <text>rost_zulus_boltovnya_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_a5_0_barmen_dialog">
+        <has_info>yan_task_group_done</has_info>
+        <dont_has_info>rost_a5_barmen_talked_about_science</dont_has_info>
+        <dont_has_info>rost_a5_dialog_start_done</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>rost_a5_0_barmen_dialog_1</text>
+                <give_info>rost_a5_barmen_talked_about_science</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>rost_a5_0_barmen_dialog_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_b47_finish_moro_dialog">
+        <phrase_list>
+            <phrase id="0">
+                <text />
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_b47_kravchenko_dialog">
+        <has_info>mil_b47_drel_1_talked</has_info>
+        <dont_has_info>rost_b47_actor_knew_about_zasada</dont_has_info>
+        <dont_has_info>rost_b47_found_killers</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>rost_b47_kravchenko_dialog_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>rost_b47_kravchenko_dialog_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>rost_b47_kravchenko_dialog_2</text>
+                <give_info>rost_b47_actor_knew_about_zasada</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_b47_zob_finish_dialog">
+        <has_info>mil_b47_actor_knew_drel_info_DIALOG_DISABLED</has_info>
+        <dont_has_info>rob_b47_zob_is_displeased</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>rost_b47_zob_finish_dialog_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>rost_b47_zob_finish_dialog_1</text>
+                <give_info>rob_b47_zob_is_displeased</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_a5_comendant_dialog">
+        <has_info>rost_a6_voronin_talked</has_info>
+        <dont_has_info>rost_a5_comendant_dialog_done</dont_has_info>
+        <phrase_list>
+            <phrase id="11">
+                <text>rost_a5_comendant_dialog_11</text>
+                <next>12</next>
+            </phrase>
+            <phrase id="10">
+                <text>rost_a5_comendant_dialog_10</text>
+                <next>11</next>
+            </phrase>
+            <phrase id="6">
+                <text>rost_a5_comendant_dialog_6</text>
+                <next>7</next>
+            </phrase>
+            <phrase id="7">
+                <text>rost_a5_comendant_dialog_7</text>
+                <next>8</next>
+            </phrase>
+            <phrase id="8">
+                <text>rost_a5_comendant_dialog_8</text>
+                <next>9</next>
+            </phrase>
+            <phrase id="9">
+                <text>rost_a5_comendant_dialog_9</text>
+                <next>10</next>
+            </phrase>
+            <phrase id="14">
+                <text>rost_a5_comendant_dialog_14</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>rost_a5_comendant_dialog_done</give_info>
+                <give_info>rost_a5_military_opened</give_info>
+            </phrase>
+            <phrase id="13">
+                <text>rost_a5_comendant_dialog_13</text>
+                <action>dialogs_rostok.give_task_a6_second</action>
+                <next>14</next>
+            </phrase>
+            <phrase id="12">
+                <text>rost_a5_comendant_dialog_12</text>
+                <next>13</next>
+            </phrase>
+            <phrase id="0">
+                <text>rost_a5_comendant_dialog_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>rost_a5_comendant_dialog_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>rost_a5_comendant_dialog_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>rost_a5_comendant_dialog_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="4">
+                <text>rost_a5_comendant_dialog_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="5">
+                <text>rost_a5_comendant_dialog_5</text>
+                <next>6</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_a5_german_dialog">
+        <dont_has_info>rost_a5_dialog_start_done</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>rost_a5_german_dialog_0</text>
+                <give_info>rost_a5_begin</give_info>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>rost_a5_german_dialog_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>rost_a5_german_dialog_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>rost_a5_german_dialog_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="4">
+                <text>rost_a5_german_dialog_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="5">
+                <text>rost_a5_german_dialog_5</text>
+                <next>6</next>
+            </phrase>
+            <phrase id="6">
+                <text>rost_a5_german_dialog_6</text>
+                <next>7</next>
+            </phrase>
+            <phrase id="7">
+                <text>rost_a5_german_dialog_7</text>
+                <give_info>rost_a5_spawn_dolg_info</give_info>
+                <next>8</next>
+            </phrase>
+            <phrase id="8">
+                <text>rost_a5_german_dialog_8</text>
+                <action>dialogs_rostok.give_task_a5</action>
+                <give_info>rost_a5_dialog_start_done</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_b47_tehnik_dialog">
+        <has_info>rost_b47_zob_1_talked</has_info>
+        <dont_has_info>rost_b47_tehnik_dialog_done</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>rost_b47_tehnik_dialog_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>rost_b47_tehnik_dialog_1</text>
+                <action>dialogs_rostok.transfer_device_b47</action>
+                <give_info>rost_b47_actor_got_device</give_info>
+                <give_info>rost_b47_knew_about_furgon</give_info>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>rost_b47_tehnik_dialog_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>rost_b47_tehnik_dialog_3</text>
+                <give_info>rost_b47_tehnik_dialog_done</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_b47_moro_dialog_middle">
+        <has_info>rost_b47_zob_1_talked</has_info>
+        <dont_has_info>mil_drel_dead</dont_has_info>
+        <dont_has_info>rost_b47_furgon_apeared</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>rost_b47_moro_dialog_middle_1</text>
+                <give_info>rost_b47_furgon_apeared</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>rost_b47_moro_dialog_middle_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_b47_zob_dialog">
+        <has_info>rost_b47_moro_1_talked</has_info>
+        <dont_has_info>rost_b47_zob_1_talked</dont_has_info>
+        <phrase_list>
+            <phrase id="115">
+                <text>rost_b47_zob_dialog_115</text>
+                <next>117</next>
+            </phrase>
+            <phrase id="116">
+                <text>rost_b47_zob_dialog_116</text>
+                <next>118</next>
+            </phrase>
+            <phrase id="12">
+                <text>rost_b47_zob_dialog_12</text>
+                <next>121</next>
+            </phrase>
+            <phrase id="121">
+                <text>rost_b47_zob_dialog_121</text>
+                <next>122</next>
+            </phrase>
+            <phrase id="122">
+                <text>rost_b47_zob_dialog_122</text>
+                <next>123</next>
+            </phrase>
+            <phrase id="0">
+                <text>rost_b47_zob_dialog_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>rost_b47_zob_dialog_1</text>
+                <next>11</next>
+                <next>12</next>
+            </phrase>
+            <phrase id="11">
+                <text>rost_b47_zob_dialog_11</text>
+                <next>111</next>
+            </phrase>
+            <phrase id="111">
+                <text>rost_b47_zob_dialog_111</text>
+                <next>112</next>
+                <next>115</next>
+                <next>116</next>
+            </phrase>
+            <phrase id="112">
+                <text>rost_b47_zob_dialog_112</text>
+                <next>113</next>
+            </phrase>
+            <phrase id="113">
+                <text>rost_b47_zob_dialog_113</text>
+                <give_info>rost_b47_zob_1_talked</give_info>
+            </phrase>
+            <phrase id="117">
+                <text>rost_b47_zob_dialog_117</text>
+                <give_info>rost_b47_zob_1_talked</give_info>
+            </phrase>
+            <phrase id="118">
+                <text>rost_b47_zob_dialog_118</text>
+                <give_info>rost_b47_zob_1_talked</give_info>
+            </phrase>
+            <phrase id="123">
+                <text>rost_b47_zob_dialog_123</text>
+                <give_info>rost_b47_zob_1_talked</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_b110_dialog_start">
+        <dont_has_info>rost_b110_actor_accepted_task</dont_has_info>
+        <phrase_list>
+            <phrase id="2">
+                <text>rost_b110_dialog_start_2</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="41">
+                <text>rost_b110_dialog_start_41</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="3">
+                <text>rost_b110_dialog_start_3</text>
+                <next>4</next>
+                <next>41</next>
+            </phrase>
+            <phrase id="4">
+                <text>rost_b110_dialog_start_4</text>
+                <action>dialogs_rostok.give_task_b110</action>
+                <give_info>rost_b110_actor_accepted_task</give_info>
+                <next>5</next>
+            </phrase>
+            <phrase id="5">
+                <text>rost_b110_dialog_start_5</text>
+                <next>6</next>
+            </phrase>
+            <phrase id="6">
+                <text>rost_b110_dialog_start_6</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>rost_b110_dialog_start_finished</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>rost_b110_dialog_start_0</text>
+                <next>1</next>
+                <next>2</next>
+            </phrase>
+            <phrase id="1">
+                <text>rost_b110_dialog_start_1</text>
+                <next>3</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_a6_drunk_brough_vodka_dialog">
+        <has_info>rost_a6_bring_vodka</has_info>
+        <dont_has_info>rost_a6_drunk_dialog_2_done</dont_has_info>
+        <phrase_list>
+            <phrase id="2">
+                <text>rost_a6_drunk_brough_vodka_dialog_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>rost_a6_drunk_brough_vodka_dialog_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="4">
+                <text>rost_a6_drunk_brough_vodka_dialog_4</text>
+                <give_info>rost_a6_talk_to_barmen</give_info>
+                <next>5</next>
+            </phrase>
+            <phrase id="1">
+                <text>rost_a6_drunk_brough_vodka_dialog_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="5">
+                <text>rost_a6_drunk_brough_vodka_dialog_5</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>rost_a6_drunk_dialog_2_done</give_info>
+                <give_info>rost_a6_talk_to_barmen</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>rost_a6_drunk_brough_vodka_dialog_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_a6_kravchenko_dialog">
+        <has_info>rost_a6_find_blockpost_dolg</has_info>
+        <dont_has_info>rost_a6_go_to_voronin</dont_has_info>
+        <phrase_list>
+            <phrase id="3">
+                <text>rost_a6_kravchenko_dialog_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="4">
+                <text>rost_a6_kravchenko_dialog_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="6">
+                <text>rost_a6_kravchenko_dialog_6</text>
+            </phrase>
+            <phrase id="1">
+                <text>rost_a6_kravchenko_dialog_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>rost_a6_kravchenko_dialog_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="5">
+                <text>rost_a6_kravchenko_dialog_5</text>
+                <give_info>rost_a6_go_to_voronin</give_info>
+                <next>6</next>
+            </phrase>
+            <phrase id="0">
+                <text>rost_a6_kravchenko_dialog_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_a6_voronin_dialog">
+        <has_info>rost_a6_go_to_voronin</has_info>
+        <dont_has_info>rost_a6_voronin_talked_done</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>rost_a6_voronin_dialog_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>rost_a6_voronin_dialog_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>rost_a6_voronin_dialog_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="6">
+                <text>rost_a6_voronin_dialog_6</text>
+                <next>7</next>
+            </phrase>
+            <phrase id="7">
+                <text>rost_a6_voronin_dialog_7</text>
+                <next>8</next>
+            </phrase>
+            <phrase id="8">
+                <text>rost_a6_voronin_dialog_8</text>
+                <next>9</next>
+            </phrase>
+            <phrase id="4">
+                <text>rost_a6_voronin_dialog_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="9">
+                <text>rost_a6_voronin_dialog_9</text>
+                <give_info>rost_a6_voronin_talked</give_info>
+                <next>10</next>
+            </phrase>
+            <phrase id="10">
+                <text>rost_a6_voronin_dialog_10</text>
+                <give_info>rost_a6_voronin_talked_done</give_info>
+            </phrase>
+            <phrase id="5">
+                <text>rost_a6_voronin_dialog_5</text>
+                <next>6</next>
+            </phrase>
+            <phrase id="0">
+                <text>rost_a6_voronin_dialog_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_a666_barmen_dialog">
+        <phrase_list>
+            <phrase id="2">
+                <text>rost_a666_barmen_dialog_2</text>
+                <next>21</next>
+            </phrase>
+            <phrase id="3">
+                <text>rost_a666_barmen_dialog_3</text>
+                <give_info>rost_a666_barmen_gave_info</give_info>
+            </phrase>
+            <phrase id="21">
+                <text>rost_a666_barmen_dialog_21</text>
+                <give_info>rost_a666_barmen_gave_info</give_info>
+            </phrase>
+            <phrase id="1">
+                <text>rost_a666_barmen_dialog_1</text>
+                <next>2</next>
+                <next>3</next>
+            </phrase>
+            <phrase id="0">
+                <text>rost_a666_barmen_dialog_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_b15_dialog_1">
+        <dont_has_info>rost_b15_task_began</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>rost_b15_dialog_1_0</text>
+                <action>dialogs_rostok.give_task_b15</action>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>rost_b15_dialog_1_1</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>rost_b15_task_began</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_b15_dialog_2">
+        <has_info>rost_b15_task_began</has_info>
+        <dont_has_info>rost_b15_actor_met_him_done</dont_has_info>
+        <dont_has_info>rost_b15_actor_denied</dont_has_info>
+        <phrase_list>
+            <phrase id="19">
+                <text>rost_b15_dialog_2_19</text>
+                <next>20</next>
+                <next>21</next>
+            </phrase>
+            <phrase id="20">
+                <text>rost_b15_dialog_2_20</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="21">
+                <text>rost_b15_dialog_2_21</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>rost_b15_actor_denied</give_info>
+            </phrase>
+            <phrase id="18">
+                <text>rost_b15_dialog_2_18</text>
+                <next>19</next>
+            </phrase>
+            <phrase id="0">
+                <text>rost_b15_dialog_2_0</text>
+                <next>1</next>
+                <next>18</next>
+            </phrase>
+            <phrase id="1">
+                <text>rost_b15_dialog_2_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>rost_b15_dialog_2_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>rost_b15_dialog_2_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="4">
+                <text>rost_b15_dialog_2_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="5">
+                <text>rost_b15_dialog_2_5</text>
+                <next>6</next>
+            </phrase>
+            <phrase id="6">
+                <text>rost_b15_dialog_2_6</text>
+                <next>7</next>
+            </phrase>
+            <phrase id="7">
+                <text>rost_b15_dialog_2_7</text>
+                <next>8</next>
+            </phrase>
+            <phrase id="8">
+                <text>rost_b15_dialog_2_8</text>
+                <next>9</next>
+            </phrase>
+            <phrase id="9">
+                <text>rost_b15_dialog_2_9</text>
+                <next>10</next>
+            </phrase>
+            <phrase id="10">
+                <text>rost_b15_dialog_2_10</text>
+                <next>11</next>
+            </phrase>
+            <phrase id="11">
+                <text>rost_b15_dialog_2_11</text>
+                <next>12</next>
+            </phrase>
+            <phrase id="12">
+                <text>rost_b15_dialog_2_12</text>
+                <next>13</next>
+            </phrase>
+            <phrase id="13">
+                <text>rost_b15_dialog_2_13</text>
+                <next>14</next>
+            </phrase>
+            <phrase id="14">
+                <text>rost_b15_dialog_2_14</text>
+                <next>15</next>
+            </phrase>
+            <phrase id="15">
+                <text>rost_b15_dialog_2_15</text>
+                <next>16</next>
+            </phrase>
+            <phrase id="16">
+                <text>rost_b15_dialog_2_16</text>
+                <give_info>rost_b15_actor_met_him</give_info>
+                <next>17</next>
+            </phrase>
+            <phrase id="17">
+                <text>rost_b15_dialog_2_17</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>rost_b15_actor_met_him_done</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_b200_german_finish_dialog">
+        <has_info>rost_b200_actor_got_plant</has_info>
+        <dont_has_info>rost_b200_task_done</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>rost_b200_german_finish_dialog_0</text>
+                <action>dialogs_rostok.transfer_b200_plant</action>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>rost_b200_german_finish_dialog_1</text>
+                <action>dialogs_rostok.transfer_deneg_2000</action>
+                <give_info>rost_b200_task_done</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_b201_kruglov_dialog">
+        <has_info>rost_b201_task_started</has_info>
+        <dont_has_info>rost_b201_actor_got_scaners</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>rost_b201_kruglov_dialog_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>rost_b201_kruglov_dialog_1</text>
+                <action>dialogs_rostok.transfer_scaners_b201</action>
+                <give_info>rost_b201_actor_got_scaners</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_b202_barmen_start_dialog">
+        <dont_has_info>rost_b202_actor_took_quest</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>rost_b202_barmen_start_dialog_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>rost_b202_barmen_start_dialog_1</text>
+                <action>dialogs_rostok.give_task_b202</action>
+                <give_info>rost_b202_actor_took_quest</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_b203_barmen_finish_dialog">
+        <has_info>rost_b203_actor_returned_pribor</has_info>
+        <dont_has_info>rost_b203_task_done</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>rost_b203_barmen_finish_dialog_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>rost_b203_barmen_finish_dialog_1</text>
+                <action>dialogs_rostok.transfer_deneg_3000</action>
+                <give_info>rost_b203_task_done</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_b203_furgon_finish_dialog">
+        <has_info>rost_b203_pribor_used</has_info>
+        <dont_has_info>rost_b203_actor_returned_pribor</dont_has_info>
+        <dont_has_info>rost_b203_task_reverse</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>rost_b203_furgon_finish_dialog_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>rost_b203_furgon_finish_dialog_1</text>
+                <action>dialogs_rostok.transfer_b203_pribor_back</action>
+                <give_info>rost_b203_actor_returned_pribor</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_b203_furgon_start_dialog">
+        <has_info>rost_b203_actor_got_task</has_info>
+        <dont_has_info>rost_b203_actor_got_pribor</dont_has_info>
+        <dont_has_info>rost_b203_task_reverse</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>rost_b203_furgon_start_dialog_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>rost_b203_furgon_start_dialog_1</text>
+                <action>dialogs_rostok.transfer_b203_pribor</action>
+                <give_info>rost_b203_actor_got_pribor</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_b202_zulus_dialog">
+        <has_info>mil_b202_dialog_done</has_info>
+        <dont_has_info>rost_b202_zulus_talked</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>rost_b202_zulus_dialog_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>rost_b202_zulus_dialog_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>rost_b202_zulus_dialog_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="0">
+                <text>rost_b202_zulus_dialog_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="4">
+                <text>rost_b202_zulus_dialog_4</text>
+                <give_info>rost_b202_zulus_talked</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_b35_barmen_dialog">
+        <has_info>rost_b35_toolkit_barmen_info</has_info>
+        <dont_has_info>rost_b35_toolkit_barmen_info_done</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>rost_b35_barmen_dialog_1</text>
+            </phrase>
+            <phrase id="0">
+                <text>rost_b35_barmen_dialog_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_b35_find_toolkit_2">
+        <precondition>dialogs_rostok.actor_got_toolkit_2</precondition>
+        <dont_has_info>tenhik_bar_got_toolkit_2</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>rost_b35_find_toolkit_2_1</text>
+                <action>dialogs_rostok.transfer_toolkit_2</action>
+                <action>dialogs_rostok.transfer_deneg_b35_2</action>
+                <give_info>tenhik_bar_got_toolkit_2</give_info>
+                <give_info>tehnik_bar_instrument_2_brought</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>rost_b35_find_toolkit_2_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_b35_find_toolkit_brought">
+        <has_info>rost_b35_find_toolkit_info</has_info>
+        <dont_has_info>tenhik_bar_got_all</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>rost_b35_find_toolkit_brought_1</text>
+                <next>11</next>
+                <next>12</next>
+                <next>13</next>
+                <next>14</next>
+            </phrase>
+            <phrase id="14">
+                <text>rost_b35_find_toolkit_brought_14</text>
+            </phrase>
+            <phrase id="22">
+                <text>rost_b35_find_toolkit_brought_22</text>
+                <dont_has_info>tenhik_bar_got_toolkit_2</dont_has_info>
+                <has_info>tenhik_bar_got_toolkit_1</has_info>
+                <has_info>tenhik_bar_got_toolkit_3</has_info>
+            </phrase>
+            <phrase id="23">
+                <text>rost_b35_find_toolkit_brought_23</text>
+                <dont_has_info>tenhik_bar_got_toolkit_3</dont_has_info>
+                <has_info>tenhik_bar_got_toolkit_1</has_info>
+                <has_info>tenhik_bar_got_toolkit_2</has_info>
+            </phrase>
+            <phrase id="32">
+                <text>rost_b35_find_toolkit_brought_32</text>
+                <dont_has_info>tenhik_bar_got_toolkit_1</dont_has_info>
+                <has_info>tenhik_bar_got_toolkit_2</has_info>
+                <has_info>tenhik_bar_got_toolkit_3</has_info>
+            </phrase>
+            <phrase id="31">
+                <text>rost_b35_find_toolkit_brought_31</text>
+                <dont_has_info>tenhik_bar_got_toolkit_1</dont_has_info>
+                <dont_has_info>tenhik_bar_got_toolkit_3</dont_has_info>
+                <has_info>tenhik_bar_got_toolkit_2</has_info>
+            </phrase>
+            <phrase id="33">
+                <text>rost_b35_find_toolkit_brought_33</text>
+                <dont_has_info>tenhik_bar_got_toolkit_3</dont_has_info>
+                <has_info>tenhik_bar_got_toolkit_1</has_info>
+                <has_info>tenhik_bar_got_toolkit_2</has_info>
+            </phrase>
+            <phrase id="42">
+                <text>rost_b35_find_toolkit_brought_42</text>
+                <dont_has_info>tenhik_bar_got_toolkit_2</dont_has_info>
+                <has_info>tenhik_bar_got_toolkit_1</has_info>
+                <has_info>tenhik_bar_got_toolkit_3</has_info>
+            </phrase>
+            <phrase id="41">
+                <text>rost_b35_find_toolkit_brought_41</text>
+                <dont_has_info>tenhik_bar_got_toolkit_1</dont_has_info>
+                <dont_has_info>tenhik_bar_got_toolkit_2</dont_has_info>
+                <has_info>tenhik_bar_got_toolkit_3</has_info>
+            </phrase>
+            <phrase id="43">
+                <text>rost_b35_find_toolkit_brought_43</text>
+                <dont_has_info>tenhik_bar_got_toolkit_1</dont_has_info>
+                <has_info>tenhik_bar_got_toolkit_2</has_info>
+                <has_info>tenhik_bar_got_toolkit_3</has_info>
+            </phrase>
+            <phrase id="24">
+                <text>rost_b35_find_toolkit_brought_24</text>
+                <give_info>tenhik_bar_got_all</give_info>
+                <has_info>tenhik_bar_got_toolkit_1</has_info>
+                <has_info>tenhik_bar_got_toolkit_2</has_info>
+                <has_info>tenhik_bar_got_toolkit_3</has_info>
+            </phrase>
+            <phrase id="34">
+                <text>rost_b35_find_toolkit_brought_34</text>
+                <give_info>tenhik_bar_got_all</give_info>
+                <has_info>tenhik_bar_got_toolkit_1</has_info>
+                <has_info>tenhik_bar_got_toolkit_2</has_info>
+                <has_info>tenhik_bar_got_toolkit_3</has_info>
+            </phrase>
+            <phrase id="44">
+                <text>rost_b35_find_toolkit_brought_44</text>
+                <give_info>tenhik_bar_got_all</give_info>
+                <has_info>tenhik_bar_got_toolkit_1</has_info>
+                <has_info>tenhik_bar_got_toolkit_2</has_info>
+                <has_info>tenhik_bar_got_toolkit_3</has_info>
+            </phrase>
+            <phrase id="21">
+                <text>rost_b35_find_toolkit_brought_21</text>
+                <dont_has_info>tenhik_bar_got_toolkit_2</dont_has_info>
+                <dont_has_info>tenhik_bar_got_toolkit_3</dont_has_info>
+                <has_info>tenhik_bar_got_toolkit_1</has_info>
+            </phrase>
+            <phrase id="11">
+                <text>rost_b35_find_toolkit_brought_11</text>
+                <precondition>dialogs_rostok.actor_got_toolkit_1</precondition>
+                <action>dialogs_rostok.transfer_toolkit_1</action>
+                <action>dialogs_military.transfer_deneg_to_actor_1000</action>
+                <dont_has_info>tenhik_bar_got_toolkit_1</dont_has_info>
+                <give_info>tehnik_bar_instrument_1_brought</give_info>
+                <give_info>tenhik_bar_got_toolkit_1</give_info>
+                <next>21</next>
+                <next>22</next>
+                <next>23</next>
+                <next>24</next>
+            </phrase>
+            <phrase id="12">
+                <text>rost_b35_find_toolkit_brought_12</text>
+                <precondition>dialogs_rostok.actor_got_toolkit_2</precondition>
+                <action>dialogs_rostok.transfer_toolkit_2</action>
+                <action>dialogs_military.transfer_deneg_to_actor_1500</action>
+                <dont_has_info>tenhik_bar_got_toolkit_2</dont_has_info>
+                <give_info>tehnik_bar_instrument_2_brought</give_info>
+                <give_info>tenhik_bar_got_toolkit_2</give_info>
+                <next>31</next>
+                <next>32</next>
+                <next>33</next>
+                <next>34</next>
+            </phrase>
+            <phrase id="13">
+                <text>rost_b35_find_toolkit_brought_13</text>
+                <precondition>dialogs_rostok.actor_got_toolkit_3</precondition>
+                <action>dialogs_rostok.transfer_toolkit_3</action>
+                <action>dialogs_military.transfer_deneg_to_actor_2000</action>
+                <dont_has_info>tenhik_bar_got_toolkit_3</dont_has_info>
+                <give_info>tehnik_bar_instrument_3_brought</give_info>
+                <give_info>tenhik_bar_got_toolkit_3</give_info>
+                <next>41</next>
+                <next>42</next>
+                <next>43</next>
+                <next>44</next>
+            </phrase>
+            <phrase id="0">
+                <text>rost_b35_find_toolkit_brought_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_b47_dubolom_dialog">
+        <has_info>rost_b110_task_done</has_info>
+        <dont_has_info>mil_drel_dead</dont_has_info>
+        <dont_has_info>rost_b47_prologue_done</dont_has_info>
+        <phrase_list>
+            <phrase id="2">
+                <text>rost_b47_dubolom_dialog_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>rost_b47_dubolom_dialog_3</text>
+                <action>dialogs_rostok.give_task_b47</action>
+                <give_info>rost_b47_prologue_done</give_info>
+            </phrase>
+            <phrase id="1">
+                <text>rost_b47_dubolom_dialog_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="0">
+                <text>rost_b47_dubolom_dialog_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_b47_barmen_dialog">
+        <phrase_list>
+            <phrase id="0">
+                <text>rost_b47_barmen_dialog_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>rost_b47_barmen_dialog_1</text>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_b66_comendant_dialog">
+        <has_info>rost_b66_voronin_2_talked</has_info>
+        <dont_has_info>rost_b66_comendant_dialog_complete</dont_has_info>
+        <phrase_list>
+            <phrase id="2">
+                <text>rost_b66_comendant_dialog_2</text>
+                <give_info>rost_b66_comendant_done</give_info>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>rost_b66_comendant_dialog_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="4">
+                <text>rost_b66_comendant_dialog_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="5">
+                <text>rost_b66_comendant_dialog_5</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>rost_b66_comendant_dialog_complete</give_info>
+            </phrase>
+            <phrase id="1">
+                <text>rost_b66_comendant_dialog_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="0">
+                <text>rost_b66_comendant_dialog_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_b66_zulus_dialog">
+        <has_info>rost_b66_voronin_2_talked</has_info>
+        <dont_has_info>rost_b66_zulus_dialog_done</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>rost_b66_zulus_dialog_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>rost_b66_zulus_dialog_1</text>
+                <give_info>rost_b66_zulus_talked</give_info>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>rost_b66_zulus_dialog_2</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>rost_b66_zulus_dialog_done</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_b75_hunter_dialog_1">
+        <dont_has_info>rost_b75_hunter_dialog_1_done</dont_has_info>
+        <phrase_list>
+            <phrase id="122">
+                <text>rost_b75_hunter_dialog_1_122</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>rost_b75_hunter_dialog_1_done</give_info>
+            </phrase>
+            <phrase id="13">
+                <text>rost_b75_hunter_dialog_1_13</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="2">
+                <text>rost_b75_hunter_dialog_1_2</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="0">
+                <text>rost_b75_hunter_dialog_1_0</text>
+                <next>1</next>
+                <next>2</next>
+            </phrase>
+            <phrase id="1">
+                <text>rost_b75_hunter_dialog_1_1</text>
+                <next>11</next>
+            </phrase>
+            <phrase id="11">
+                <text>rost_b75_hunter_dialog_1_11</text>
+                <next>12</next>
+                <next>13</next>
+            </phrase>
+            <phrase id="12">
+                <text>rost_b75_hunter_dialog_1_12</text>
+                <action>dialogs_rostok.give_task_b75</action>
+                <next>121</next>
+            </phrase>
+            <phrase id="121">
+                <text>rost_b75_hunter_dialog_1_121</text>
+                <next>122</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_b75_hunter_dialog_2">
+        <has_info>rost_b75_found_gun</has_info>
+        <dont_has_info>rost_b75_hunter_dialog_2_done</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>rost_b75_hunter_dialog_2_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>rost_b75_hunter_dialog_2_1</text>
+                <action>dialogs_rostok.transfer_vintovka_b75</action>
+                <give_info>rost_b75_task_done</give_info>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>rost_b75_hunter_dialog_2_2</text>
+                <action>dialogs_rostok.transfer_money_b75</action>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>rost_b75_hunter_dialog_2_3</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>rost_b75_hunter_dialog_2_done</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_b98_german_about_osv_dialog">
+        <has_info>rost_b98_actor_knew_about_osved</has_info>
+        <dont_has_info>rost_b98_actor_asked_about_osv</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>rost_b98_german_about_osv_dialog_1</text>
+                <give_info>rost_b98_actor_asked_about_osv</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>rost_b98_german_about_osv_dialog_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_boltovnya_bariga">
+        <dont_has_info>rost_b47_zob_is_displeased</dont_has_info>
+        <phrase_list>
+            <phrase id="6">
+                <text>rost_boltovnya_bariga_6</text>
+                <next>61</next>
+            </phrase>
+            <phrase id="7">
+                <text>rost_boltovnya_bariga_7</text>
+            </phrase>
+            <phrase id="0">
+                <text>rost_boltovnya_bariga_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>rost_boltovnya_bariga_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text />
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text />
+                <next>4</next>
+                <next>5</next>
+                <next>6</next>
+                <next>7</next>
+            </phrase>
+            <phrase id="4">
+                <text>rost_boltovnya_bariga_4</text>
+                <next>41</next>
+            </phrase>
+            <phrase id="41">
+                <text>rost_boltovnya_bariga_41</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="5">
+                <text>rost_boltovnya_bariga_5</text>
+                <next>51</next>
+            </phrase>
+            <phrase id="51">
+                <text>rost_boltovnya_bariga_51</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="61">
+                <text>rost_boltovnya_bariga_61</text>
+                <next>2</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_boltovnya_barmen">
+        <phrase_list>
+            <phrase id="35">
+                <text>rost_boltovnya_barmen_35</text>
+            </phrase>
+            <phrase id="3">
+                <text />
+                <next>31</next>
+                <next>32</next>
+                <next>33</next>
+                <next>34</next>
+                <next>35</next>
+            </phrase>
+            <phrase id="34">
+                <text>rost_boltovnya_barmen_34</text>
+                <next>7</next>
+            </phrase>
+            <phrase id="0">
+                <text>rost_boltovnya_barmen_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>rost_boltovnya_barmen_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text />
+                <next>3</next>
+            </phrase>
+            <phrase id="31">
+                <text>rost_boltovnya_barmen_31</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="4">
+                <text>rost_boltovnya_barmen_4</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="32">
+                <text>rost_boltovnya_barmen_32</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="5">
+                <text>rost_boltovnya_barmen_5</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="33">
+                <text>rost_boltovnya_barmen_33</text>
+                <next>6</next>
+            </phrase>
+            <phrase id="6">
+                <text>rost_boltovnya_barmen_6</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="7">
+                <text>rost_boltovnya_barmen_7</text>
+                <next>2</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_boltovnya_furgon">
+        <phrase_list>
+            <phrase id="32">
+                <text>rost_boltovnya_furgon_32</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="33">
+                <text>rost_boltovnya_furgon_33</text>
+                <next>6</next>
+            </phrase>
+            <phrase id="34">
+                <text>rost_boltovnya_furgon_34</text>
+            </phrase>
+            <phrase id="0">
+                <text>rost_boltovnya_furgon_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="2">
+                <text />
+                <next>3</next>
+            </phrase>
+            <phrase id="1">
+                <text>rost_boltovnya_furgon_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="3">
+                <text />
+                <next>31</next>
+                <next>32</next>
+                <next>33</next>
+                <next>34</next>
+            </phrase>
+            <phrase id="31">
+                <text>rost_boltovnya_furgon_31</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="4">
+                <text>rost_boltovnya_furgon_4</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="5">
+                <text>rost_boltovnya_furgon_5</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="6">
+                <text>rost_boltovnya_furgon_6</text>
+                <next>2</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_boltovnya_ivancov">
+        <phrase_list>
+            <phrase id="32">
+                <text>rost_boltovnya_ivancov_32</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="33">
+                <text>rost_boltovnya_ivancov_33</text>
+            </phrase>
+            <phrase id="0">
+                <text>rost_boltovnya_ivancov_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>rost_boltovnya_ivancov_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text />
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text />
+                <next>31</next>
+                <next>32</next>
+                <next>33</next>
+            </phrase>
+            <phrase id="31">
+                <text>rost_boltovnya_ivancov_31</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="4">
+                <text>rost_boltovnya_ivancov_4</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="5">
+                <text>rost_boltovnya_ivancov_5</text>
+                <next>2</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_boltovnya_moro">
+        <phrase_list>
+            <phrase id="1">
+                <text>rost_boltovnya_moro_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="6">
+                <text>rost_boltovnya_moro_6</text>
+            </phrase>
+            <phrase id="0">
+                <text>rost_boltovnya_moro_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="2">
+                <text />
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text />
+                <next>4</next>
+                <next>5</next>
+                <next>6</next>
+            </phrase>
+            <phrase id="4">
+                <text>rost_boltovnya_moro_4</text>
+                <next>41</next>
+            </phrase>
+            <phrase id="41">
+                <text>rost_boltovnya_moro_41</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="5">
+                <text>rost_boltovnya_moro_5</text>
+                <next>51</next>
+            </phrase>
+            <phrase id="51">
+                <text>rost_boltovnya_moro_51</text>
+                <next>2</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_boltovnya_voronin">
+        <phrase_list>
+            <phrase id="1">
+                <text>rost_boltovnya_voronin_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="34">
+                <text>rost_boltovnya_voronin_34</text>
+            </phrase>
+            <phrase id="4">
+                <text>rost_boltovnya_voronin_4</text>
+                <give_info>rost_a12_took_info_about_zulus</give_info>
+                <next>2</next>
+            </phrase>
+            <phrase id="0">
+                <text>rost_boltovnya_voronin_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="2">
+                <text />
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text />
+                <next>31</next>
+                <next>32</next>
+                <next>33</next>
+                <next>34</next>
+            </phrase>
+            <phrase id="31">
+                <text>rost_boltovnya_voronin_31</text>
+                <dont_has_info>rost_a12_took_info_about_zulus</dont_has_info>
+                <has_info>lim_a10_kalancha_done_dialog</has_info>
+                <next>4</next>
+            </phrase>
+            <phrase id="32">
+                <text>rost_boltovnya_voronin_32</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="5">
+                <text>rost_boltovnya_voronin_5</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="33">
+                <text>rost_boltovnya_voronin_33</text>
+                <next>6</next>
+            </phrase>
+            <phrase id="6">
+                <text>rost_boltovnya_voronin_6</text>
+                <next>2</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_a12_chugun_dialog">
+        <has_info>rost_a12_actor_talked_to_zulus</has_info>
+        <dont_has_info>rost_a12_chugun_dialog_done</dont_has_info>
+        <has_info>red_b13_complete_task</has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>rost_a12_chugun_dialog_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>rost_a12_chugun_dialog_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>rost_a12_chugun_dialog_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="4">
+                <text>rost_a12_chugun_dialog_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="5">
+                <text>rost_a12_chugun_dialog_5</text>
+                <next>6</next>
+            </phrase>
+            <phrase id="6">
+                <text>rost_a12_chugun_dialog_6</text>
+                <give_info>rost_a12_actor_knew_about_koshei</give_info>
+                <next>7</next>
+            </phrase>
+            <phrase id="0">
+                <text>rost_a12_chugun_dialog_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="7">
+                <text>rost_a12_chugun_dialog_7</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>rost_a12_chugun_dialog_done</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_b35_find_toolkit">
+        <dont_has_info>rost_b35_find_toolkit_info</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>rost_b35_find_toolkit_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>rost_b35_find_toolkit_1</text>
+                <action>dialogs_rostok.give_task_b35</action>
+                <give_info>rost_b35_find_toolkit_info</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_b109_barmen_dialog">
+        <has_info>rost_b109_actor_didnt_find_brevno</has_info>
+        <dont_has_info>rost_b109_barmen_give_some_info</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>rost_b109_barmen_dialog_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>rost_b109_barmen_dialog_1</text>
+                <give_info>rost_b109_stalker_bar_give_navodka</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_b109_brevno_dialog">
+        <dont_has_info>rost_b109_actor_talked_to_brevno_1</dont_has_info>
+        <phrase_list>
+            <phrase id="3">
+                <text>rost_b109_brevno_dialog_3</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>rost_b109_actor_talked_to_brevno_1</give_info>
+                <give_info>rost_b109_actor_gave_money</give_info>
+            </phrase>
+            <phrase id="2111">
+                <text>rost_b109_brevno_dialog_2111</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>rost_b109_actor_talked_to_brevno_1</give_info>
+                <give_info>rost_b109_actor_gave_money</give_info>
+            </phrase>
+            <phrase id="1">
+                <text>rost_b109_brevno_dialog_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>rost_b109_brevno_dialog_2</text>
+                <next>21</next>
+                <next>22</next>
+                <next>23</next>
+            </phrase>
+            <phrase id="23">
+                <text>rost_b109_brevno_dialog_23</text>
+                <next>231</next>
+            </phrase>
+            <phrase id="231">
+                <text>rost_b109_brevno_dialog_231</text>
+                <next>232</next>
+                <next>233</next>
+            </phrase>
+            <phrase id="233">
+                <text>rost_b109_brevno_dialog_233</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>rost_b109_actor_talked_to_brevno_1</give_info>
+                <give_info>rost_b109_actor_doesnt_trust</give_info>
+            </phrase>
+            <phrase id="232">
+                <text>rost_b109_brevno_dialog_232</text>
+                <next>2321</next>
+            </phrase>
+            <phrase id="2321">
+                <text>rost_b109_brevno_dialog_2321</text>
+                <action>dialogs_rostok.give_task_b109</action>
+                <action>dialogs_rostok.transfer_key_b109</action>
+                <give_info>rost_b109_actor_bought_info</give_info>
+                <next>4</next>
+            </phrase>
+            <phrase id="223">
+                <text>rost_b109_brevno_dialog_223</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>rost_b109_actor_talked_to_brevno_1</give_info>
+                <give_info>rost_b109_actor_doesnt_trust</give_info>
+            </phrase>
+            <phrase id="22">
+                <text>rost_b109_brevno_dialog_22</text>
+                <next>221</next>
+            </phrase>
+            <phrase id="221">
+                <text>rost_b109_brevno_dialog_221</text>
+                <next>222</next>
+                <next>223</next>
+            </phrase>
+            <phrase id="2221">
+                <text>rost_b109_brevno_dialog_2221</text>
+                <action>dialogs_rostok.give_task_b109</action>
+                <action>dialogs_rostok.transfer_key_b109</action>
+                <action>dialogs_rostok.transfer_deneg_5000_from</action>
+                <give_info>rost_b109_actor_bought_info</give_info>
+                <next>3</next>
+            </phrase>
+            <phrase id="21">
+                <text>rost_b109_brevno_dialog_21</text>
+                <precondition>dialogs_rostok.actor_has_5000_money</precondition>
+                <next>211</next>
+            </phrase>
+            <phrase id="222">
+                <text>rost_b109_brevno_dialog_222</text>
+                <precondition>dialogs_rostok.actor_has_5000_money</precondition>
+                <next>2221</next>
+            </phrase>
+            <phrase id="0">
+                <text>rost_b109_brevno_dialog_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="4">
+                <text>rost_b109_brevno_dialog_4</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>rost_b109_actor_talked_to_brevno_1</give_info>
+                <give_info>rost_b109_actor_gave_money</give_info>
+            </phrase>
+            <phrase id="211">
+                <text>rost_b109_brevno_dialog_211</text>
+                <action>dialogs_rostok.give_task_b109</action>
+                <action>dialogs_rostok.transfer_key_b109</action>
+                <action>dialogs_rostok.transfer_deneg_5000_from</action>
+                <give_info>rost_b109_actor_bought_info</give_info>
+                <next>2111</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_b109_brevno_dialog_2">
+        <has_info>rost_b109_actor_doesnt_trust</has_info>
+        <dont_has_info>rost_b109_actor_talked_to_brevno_2</dont_has_info>
+        <phrase_list>
+            <phrase id="4">
+                <text>rost_b109_brevno_dialog_2_4</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>rost_b109_actor_talked_to_brevno_2</give_info>
+                <give_info>rost_b109_actor_gave_money</give_info>
+            </phrase>
+            <phrase id="3">
+                <text>rost_b109_brevno_dialog_2_3</text>
+                <action>dialogs_rostok.give_task_b109</action>
+                <action>dialogs_rostok.transfer_key_b109</action>
+                <action>dialogs_rostok.transfer_deneg_5000_from</action>
+                <give_info>rost_b109_actor_bought_info</give_info>
+                <next>4</next>
+            </phrase>
+            <phrase id="0">
+                <text>rost_b109_brevno_dialog_2_0</text>
+                <next>1</next>
+                <next>2</next>
+            </phrase>
+            <phrase id="1">
+                <text>rost_b109_brevno_dialog_2_1</text>
+                <precondition>dialogs_rostok.actor_has_5000_money</precondition>
+                <next>3</next>
+            </phrase>
+            <phrase id="2">
+                <text>rost_b109_brevno_dialog_2_2</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_a12_zulus_dialog">
+        <has_info>lim_a10_kalancha_done_dialog</has_info>
+        <dont_has_info>rost_a12_actor_talked_to_zulus</dont_has_info>
+        <phrase_list>
+            <phrase id="2">
+                <text>rost_a12_zulus_dialog_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>rost_a12_zulus_dialog_3</text>
+                <give_info>rost_a12_actor_talked_to_zulus</give_info>
+                <give_info>rost_a12_zulus_isnt_coming_to_centr</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>rost_a12_zulus_dialog_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>rost_a12_zulus_dialog_1</text>
+                <next>2</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_b47_pda_zob_dialog">
+        <precondition>dialogs_rostok.actor_got_drel_pda</precondition>
+        <has_info>rost_b47_zob_didnt_get_pda</has_info>
+        <dont_has_info>rost_b47_zob_got_pda</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>rost_b47_pda_zob_dialog_1</text>
+                <action>dialogs_rostok.transfer_drel_pda_zob</action>
+                <give_info>rost_b47_zob_got_pda</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>rost_b47_pda_zob_dialog_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_b47_pda_moro_dialog">
+        <precondition>dialogs_rostok.actor_got_drel_pda</precondition>
+        <has_info>rost_b47_zob_didnt_get_pda</has_info>
+        <has_info>rost_b47_task_done</has_info>
+        <dont_has_info>rost_b47_zob_got_pda</dont_has_info>
+        <dont_has_info>rost_b47_zob_knew_bout_pda</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>rost_b47_pda_moro_dialog_1</text>
+                <action>dialogs_rostok.transfer_drel_pda_moro</action>
+                <give_info>rost_b47_zob_knew_bout_pda</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>rost_b47_pda_moro_dialog_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_b110_dialog_finish">
+        <has_info>rost_b110_dialog_start_finished</has_info>
+        <dont_has_info>rost_b110_dialog_finish_done</dont_has_info>
+        <phrase_list>
+            <phrase id="34">
+                <text>rost_b110_dialog_finish_34</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>rost_b110_dialog_finish_done</give_info>
+            </phrase>
+            <phrase id="14">
+                <text>rost_b110_dialog_finish_14</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>rost_b110_dialog_finish_done</give_info>
+            </phrase>
+            <phrase id="37">
+                <text>rost_b110_dialog_finish_37</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>rost_b110_dialog_finish_done</give_info>
+            </phrase>
+            <phrase id="11">
+                <text>rost_b110_dialog_finish_11</text>
+                <next>12</next>
+                <next>22</next>
+                <next>32</next>
+                <next>35</next>
+            </phrase>
+            <phrase id="36">
+                <text>rost_b110_dialog_finish_36</text>
+                <action>dialogs_rostok.transfer_b110_large</action>
+                <give_info>rost_b110_task_done</give_info>
+                <next>37</next>
+            </phrase>
+            <phrase id="33">
+                <text>rost_b110_dialog_finish_33</text>
+                <action>dialogs_rostok.transfer_b110_kill</action>
+                <give_info>rost_b110_task_done</give_info>
+                <next>34</next>
+            </phrase>
+            <phrase id="13">
+                <text>rost_b110_dialog_finish_13</text>
+                <action>dialogs_rostok.transfer_b110_large</action>
+                <give_info>rost_b110_task_done</give_info>
+                <next>14</next>
+            </phrase>
+            <phrase id="2">
+                <text>rost_b110_dialog_finish_2</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="1">
+                <text>rost_b110_dialog_finish_1</text>
+                <precondition>dialogs_rostok.actor_got_b110_wpn</precondition>
+                <action>dialogs_rostok.transfer_b110_wpn</action>
+                <next>11</next>
+            </phrase>
+            <phrase id="0">
+                <text>rost_b110_dialog_finish_0</text>
+                <next>1</next>
+                <next>2</next>
+            </phrase>
+            <phrase id="12">
+                <text>rost_b110_dialog_finish_12</text>
+                <has_info>mil_b110_actor_sent_15000</has_info>
+                <next>13</next>
+            </phrase>
+            <phrase id="32">
+                <text>rost_b110_dialog_finish_32</text>
+                <has_info>mil_drel_dead</has_info>
+                <next>33</next>
+            </phrase>
+            <phrase id="35">
+                <text>rost_b110_dialog_finish_35</text>
+                <has_info>mil_b110_actor_sent_17000</has_info>
+                <next>36</next>
+            </phrase>
+            <phrase id="22">
+                <text>rost_b110_dialog_finish_22</text>
+                <has_info>mil_b110_actor_got_it_free</has_info>
+                <next>23</next>
+            </phrase>
+            <phrase id="24">
+                <text>rost_b110_dialog_finish_24</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>rost_b110_dialog_finish_done</give_info>
+            </phrase>
+            <phrase id="23">
+                <text>rost_b110_dialog_finish_23</text>
+                <action>dialogs_rostok.transfer_b110_small</action>
+                <give_info>rost_b110_task_done</give_info>
+                <next>24</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_b47_moro_dialog">
+        <has_info>rost_b110_task_done</has_info>
+        <dont_has_info>mil_drel_dead</dont_has_info>
+        <dont_has_info>rost_b47_moro_dialog_done</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>rost_b47_moro_dialog_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>rost_b47_moro_dialog_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>rost_b47_moro_dialog_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="5">
+                <text>rost_b47_moro_dialog_5</text>
+                <give_info>rost_b47_moro_1_talked</give_info>
+                <give_info>rost_b47_moro_dialog_done</give_info>
+            </phrase>
+            <phrase id="4">
+                <text>rost_b47_moro_dialog_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="3">
+                <text>rost_b47_moro_dialog_3</text>
+                <next>4</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_b47_moro_finish_dialog">
+        <precondition>dialogs_rostok.actor_got_drel_pda</precondition>
+        <has_info>rost_b47_prologue_done</has_info>
+        <dont_has_info>rost_b47_task_done</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>rost_b47_moro_finish_dialog_1</text>
+                <action>dialogs_rostok.transfer_deneg_b47</action>
+                <action>dialogs_rostok.transfer_drel_pda_moro</action>
+                <give_info>rost_b47_task_done</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>rost_b47_moro_finish_dialog_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_b51_osvedomitel_1_dialog">
+        <dont_has_info>rost_b51_actor_gave_task</dont_has_info>
+        <dont_has_info>mil_b51_diodor_dead_early</dont_has_info>
+        <phrase_list>
+            <phrase id="12">
+                <text>rost_b51_osvedomitel_1_dialog_12</text>
+            </phrase>
+            <phrase id="1">
+                <text>rost_b51_osvedomitel_1_dialog_1</text>
+                <next>2</next>
+                <next>12</next>
+            </phrase>
+            <phrase id="2">
+                <text>rost_b51_osvedomitel_1_dialog_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>rost_b51_osvedomitel_1_dialog_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="4">
+                <text>rost_b51_osvedomitel_1_dialog_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="5">
+                <text>rost_b51_osvedomitel_1_dialog_5</text>
+                <action>dialogs_rostok.give_task_b51</action>
+                <give_info>rost_b51_actor_gave_task</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>rost_b51_osvedomitel_1_dialog_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_b51_osvedomitel_2_dialog">
+        <has_info>rost_b51_actor_talked_to_diodor</has_info>
+        <dont_has_info>rost_b51_osvedomitel_2_dialog_done</dont_has_info>
+        <dont_has_info>mil_b51_diodor_dead_already</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>rost_b51_osvedomitel_2_dialog_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>rost_b51_osvedomitel_2_dialog_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>rost_b51_osvedomitel_2_dialog_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="4">
+                <text>rost_b51_osvedomitel_2_dialog_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="5">
+                <text>rost_b51_osvedomitel_2_dialog_5</text>
+                <give_info>rost_b51_task_fail</give_info>
+                <next>6</next>
+            </phrase>
+            <phrase id="6">
+                <text>rost_b51_osvedomitel_2_dialog_6</text>
+                <give_info>rost_b51_osvedomitel_2_dialog_done</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>rost_b51_osvedomitel_2_dialog_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_b51_osvedomitel_3_dialog">
+        <has_info>mil_b51_diodor_dead_already</has_info>
+        <dont_has_info>rost_b51_osvedomitel_3_dialog_done</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>rost_b51_osvedomitel_3_dialog_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>rost_b51_osvedomitel_3_dialog_1</text>
+                <action>dialogs_military.transfer_reward_b52</action>
+                <give_info>rost_b51_task_done</give_info>
+                <give_info>rost_b51_osvedomitel_3_dialog_done</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_b51_osvedomitel_4_dialog">
+        <has_info>rost_b51_actor_talked_to_diodor</has_info>
+        <has_info>mil_b51_diodor_dead_already</has_info>
+        <dont_has_info>rost_b51_osvedomitel_4_dialog_done</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>rost_b51_osvedomitel_4_dialog_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>rost_b51_osvedomitel_4_dialog_1</text>
+                <action>dialogs_military.transfer_reward_b52</action>
+                <give_info>rost_b51_task_done</give_info>
+                <give_info>rost_b51_osvedomitel_4_dialog_done</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_a6_drunk_dialog">
+        <has_info>rost_a6_wait_trezv</has_info>
+        <dont_has_info>rost_a6_drunk_dialog_1_done</dont_has_info>
+        <dont_has_info>rost_a5_actor_knew_info_from_osvedomitel</dont_has_info>
+        <dont_has_info>rost_a5_military_opened</dont_has_info>
+        <phrase_list>
+            <phrase id="71">
+                <text>rost_a6_drunk_dialog_71</text>
+                <next>72</next>
+            </phrase>
+            <phrase id="73">
+                <text>rost_a6_drunk_dialog_73</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>rost_a6_drunk_dialog_1_done</give_info>
+            </phrase>
+            <phrase id="72">
+                <text>rost_a6_drunk_dialog_72</text>
+                <give_info>rost_a6_bring_vodka</give_info>
+                <next>73</next>
+            </phrase>
+            <phrase id="1">
+                <text>rost_a6_drunk_dialog_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>rost_a6_drunk_dialog_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>rost_a6_drunk_dialog_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="4">
+                <text>rost_a6_drunk_dialog_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="5">
+                <text>rost_a6_drunk_dialog_5</text>
+                <next>6</next>
+            </phrase>
+            <phrase id="6">
+                <text>rost_a6_drunk_dialog_6</text>
+                <next>7</next>
+                <next>71</next>
+            </phrase>
+            <phrase id="7">
+                <text>rost_a6_drunk_dialog_7</text>
+                <precondition>dialogs_rostok.actor_got_vodka</precondition>
+                <action>dialogs_rostok.relocate_vodka</action>
+                <next>8</next>
+            </phrase>
+            <phrase id="8">
+                <text>rost_a6_drunk_dialog_8</text>
+                <next>82</next>
+            </phrase>
+            <phrase id="82">
+                <text>rost_a6_drunk_dialog_82</text>
+                <next>83</next>
+            </phrase>
+            <phrase id="84">
+                <text>rost_a6_drunk_dialog_84</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>rost_a6_drunk_dialog_1_done</give_info>
+                <give_info>rost_a6_drunk_dialog_2_done</give_info>
+                <give_info>rost_a6_talk_to_barmen</give_info>
+            </phrase>
+            <phrase id="83">
+                <text>rost_a6_drunk_dialog_83</text>
+                <next>84</next>
+            </phrase>
+            <phrase id="0">
+                <text>rost_a6_drunk_dialog_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_b66_voronin_new_dialog">
+        <has_info>rost_b65_actor_knew_about_murder</has_info>
+        <dont_has_info>rost_b66_voronin_new_dialog_done</dont_has_info>
+        <phrase_list>
+            <phrase id="11">
+                <text>rost_b66_voronin_new_dialog_11</text>
+                <give_info>rost_b65_actor_talked_to_voronin</give_info>
+                <next>111</next>
+            </phrase>
+            <phrase id="111">
+                <text>rost_b66_voronin_new_dialog_111</text>
+                <next>112</next>
+            </phrase>
+            <phrase id="112">
+                <text>rost_b66_voronin_new_dialog_112</text>
+                <next>113</next>
+            </phrase>
+            <phrase id="113">
+                <text>rost_b66_voronin_new_dialog_113</text>
+                <action>dialogs_rostok.give_task_b66</action>
+                <next>114</next>
+            </phrase>
+            <phrase id="114">
+                <text>rost_b66_voronin_new_dialog_114</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>rost_b66_voronin_new_dialog_done</give_info>
+            </phrase>
+            <phrase id="12">
+                <text>rost_b66_voronin_new_dialog_12</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="0">
+                <text>rost_b66_voronin_new_dialog_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>rost_b66_voronin_new_dialog_1</text>
+                <next>11</next>
+                <next>12</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_a12_chugun_dialog_2">
+        <has_info>rost_a12_actor_talked_to_zulus</has_info>
+        <dont_has_info>rost_a12_chugun_dialog_done</dont_has_info>
+        <dont_has_info>red_b13_complete_task</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>rost_a12_chugun_dialog_2_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="3">
+                <text>rost_a12_chugun_dialog_2_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="2">
+                <text>rost_a12_chugun_dialog_2_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="5">
+                <text>rost_a12_chugun_dialog_2_5</text>
+                <next>6</next>
+            </phrase>
+            <phrase id="6">
+                <text>rost_a12_chugun_dialog_2_6</text>
+                <give_info>rost_a12_actor_knew_about_koshei</give_info>
+                <next>7</next>
+            </phrase>
+            <phrase id="7">
+                <text>rost_a12_chugun_dialog_2_7</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>rost_a12_chugun_dialog_done</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>rost_a12_chugun_dialog_2_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="4">
+                <text>rost_a12_chugun_dialog_2_4</text>
+                <next>5</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_c6_ozerski_dialog_1">
+        <has_info>rost_a12_german_dialog_done</has_info>
+        <dont_has_info>rost_c6_actor_accepted</dont_has_info>
+        <dont_has_info>rost_c6_actor_refused</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>rost_c6_ozerski_dialog_1_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>rost_c6_ozerski_dialog_1_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>rost_c6_ozerski_dialog_1_3</text>
+                <next>4</next>
+                <next>5</next>
+            </phrase>
+            <phrase id="0">
+                <text>rost_c6_ozerski_dialog_1_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="4">
+                <text>rost_c6_ozerski_dialog_1_4</text>
+                <give_info>rost_c6_actor_accepted</give_info>
+            </phrase>
+            <phrase id="5">
+                <text>rost_c6_ozerski_dialog_1_5</text>
+                <give_info>rost_c6_actor_refused</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_c6_ozerski_dialog_2">
+        <has_info>rost_b200_actor_got_plant</has_info>
+        <dont_has_info>rost_b200_task_done</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>rost_c6_ozerski_dialog_2_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>rost_c6_ozerski_dialog_2_1</text>
+                <action>dialogs_rostok.transfer_b200_plant</action>
+                <give_info>rost_b200_task_done</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_b15_barman_dialog">
+        <has_info>rost_b15_grumpy_told_his_sad_story</has_info>
+        <dont_has_info>rost_b15_actor_was_sent_to_hermann</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>rost_b15_barman_dialog_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>rost_b15_barman_dialog_1</text>
+                <give_info>rost_b15_actor_was_sent_to_hermann</give_info>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>rost_b15_barman_dialog_2</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_b98_german_final_2_dialog">
+        <precondition>dialogs_rostok.actor_got_x19_docs</precondition>
+        <dont_has_info>rost_b98_task_done</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>rost_b98_german_final_2_dialog_1</text>
+                <action>dialogs_rostok.transfer_deneg_6000</action>
+                <action>dialogs_rostok.transfer_all_docs</action>
+            </phrase>
+            <phrase id="0">
+                <text>rost_b98_german_final_2_dialog_0</text>
+                <give_info>rost_b98_task_done</give_info>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_b98_german_final_dialog">
+        <has_info>x19_actor_has_doc_1</has_info>
+        <dont_has_info>rost_b98_german_got_all_docs</dont_has_info>
+        <dont_has_info>rost_b98_actor_sold_all_to_osvedomitel</dont_has_info>
+        <phrase_list>
+            <phrase id="17">
+                <text>rost_b98_german_final_dialog_17</text>
+            </phrase>
+            <phrase id="13">
+                <text>rost_b98_german_final_dialog_13</text>
+                <precondition>dialogs_rostok.actor_got_x19_doc_3</precondition>
+                <next>23</next>
+            </phrase>
+            <phrase id="14">
+                <text>rost_b98_german_final_dialog_14</text>
+                <precondition>dialogs_rostok.actor_got_x19_doc_4</precondition>
+                <next>24</next>
+            </phrase>
+            <phrase id="15">
+                <text>rost_b98_german_final_dialog_15</text>
+                <precondition>dialogs_rostok.actor_got_x19_doc_5</precondition>
+                <next>25</next>
+            </phrase>
+            <phrase id="16">
+                <text>rost_b98_german_final_dialog_16</text>
+                <precondition>dialogs_rostok.actor_got_x19_doc_6</precondition>
+                <next>26</next>
+            </phrase>
+            <phrase id="23">
+                <text>rost_b98_german_final_dialog_23</text>
+                <action>dialogs_rostok.transfer_deneg_1500</action>
+                <action>dialogs_rostok.transfer_b98_doc_3</action>
+                <give_info>x19_german_got_doc_3</give_info>
+                <give_info>rost_b98_task_done</give_info>
+                <next>11</next>
+                <next>12</next>
+                <next>14</next>
+                <next>15</next>
+                <next>16</next>
+                <next>17</next>
+            </phrase>
+            <phrase id="24">
+                <text>rost_b98_german_final_dialog_24</text>
+                <action>dialogs_rostok.transfer_deneg_1500</action>
+                <action>dialogs_rostok.transfer_b98_doc_4</action>
+                <give_info>x19_german_got_doc_4</give_info>
+                <give_info>rost_b98_task_done</give_info>
+                <next>11</next>
+                <next>12</next>
+                <next>13</next>
+                <next>15</next>
+                <next>16</next>
+                <next>17</next>
+            </phrase>
+            <phrase id="25">
+                <text>rost_b98_german_final_dialog_25</text>
+                <action>dialogs_rostok.transfer_deneg_1500</action>
+                <action>dialogs_rostok.transfer_b98_doc_5</action>
+                <give_info>x19_german_got_doc_5</give_info>
+                <give_info>rost_b98_task_done</give_info>
+                <next>11</next>
+                <next>12</next>
+                <next>13</next>
+                <next>14</next>
+                <next>16</next>
+                <next>17</next>
+            </phrase>
+            <phrase id="26">
+                <text>rost_b98_german_final_dialog_26</text>
+                <action>dialogs_rostok.transfer_deneg_1500</action>
+                <action>dialogs_rostok.transfer_b98_doc_6</action>
+                <give_info>x19_german_got_doc_6</give_info>
+                <give_info>rost_b98_task_done</give_info>
+                <next>11</next>
+                <next>12</next>
+                <next>13</next>
+                <next>14</next>
+                <next>15</next>
+                <next>17</next>
+            </phrase>
+            <phrase id="12">
+                <text>rost_b98_german_final_dialog_12</text>
+                <precondition>dialogs_rostok.actor_got_x19_doc_2</precondition>
+                <next>22</next>
+            </phrase>
+            <phrase id="22">
+                <text>rost_b98_german_final_dialog_22</text>
+                <action>dialogs_rostok.transfer_deneg_1500</action>
+                <action>dialogs_rostok.transfer_b98_doc_2</action>
+                <give_info>x19_german_got_doc_2</give_info>
+                <give_info>rost_b98_task_done</give_info>
+                <next>11</next>
+                <next>13</next>
+                <next>14</next>
+                <next>15</next>
+                <next>16</next>
+                <next>17</next>
+            </phrase>
+            <phrase id="1">
+                <text>rost_b98_german_final_dialog_1</text>
+                <next>11</next>
+                <next>12</next>
+                <next>13</next>
+                <next>14</next>
+                <next>15</next>
+                <next>16</next>
+                <next>17</next>
+            </phrase>
+            <phrase id="11">
+                <text>rost_b98_german_final_dialog_11</text>
+                <precondition>dialogs_rostok.actor_got_x19_doc_1</precondition>
+                <next>21</next>
+            </phrase>
+            <phrase id="0">
+                <text>rost_b98_german_final_dialog_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="21">
+                <text>rost_b98_german_final_dialog_21</text>
+                <action>dialogs_rostok.transfer_b98_doc_1</action>
+                <action>dialogs_rostok.transfer_deneg_1500</action>
+                <give_info>x19_german_got_doc_1</give_info>
+                <give_info>rost_b98_task_done</give_info>
+                <next>12</next>
+                <next>13</next>
+                <next>14</next>
+                <next>15</next>
+                <next>16</next>
+                <next>17</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_b98_german_start_2_dialog">
+        <has_info>rost_b98_actor_got_to_think</has_info>
+        <dont_has_info>rost_b98_actor_got_a_task</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>rost_b98_german_start_2_dialog_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>rost_b98_german_start_2_dialog_1</text>
+                <action>dialogs_rostok.give_task_b98</action>
+                <action>dialogs_rostok.transfer_b98_key</action>
+                <give_info>rost_b98_actor_got_a_task</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_b98_osvedomitel_dialog">
+        <has_info>x19_actor_has_doc_1</has_info>
+        <dont_has_info>rost_b98_actor_knew_about_osved</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>rost_b98_osvedomitel_dialog_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>rost_b98_osvedomitel_dialog_2</text>
+                <action>dialogs_rostok.give_task_b99</action>
+                <give_info>rost_b98_actor_knew_about_osved</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>rost_b98_osvedomitel_dialog_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_b15_start">
+        <phrase_list>
+            <phrase id="0">
+                <text>rost_b15_start_0</text>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_b98_german_start_dialog">
+        <has_info>rost_a5_task_done</has_info>
+        <dont_has_info>rost_b98_dialog_start_done</dont_has_info>
+        <phrase_list>
+            <phrase id="12">
+                <text>rost_b98_german_start_dialog_12</text>
+                <precondition>dialogs_rostok.rost_b98_actor_do_not_has_good_suit</precondition>
+            </phrase>
+            <phrase id="11">
+                <text>rost_b98_german_start_dialog_11</text>
+                <precondition>dialogs_rostok.rost_b98_actor_has_good_suit</precondition>
+                <next>21</next>
+                <next>22</next>
+            </phrase>
+            <phrase id="22">
+                <text>rost_b98_german_start_dialog_22</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="21">
+                <text>rost_b98_german_start_dialog_21</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="4">
+                <text>rost_b98_german_start_dialog_4</text>
+                <give_info>rost_b98_actor_got_to_think</give_info>
+                <give_info>rost_b98_dialog_start_done</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>rost_b98_german_start_dialog_0</text>
+                <next>11</next>
+                <next>12</next>
+            </phrase>
+            <phrase id="3">
+                <text>rost_b98_german_start_dialog_3</text>
+                <action>dialogs_rostok.give_task_b98</action>
+                <action>dialogs_rostok.transfer_b98_key</action>
+                <give_info>rost_b98_actor_got_a_task</give_info>
+                <give_info>rost_b98_dialog_start_done</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_b66_voronin_3_dialog">
+        <has_info>rost_b66_came_from_work</has_info>
+        <dont_has_info>rost_b66_voronin_3_dialog_done</dont_has_info>
+        <phrase_list>
+            <phrase id="4">
+                <text>rost_b66_voronin_3_dialog_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="3">
+                <text>rost_b66_voronin_3_dialog_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="5">
+                <text>rost_b66_voronin_3_dialog_5</text>
+                <next>6</next>
+            </phrase>
+            <phrase id="6">
+                <text>rost_b66_voronin_3_dialog_6</text>
+                <next>7</next>
+            </phrase>
+            <phrase id="7">
+                <text>rost_b66_voronin_3_dialog_7</text>
+                <action>dialogs_rostok.transfer_vintorez_and_money</action>
+                <give_info>rost_b66_task_done</give_info>
+                <next>8</next>
+            </phrase>
+            <phrase id="2">
+                <text>rost_b66_voronin_3_dialog_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="8">
+                <text>rost_b66_voronin_3_dialog_8</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>rost_b66_voronin_3_dialog_done</give_info>
+            </phrase>
+            <phrase id="1">
+                <text>rost_b66_voronin_3_dialog_1</text>
+                <action>dialogs_rostok.transfer_documents_from_actor</action>
+                <next>2</next>
+            </phrase>
+            <phrase id="0">
+                <text>rost_b66_voronin_3_dialog_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_b66_voronin_2_dialog">
+        <has_info>mil_b66_military_done</has_info>
+        <dont_has_info>rost_b66_voronin_2_done</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>rost_b66_voronin_2_dialog_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="4">
+                <text>rost_b66_voronin_2_dialog_4</text>
+                <give_info>rost_b66_voronin_2_done</give_info>
+            </phrase>
+            <phrase id="1">
+                <text>rost_b66_voronin_2_dialog_1</text>
+                <next>2</next>
+                <next>3</next>
+            </phrase>
+            <phrase id="5">
+                <text>rost_b66_voronin_2_dialog_5</text>
+                <give_info>rost_b66_voronin_2_done</give_info>
+            </phrase>
+            <phrase id="3">
+                <text>rost_b66_voronin_2_dialog_3</text>
+                <give_info>rost_b66_voronin_2_talked</give_info>
+                <give_info>rost_b66_comendant_dialog_complete</give_info>
+                <next>4</next>
+            </phrase>
+            <phrase id="2">
+                <text>rost_b66_voronin_2_dialog_2</text>
+                <give_info>rost_b66_actor_prefered_to_do_alone</give_info>
+                <give_info>rost_b66_voronin_2_talked</give_info>
+                <give_info>rost_b66_comendant_dialog_complete</give_info>
+                <next>5</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_a12_german_dialog">
+        <has_info>lim_a10_kalancha_done_dialog</has_info>
+        <dont_has_info>rost_a12_german_dialog_done</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>rost_a12_german_dialog_1</text>
+                <give_info>rost_a12_actor_met_german</give_info>
+                <next>2</next>
+            </phrase>
+            <phrase id="8">
+                <text>rost_a12_german_dialog_8</text>
+                <next>9</next>
+            </phrase>
+            <phrase id="14">
+                <text>rost_a12_german_dialog_14</text>
+                <next>15</next>
+            </phrase>
+            <phrase id="13">
+                <text>rost_a12_german_dialog_13</text>
+                <next>14</next>
+            </phrase>
+            <phrase id="12">
+                <text>rost_a12_german_dialog_12</text>
+                <next>13</next>
+            </phrase>
+            <phrase id="11">
+                <text>rost_a12_german_dialog_11</text>
+                <next>12</next>
+            </phrase>
+            <phrase id="10">
+                <text>rost_a12_german_dialog_10</text>
+                <next>11</next>
+            </phrase>
+            <phrase id="9">
+                <text>rost_a12_german_dialog_9</text>
+                <next>10</next>
+            </phrase>
+            <phrase id="15">
+                <text>rost_a12_german_dialog_15</text>
+                <action>dialogs_rostok.give_task_b200</action>
+                <give_info>rost_a12_german_dialog_done</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>rost_a12_german_dialog_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="2">
+                <text>rost_a12_german_dialog_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>rost_a12_german_dialog_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="4">
+                <text>rost_a12_german_dialog_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="5">
+                <text>rost_a12_german_dialog_5</text>
+                <next>6</next>
+            </phrase>
+            <phrase id="6">
+                <text>rost_a12_german_dialog_6</text>
+                <next>7</next>
+            </phrase>
+            <phrase id="7">
+                <text>rost_a12_german_dialog_7</text>
+                <action>dialogs_rostok.give_task_a12</action>
+                <next>8</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_b15_ozerski_dialog_about">
+        <has_info>rost_b15_suicido_is_treated</has_info>
+        <dont_has_info>rost_b15_finalest_dialog_done</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>rost_b15_ozerski_dialog_about_1</text>
+                <give_info>rost_b15_finalest_dialog_done</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>rost_b15_ozerski_dialog_about_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_b15_hermann_dialogue">
+        <has_info>rost_b15_actor_was_sent_to_hermann</has_info>
+        <dont_has_info>rost_b15_hermann_agreed_to_cure_suicido</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>rost_b15_hermann_dialogue_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="10">
+                <text>rost_b15_hermann_dialogue_10</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="0">
+                <text>rost_b15_hermann_dialogue_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="2">
+                <text>rost_b15_hermann_dialogue_2</text>
+                <next>3</next>
+                <next>5</next>
+            </phrase>
+            <phrase id="3">
+                <text>rost_b15_hermann_dialogue_3</text>
+                <give_info>rost_b15_hermann_agreed_to_cure_suicido</give_info>
+                <has_info>rost_b98_task_done</has_info>
+                <next>10</next>
+            </phrase>
+            <phrase id="5">
+                <text>rost_b15_hermann_dialogue_5</text>
+                <dont_has_info>rost_b98_task_done</dont_has_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_b15_dialog_3">
+        <has_info>rost_b15_actor_met_him_done</has_info>
+        <dont_has_info>rost_b15_grumpy_said_everything</dont_has_info>
+        <phrase_list>
+            <phrase id="211">
+                <text>rost_b15_dialog_3_211</text>
+                <next>212</next>
+            </phrase>
+            <phrase id="212">
+                <text>rost_b15_dialog_3_212</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>rost_b15_suicide_tolknul</give_info>
+            </phrase>
+            <phrase id="1">
+                <text>rost_b15_dialog_3_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>rost_b15_dialog_3_2</text>
+                <next>21</next>
+                <next>22</next>
+                <next>23</next>
+            </phrase>
+            <phrase id="21">
+                <text>rost_b15_dialog_3_21</text>
+                <next>211</next>
+            </phrase>
+            <phrase id="23">
+                <text>rost_b15_dialog_3_23</text>
+            </phrase>
+            <phrase id="22">
+                <text>rost_b15_dialog_3_22</text>
+                <next>24</next>
+            </phrase>
+            <phrase id="24">
+                <text>rost_b15_dialog_3_24</text>
+                <next>25</next>
+            </phrase>
+            <phrase id="25">
+                <text>rost_b15_dialog_3_25</text>
+                <next>26</next>
+            </phrase>
+            <phrase id="26">
+                <text>rost_b15_dialog_3_26</text>
+                <next>27</next>
+            </phrase>
+            <phrase id="27">
+                <text>rost_b15_dialog_3_27</text>
+                <next>28</next>
+            </phrase>
+            <phrase id="28">
+                <text>rost_b15_dialog_3_28</text>
+                <next>29</next>
+            </phrase>
+            <phrase id="29">
+                <text>rost_b15_dialog_3_29</text>
+                <next>30</next>
+            </phrase>
+            <phrase id="30">
+                <text>rost_b15_dialog_3_30</text>
+                <next>31</next>
+            </phrase>
+            <phrase id="31">
+                <text>rost_b15_dialog_3_31</text>
+                <next>32</next>
+            </phrase>
+            <phrase id="33">
+                <text>rost_b15_dialog_3_33</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>rost_b15_grumpy_said_everything</give_info>
+            </phrase>
+            <phrase id="32">
+                <text>rost_b15_dialog_3_32</text>
+                <give_info>rost_b15_grumpy_told_his_sad_story</give_info>
+                <next>33</next>
+            </phrase>
+            <phrase id="0">
+                <text>rost_b15_dialog_3_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_b15_suicide_final_dialog">
+        <has_info>rost_b15_hermann_agreed_to_cure_suicido</has_info>
+        <dont_has_info>rost_b15_suicide_went_to_treat_himself</dont_has_info>
+        <phrase_list>
+            <phrase id="2">
+                <text>rost_b15_suicide_final_dialog_2</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>rost_b15_suicide_went_to_treat_himself</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>rost_b15_suicide_final_dialog_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>rost_b15_suicide_final_dialog_1</text>
+                <action>dialogs_rostok.transer_af_bat</action>
+                <give_info>rost_b15_everything_is_done</give_info>
+                <next>2</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_veteran_dialog">
+        <phrase_list>
+            <phrase id="0">
+                <text>rost_veteran_dialog_0</text>
+                <next>1</next>
+                <next>2</next>
+                <next>3</next>
+                <next>4</next>
+                <next>5</next>
+                <next>6</next>
+                <next>7</next>
+            </phrase>
+            <phrase id="1">
+                <text>rost_veteran_dialog_1</text>
+                <dont_has_info>mil_b49_ohota_3_done</dont_has_info>
+            </phrase>
+            <phrase id="2">
+                <text>rost_veteran_dialog_2</text>
+                <dont_has_info>red_b13_complete_task</dont_has_info>
+            </phrase>
+            <phrase id="3">
+                <text>rost_veteran_dialog_3</text>
+                <has_info>red_thief_quest_done</has_info>
+            </phrase>
+            <phrase id="4">
+                <text>rost_veteran_dialog_4</text>
+                <has_info>rost_b15_suicide_tolknul</has_info>
+            </phrase>
+            <phrase id="5">
+                <text>rost_veteran_dialog_5</text>
+                <has_info>mil_b109_brevno_squad_dead</has_info>
+            </phrase>
+            <phrase id="6">
+                <text>rost_veteran_dialog_6</text>
+                <has_info>yan_a12_saharov_is_glad</has_info>
+            </phrase>
+            <phrase id="7">
+                <text>rost_veteran_dialog_7</text>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_veteran_dialog_svoboda">
+        <phrase_list>
+            <phrase id="0">
+                <text>rost_veteran_dialog_svoboda_0</text>
+                <next>1</next>
+                <next>2</next>
+                <next>3</next>
+            </phrase>
+            <phrase id="1">
+                <text>rost_veteran_dialog_svoboda_1</text>
+            </phrase>
+            <phrase id="3">
+                <text>rost_veteran_dialog_svoboda_3</text>
+            </phrase>
+            <phrase id="2">
+                <text>rost_veteran_dialog_svoboda_2</text>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_german_start_dialog">
+        <phrase_list>
+            <phrase id="6">
+                <text>rost_german_start_dialog_6</text>
+                <dont_has_info>rost_b98_task_done</dont_has_info>
+                <dont_has_info>rost_b98_actor_sold_all_to_osvedomitel</dont_has_info>
+                <dont_has_info>rost_b98_actor_got_a_task</dont_has_info>
+                <has_info>rost_german_helloed_actor</has_info>
+            </phrase>
+            <phrase id="9">
+                <text>rost_german_start_dialog_9</text>
+                <has_info>rost_b98_german_confused</has_info>
+            </phrase>
+            <phrase id="8">
+                <text>rost_german_start_dialog_8</text>
+                <dont_has_info>rost_b98_german_confused</dont_has_info>
+                <give_info>rost_b98_german_confused</give_info>
+                <has_info>rost_b98_task_done</has_info>
+                <has_info>rost_b98_actor_sold_all_to_osvedomitel</has_info>
+                <has_info>clipped_task_info</has_info>
+            </phrase>
+            <phrase id="7">
+                <text>rost_german_start_dialog_7</text>
+                <dont_has_info>rost_b98_task_done</dont_has_info>
+                <dont_has_info>rost_b98_actor_sold_all_to_osvedomitel</dont_has_info>
+                <has_info>rost_b98_actor_got_a_task</has_info>
+            </phrase>
+            <phrase id="5">
+                <text>rost_german_start_dialog_5</text>
+                <has_info>rost_b98_german_angry_now</has_info>
+            </phrase>
+            <phrase id="4">
+                <text>rost_german_start_dialog_4</text>
+                <dont_has_info>rost_b98_task_done</dont_has_info>
+                <give_info>rost_b98_german_angry_now</give_info>
+                <has_info>rost_b98_actor_sold_all_to_osvedomitel</has_info>
+            </phrase>
+            <phrase id="3">
+                <text>rost_german_start_dialog_3</text>
+                <dont_has_info>rost_b98_actor_sold_all_to_osvedomitel</dont_has_info>
+                <has_info>rost_b98_task_done</has_info>
+            </phrase>
+            <phrase id="2">
+                <text>rost_german_start_dialog_2</text>
+                <dont_has_info>rost_german_prologue</dont_has_info>
+                <give_info>rost_german_prologue</give_info>
+                <give_info>rost_german_helloed_actor</give_info>
+            </phrase>
+            <phrase id="1">
+                <text />
+                <next>2</next>
+                <next>3</next>
+                <next>4</next>
+                <next>5</next>
+                <next>6</next>
+                <next>7</next>
+                <next>8</next>
+                <next>9</next>
+                <next>10</next>
+            </phrase>
+            <phrase id="10">
+                <text>rost_german_start_dialog_10</text>
+                <has_info>rost_german_prologue</has_info>
+            </phrase>
+            <phrase id="0">
+                <text />
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_bolrovnya_medik">
+        <phrase_list>
+            <phrase id="6">
+                <text>rost_bolrovnya_medik_6</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="5">
+                <text>rost_bolrovnya_medik_5</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="4">
+                <text>rost_bolrovnya_medik_4</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="34">
+                <text>rost_bolrovnya_medik_34</text>
+            </phrase>
+            <phrase id="33">
+                <text>rost_bolrovnya_medik_33</text>
+                <next>6</next>
+            </phrase>
+            <phrase id="32">
+                <text>rost_bolrovnya_medik_32</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="31">
+                <text>rost_bolrovnya_medik_31</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="3">
+                <text />
+                <next>31</next>
+                <next>32</next>
+                <next>33</next>
+                <next>34</next>
+            </phrase>
+            <phrase id="2">
+                <text />
+                <next>3</next>
+            </phrase>
+            <phrase id="0">
+                <text>rost_bolrovnya_medik_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>rost_bolrovnya_medik_1</text>
+                <next>2</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_veteran_start">
+        <phrase_list>
+            <phrase id="0">
+                <text>rost_veteran_start_0</text>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_a5_german_finish">
+        <has_info>rost_a5_poltergeist_dead</has_info>
+        <dont_has_info>rost_a5_german_finish_done</dont_has_info>
+        <phrase_list>
+            <phrase id="3">
+                <text>rost_a5_german_finish_3</text>
+                <action>dialogs_rostok.give_task_a6</action>
+                <give_info>rost_a6_talk_to_all</give_info>
+                <give_info>rost_a5_german_finish_done</give_info>
+                <give_info>rost_a16_finish_done</give_info>
+            </phrase>
+            <phrase id="1">
+                <text>rost_a5_german_finish_1</text>
+                <give_info>rost_a5_task_done</give_info>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>rost_a5_german_finish_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="0">
+                <text>rost_a5_german_finish_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_a6_barmen_2_dialog">
+        <has_info>rost_a6_drunk_dialog_2_done</has_info>
+        <dont_has_info>rost_a6_find_blockpost_dolg</dont_has_info>
+        <dont_has_info>rost_a5_actor_knew_info_from_osvedomitel</dont_has_info>
+        <dont_has_info>rost_a5_comendant_dialog_done</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>rost_a6_barmen_2_dialog_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>rost_a6_barmen_2_dialog_1</text>
+                <action>dialogs_rostok.give_task_a6_second</action>
+                <give_info>rost_a5_comendant_dialog_done</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_a6_barmen_dialog">
+        <has_info>rost_a6_talk_to_all</has_info>
+        <dont_has_info>rost_a6_barmen_1_done</dont_has_info>
+        <dont_has_info>rost_a5_actor_knew_info_from_osvedomitel</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>rost_a6_barmen_dialog_1</text>
+                <give_info>rost_a6_wait_trezv</give_info>
+                <give_info>rost_a6_barmen_1_done</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>rost_a6_barmen_dialog_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_barmen_about_guider">
+        <phrase_list>
+            <phrase id="1">
+                <text>rost_barmen_about_guider_1</text>
+            </phrase>
+            <phrase id="0">
+                <text>rost_barmen_about_guider_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_a12_barmen_dialog">
+        <has_info>rost_a12_chugun_dialog_done</has_info>
+        <dont_has_info>rost_a12_barmen_dialog_talked</dont_has_info>
+        <phrase_list>
+            <phrase id="5">
+                <text>rost_a12_barmen_dialog_5</text>
+                <action>dialogs_rostok.give_task_a12_saharov</action>
+                <give_info>rost_a12_complete_saharov_task</give_info>
+                <next>6</next>
+            </phrase>
+            <phrase id="4">
+                <text>rost_a12_barmen_dialog_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="7">
+                <text>rost_a12_barmen_dialog_7</text>
+                <dont_has_info>rost_b203_task_done</dont_has_info>
+            </phrase>
+            <phrase id="6">
+                <text>rost_a12_barmen_dialog_6</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>rost_a12_barmen_dialog_talked</give_info>
+            </phrase>
+            <phrase id="1">
+                <text>rost_a12_barmen_dialog_1</text>
+                <has_info>rost_b203_task_done</has_info>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>rost_a12_barmen_dialog_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>rost_a12_barmen_dialog_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="0">
+                <text>rost_a12_barmen_dialog_0</text>
+                <next>1</next>
+                <next>7</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_guido_dialog">
+        <phrase_list>
+            <phrase id="5">
+                <text>rost_guido_dialog_5</text>
+            </phrase>
+            <phrase id="3">
+                <text>rost_guido_dialog_3</text>
+                <next>4</next>
+                <next>5</next>
+            </phrase>
+            <phrase id="11">
+                <text>rost_guido_dialog_11</text>
+                <next>12</next>
+                <next>13</next>
+            </phrase>
+            <phrase id="13">
+                <text>rost_guido_dialog_13</text>
+            </phrase>
+            <phrase id="12">
+                <text>rost_guido_dialog_12</text>
+                <action>dialogs.transfer_money_from_actor_1500</action>
+                <action>dialogs.jump_to_mil_dead_village</action>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="4">
+                <text>rost_guido_dialog_4</text>
+                <action>dialogs.transfer_money_from_actor_3200</action>
+                <action>dialogs.jump_to_lim</action>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="15">
+                <text>rost_guido_dialog_15</text>
+                <next>16</next>
+                <next>17</next>
+            </phrase>
+            <phrase id="17">
+                <text>rost_guido_dialog_17</text>
+            </phrase>
+            <phrase id="16">
+                <text>rost_guido_dialog_16</text>
+                <action>dialogs.break_dialog</action>
+                <action>dialogs.transfer_money_from_actor_1600</action>
+                <action>dialogs.jump_to_mil_diodor</action>
+            </phrase>
+            <phrase id="27">
+                <text>rost_guido_dialog_27</text>
+                <next>28</next>
+                <next>29</next>
+            </phrase>
+            <phrase id="29">
+                <text>rost_guido_dialog_29</text>
+            </phrase>
+            <phrase id="28">
+                <text>rost_guido_dialog_28</text>
+                <action>dialogs.jump_to_yantar</action>
+                <action>dialogs.break_dialog</action>
+                <action>dialogs.transfer_money_from_actor_1500</action>
+            </phrase>
+            <phrase id="31">
+                <text>rost_guido_dialog_31</text>
+                <next>32</next>
+                <next>33</next>
+            </phrase>
+            <phrase id="33">
+                <text>rost_guido_dialog_33</text>
+            </phrase>
+            <phrase id="32">
+                <text>rost_guido_dialog_32</text>
+                <action>dialogs.break_dialog</action>
+                <action>dialogs.jump_to_agroprom</action>
+                <action>dialogs.transfer_money_from_actor_1600</action>
+            </phrase>
+            <phrase id="37">
+                <text>rost_guido_dialog_37</text>
+            </phrase>
+            <phrase id="35">
+                <text>rost_guido_dialog_35</text>
+                <next>36</next>
+                <next>37</next>
+            </phrase>
+            <phrase id="36">
+                <text>rost_guido_dialog_36</text>
+                <action>dialogs.transfer_money_from_actor_1500</action>
+                <action>dialogs.break_dialog</action>
+                <action>dialogs.jump_to_radar_south</action>
+            </phrase>
+            <phrase id="39">
+                <text>rost_guido_dialog_39</text>
+                <next>40</next>
+                <next>41</next>
+            </phrase>
+            <phrase id="41">
+                <text>rost_guido_dialog_41</text>
+            </phrase>
+            <phrase id="40">
+                <text>rost_guido_dialog_40</text>
+                <action>dialogs.break_dialog</action>
+                <action>dialogs.transfer_money_from_actor_1600</action>
+                <action>dialogs.jump_to_radar_east</action>
+            </phrase>
+            <phrase id="45">
+                <text>rost_guido_dialog_45</text>
+            </phrase>
+            <phrase id="43">
+                <text>rost_guido_dialog_43</text>
+                <next>44</next>
+                <next>45</next>
+            </phrase>
+            <phrase id="47">
+                <text>rost_guido_dialog_47</text>
+                <next>48</next>
+                <next>49</next>
+            </phrase>
+            <phrase id="51">
+                <text>rost_guido_dialog_51</text>
+                <next>52</next>
+                <next>53</next>
+            </phrase>
+            <phrase id="44">
+                <text>rost_guido_dialog_44</text>
+                <action>dialogs.break_dialog</action>
+                <action>dialogs.transfer_money_from_actor_2000</action>
+                <action>dialogs.jump_to_red_bridge</action>
+            </phrase>
+            <phrase id="53">
+                <text>rost_guido_dialog_53</text>
+            </phrase>
+            <phrase id="49">
+                <text>rost_guido_dialog_49</text>
+            </phrase>
+            <phrase id="48">
+                <text>rost_guido_dialog_48</text>
+                <action>dialogs.break_dialog</action>
+                <action>dialogs.transfer_money_from_actor_2300</action>
+                <action>dialogs.jump_to_red_koper</action>
+            </phrase>
+            <phrase id="52">
+                <text>rost_guido_dialog_52</text>
+                <action>dialogs.break_dialog</action>
+                <action>dialogs.transfer_money_from_actor_2000</action>
+                <action>dialogs.jump_to_red_simbiont</action>
+            </phrase>
+            <phrase id="54">
+                <text>rost_guido_dialog_54</text>
+            </phrase>
+            <phrase id="0">
+                <text>rost_guido_dialog_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>rost_guido_dialog_1</text>
+                <next>2</next>
+                <next>10</next>
+                <next>14</next>
+                <next>26</next>
+                <next>30</next>
+                <next>34</next>
+                <next>38</next>
+                <next>42</next>
+                <next>46</next>
+                <next>50</next>
+                <next>54</next>
+            </phrase>
+            <phrase id="2">
+                <text>rost_guido_dialog_2</text>
+                <precondition>dialogs.actor_has_3200_money</precondition>
+                <next>3</next>
+            </phrase>
+            <phrase id="10">
+                <text>rost_guido_dialog_10</text>
+                <precondition>dialogs.actor_has_1500_money</precondition>
+                <has_info>a6_actor_has_come</has_info>
+                <next>11</next>
+            </phrase>
+            <phrase id="14">
+                <text>rost_guido_dialog_14</text>
+                <precondition>dialogs.actor_has_1600_money</precondition>
+                <has_info>a6_actor_has_come</has_info>
+                <next>15</next>
+            </phrase>
+            <phrase id="26">
+                <text>rost_guido_dialog_26</text>
+                <precondition>dialogs.actor_has_1500_money</precondition>
+                <next>27</next>
+            </phrase>
+            <phrase id="30">
+                <text>rost_guido_dialog_30</text>
+                <precondition>dialogs.actor_has_1600_money</precondition>
+                <has_info>agru_b112_actor_got_vydras_message</has_info>
+                <next>31</next>
+            </phrase>
+            <phrase id="34">
+                <text>rost_guido_dialog_34</text>
+                <precondition>dialogs.actor_has_1500_money</precondition>
+                <has_info>rad_c2_info_about_stash_is_gotten</has_info>
+                <next>35</next>
+            </phrase>
+            <phrase id="38">
+                <text>rost_guido_dialog_38</text>
+                <precondition>dialogs.actor_has_1600_money</precondition>
+                <has_info>rad_c2_info_about_stash_is_gotten</has_info>
+                <next>39</next>
+            </phrase>
+            <phrase id="42">
+                <text>rost_guido_dialog_42</text>
+                <precondition>dialogs.actor_has_2000_money</precondition>
+                <next>43</next>
+            </phrase>
+            <phrase id="46">
+                <text>rost_guido_dialog_46</text>
+                <precondition>dialogs.actor_has_2300_money</precondition>
+                <next>47</next>
+            </phrase>
+            <phrase id="50">
+                <text>rost_guido_dialog_50</text>
+                <precondition>dialogs.actor_has_2000_money</precondition>
+                <next>51</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+</game_dialogs>

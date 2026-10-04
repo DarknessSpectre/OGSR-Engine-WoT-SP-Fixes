@@ -1,0 +1,153 @@
+[logic@dark_novikov]
+suitable = {=check_npc_name(dark_novikov)}
+active = walker@walk0
+prior = 200
+post_combat_time = 0, 0
+
+[meet]
+close_snd_hello = nil
+close_snd_bye = nil
+no_move = false
+abuse = false
+allow_break = false
+meet_on_talking = false
+trade_enable = false
+close_distance = {+lab_system_is_on} 5, {-darklab_dialog_1_done} 5, {+darklab_dialog_1_done} 0
+close_anim = {-lab_stop_this_animation_novikov} search, {+lab_stop_this_animation_novikov} guard_na
+close_victim = {+lab_system_is_on} actor, {-darklab_dialog_1_done} nil, {+darklab_dialog_1_done} actor
+use = {-darklab_dialog_1_done =dist_to_actor_le(5) +lab_actor_is_available_to_talk} self,  true
+meet_dialog = {+lab_system_is_on -lab_ending_started} darklab_dialog_final, {-darklab_dialog_1_done +lab_actor_is_available_to_talk} darklab_dialog_1, nil
+snd_on_use = nil
+
+[walker@walk0]
+def_state_standing = search
+path_walk = walker_1_walk
+path_look = walker_1_look
+meet = meet
+corpse_detection_enabled = false
+gather_items_enabled = false
+use_camp = false
+invulnerable = true
+on_info = {+lab_stop_this_animation_novikov} walker@walk1
+
+[walker@walk1]
+def_state_standing = guard_na
+path_walk = walker_1_walk
+path_look = walker_1_look
+meet = meet
+corpse_detection_enabled = false
+gather_items_enabled = false
+use_camp = false
+invulnerable = true
+on_info = {+darklab_dialog_1_done} walker@walk2
+
+[walker@walk2]
+def_state_moving1 = assault
+def_state_moving2 = assault
+def_state_moving3 = assault
+path_walk = walker_5_walk
+path_look = walker_5_look
+meet = meet
+corpse_detection_enabled = false
+gather_items_enabled = false
+use_camp = false
+invulnerable = true
+on_info = {=npc_in_zone(lab_novikov_zone_1_sr)} walker@walk3
+
+[walker@walk3]
+path_walk = walker_2_walk
+path_look = walker_2_look
+meet = meet
+corpse_detection_enabled = false
+gather_items_enabled = false
+use_camp = false
+invulnerable = true
+combat_ignore_cond = true
+ñombat_ignore = combat_ignore
+combat_ignore_keep_when_attacked = true
+on_game_timer = 100 | walker@walk4 %+lab_start_engine_1 =send_message(lab_sms_1:102:st_kruglov_name:5000:stalker_nebo_2_face_1)%
+
+[walker@walk4]
+def_state_moving1 = assault
+def_state_moving2 = assault
+def_state_moving3 = assault
+path_walk = walker_6_walk
+path_look = walker_6_look
+meet = meet
+corpse_detection_enabled = false
+gather_items_enabled = false
+use_camp = false
+invulnerable = true
+on_info = {=npc_in_zone(lab_novikov_zone_2_sr)} walker@walk5
+
+[walker@walk5]
+path_walk = walker_3_walk
+path_look = walker_3_look
+meet = meet
+corpse_detection_enabled = false
+gather_items_enabled = false
+use_camp = false
+invulnerable = true
+combat_ignore_cond = true
+ñombat_ignore = combat_ignore
+combat_ignore_keep_when_attacked = true
+on_game_timer = 100 | walker@walk6 %=turn_off(lab_lamp_120) =turn_off(lab_lamp_121) =turn_off(lab_lamp_122) =turn_off(lab_lamp_123) =turn_off(lab_lamp_124) =turn_off(lab_lamp_125) =turn_on_darklab_lamps +lab_start_engine_2 =send_message(lab_sms_2:102:st_kruglov_name:5000:stalker_nebo_2_face_1) =create_squad(darklab_zombied_4_smart_squad:darklab_zombied_4_smart) =create_squad(darklab_zombied_5_smart_squad:darklab_zombied_5_smart)%
+
+[walker@walk6]
+def_state_moving1 = assault
+def_state_moving2 = assault
+def_state_moving3 = assault
+path_walk = walker_7_walk
+path_look = walker_7_look
+meet = meet
+corpse_detection_enabled = false
+gather_items_enabled = false
+use_camp = false
+invulnerable = true
+on_info = {=npc_in_zone(lab_novikov_zone_3_sr)} walker@walk7 %=send_message(lab_sms_3:102:st_kruglov_name:5000:stalker_nebo_2_face_1) +lab_switcher_is_activated%
+
+[walker@walk7]
+def_state_moving1 = assault
+def_state_moving2 = assault
+def_state_moving3 = assault
+path_walk = walker_4_walk
+path_look = walker_4_look
+meet = meet
+corpse_detection_enabled = false
+gather_items_enabled = false
+use_camp = false
+invulnerable = true
+combat_ignore_cond = true
+ñombat_ignore = combat_ignore
+combat_ignore_keep_when_attacked = true
+on_info = {+lab_switcher_3_sr_done} walker@walk8
+
+[walker@walk8]
+path_walk = walker_8_walk
+path_look = walker_8_look
+meet = no_meet
+corpse_detection_enabled = false
+gather_items_enabled = false
+use_camp = false
+invulnerable = true
+combat_ignore_cond = true
+ñombat_ignore = combat_ignore
+combat_ignore_keep_when_attacked = true
+on_info = {+lab_system_is_on} remark@look
+
+[remark@look]
+anim = wait_na
+target = story | actor
+meet = meet
+
+[walker@walk9]
+path_walk = walker_8_walk
+path_look = walker_8_look
+meet = meet
+corpse_detection_enabled = false
+gather_items_enabled = false
+use_camp = false
+invulnerable = true
+combat_ignore_cond = true
+ñombat_ignore = combat_ignore
+combat_ignore_keep_when_attacked = true

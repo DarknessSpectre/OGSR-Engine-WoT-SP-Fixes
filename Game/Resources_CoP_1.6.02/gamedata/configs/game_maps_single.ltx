@@ -1,0 +1,127 @@
+[___level_music_tracks]
+        ;
+        music\marsh_night                      = 0, 8, 0.25, 10, 20
+        music\marsh_2                      = 8, 24, 0.25, 5, 25
+
+[def_map]
+        bound_rect                       = -10000.0f, -10000.0f, 10000.0f, 10000.0f
+        texture                          = ui\ui_nomap2
+
+
+
+[global_map]
+        ;
+        bound_rect                       = 0.0, 0.0, 1024, 2634.0
+        max_zoom                         = 6.0
+        texture                          = ui\ui_global_map
+
+
+[level_maps_single]
+
+		limansk	=
+        nii =
+		red_forest =
+		yantar =
+		rostok =
+		universe =
+        military = 
+		workshop =
+		l10_radar =
+;		l08u_brainlab =
+		marsh_podzemka =
+		l13_generators =
+		l13u_warlab = 		
+		l03_agroprom =
+;		l03u_agr_underground =
+		laba_x = 
+;		l04u_darklab =
+		l09_deadcity =	 
+
+
+[limansk]
+        global_rect                      = 66.0, 874.0, 182.0, 1105.000000
+        music_tracks                     = limansk_musics
+        weathers                         = atmosfear
+
+[nii]
+        global_rect                      = 580.0, 789.0, 581.0, 790.0
+        music_tracks                     = nii_musics
+        weathers                         = atmosfear_generators
+
+[red_forest]
+        global_rect                      = 198.0, 1028.0, 380.0, 1210.000000
+        music_tracks                     = red_forest_musics
+        weathers                         = atmosfear
+
+[yantar]
+        global_rect                      = 101.0, 1572.0, 249.0, 1720.000000
+        music_tracks                     = yantar_musics
+        weathers                         = {+yan_a12_return_to_saharov} atmosfear, atmosfear_yantar
+
+[rostok]
+        global_rect                      = 340.0000305175781,1472.0000762939453,555.0000305175781,1688.0000762939453
+        music_tracks                     = rostok_musics
+        weathers                         = atmosfear
+
+[universe]
+        global_rect                      = 0.0,0.0,0.0,0
+        music_tracks                     = universe_musics
+        weathers                         = atmosfear_generators
+		
+[l10_radar]
+        global_rect                      = 524,970.0000610351562,770,1219.0000610351562
+        music_tracks                     = radar_musics
+        weathers                         = atmosfear_foggy_rainy
+		
+[military]
+        global_rect                      = 425.0, 1231.0, 590, 1396.000000
+        music_tracks                     = military_musics
+        weathers                         = atmosfear
+		
+[workshop]
+        global_rect                      = 173,1451.0001068115234,407,1707.0001068115234
+        music_tracks                     = workshop_musics
+        weathers                         = atmosfear
+
+[l08u_brainlab]
+        global_rect                      = 580.0, 789.0, 581.0, 790.0
+        music_tracks                     = underground_musics
+        weathers                         = x16_ambient
+
+[marsh_podzemka]
+        global_rect                      = 580.0, 789.0, 581.0, 790.0
+        weathers                         = silence_ambient
+
+[l13_generators]
+        global_rect                      = 499.0, 0.0, 681.0, 182.0
+        music_tracks                     = generators_musics
+        weathers                         = {+war_a51_oso_is_dead} atmosfear, atmosfear_generators
+		
+[l13u_warlab]
+        global_rect                      = 391.0,0.0,0,0
+        music_tracks                     = underground_musics
+        weathers                         = x16_ambient		
+
+[l03_agroprom]
+        global_rect                      = 161.0, 1834.0, 348.0, 2008.293945
+        music_tracks                     = agroprom_musics
+        weathers                         = atmosfear
+
+[l03u_agr_underground]
+        global_rect                      = 255.0, 1900.0, 257.0, 1903.879150
+        music_tracks                     = underground_musics
+        weathers                         = indoor_ambient
+
+[laba_x]
+        global_rect                      = 391.0,0.0,0,0
+        music_tracks                     = bunker_musics
+        weathers                         = x16_ambient
+
+[l04u_darklab]
+        global_rect		                 = 391.0,0.0,0,0
+        weathers                         = x16_ambient
+		
+[l09_deadcity]
+        global_rect     				 = -6,1220.0, 248.0,1481.0
+        weathers                         = atmosfear
+		music_tracks                     = deadcity_musics

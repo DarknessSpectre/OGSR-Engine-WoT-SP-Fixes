@@ -30,7 +30,7 @@ corpse_detection_enabled = false
 gather_items_enabled = false
 use_camp = false
 invulnerable = true
-on_info = {+rad_c2_military_squad_is_dead} walker@max2
+on_info = {+rad_c4_task_done} animpoint@max, {+rad_c4_wait_for_actor} remark@max_wait_actor, {+rad_c4_military_smart_squad} walker@max6, {+rad_c4_1_actor_is_ready_to_kill} walker@max5, {+rad_c4_teleport_of_max_squad_is_ready} walker@max4, {+rad_c2_military_squad_is_dead} walker@max2
 on_info2 = {=actor_enemy} %=actor_neutral%
 
 [walker@max2]
@@ -82,10 +82,10 @@ path_look = max_leader_5_look
 meet = no_meet
 corpse_detection_enabled = false
 gather_items_enabled = false
-combat_ignore_cond = {=fighting_dist_ge(40)} true, false
+combat_ignore_cond = {+rad_c4_military_smart_squad} true, {=fighting_dist_ge(40)} true, false
 use_camp = false
 invulnerable = true
-on_info = {+rad_c4_military_smart_squad !has_enemy} walker@max6 %+rad_c4_alarm_is_out%
+on_info = {+rad_c4_task_done} animpoint@max, {+rad_c4_wait_for_actor} remark@max_wait_actor, {+rad_c4_military_smart_squad} walker@max6
 on_info2 = {=actor_enemy} %=actor_neutral%
 
 [walker@max6]
@@ -99,8 +99,9 @@ invulnerable = true
 combat_ignore_cond = true
 сombat_ignore = combat_ignore
 combat_ignore_keep_when_attacked = true
-on_info = {+rad_c4_task_done} animpoint@max
+on_info = {+rad_c4_task_done} animpoint@max, {+rad_c4_wait_for_actor -rad_c4_alarm_is_out} remark@max_wait_actor
 on_info2 = {=actor_enemy} %=actor_neutral%
+on_info3 = {+rad_c4_military_smart_squad -rad_c4_alarm_is_out =npc_in_zone(rad_c4_military_hq)} %+rad_c4_alarm_is_out%
 
 [animpoint@max]
 cover_name = rad_c4_max_animpoint
@@ -117,10 +118,10 @@ far_victim 		= actor
 close_distance  = 5
 far_distance 	= 5
 close_snd_distance = 5
-use = {+rad_c4_actor_is_ready_to_talk -rad_c4_start_moving} self, {+rad_c4_military_smart_squad +rad_c4_task_is_taken -rad_c4_task_done !check_alarm_status(rad_c2_smart)} true, {+rad_c2_actor_is_ready_to_talk =dist_to_actor_le(5) -rad_c4_dialog_done} self, false
+use = {+rad_c4_actor_is_ready_to_talk -rad_c4_start_moving} self, {+rad_c4_max_is_available_to_talk +rad_c4_task_is_taken -rad_c4_task_done} true, {+rad_c2_actor_is_ready_to_talk =dist_to_actor_le(5) -rad_c4_dialog_done} self, false
 allow_break = false
 trade_enable = false
-meet_dialog = {+rad_c4_actor_is_ready_to_talk -rad_c4_start_moving} rad_c4_1_dialog, {+rad_c4_military_smart_squad +rad_c4_task_is_taken !check_alarm_status(rad_c2_smart)} rad_c4_dialog, {+rad_c2_actor_is_ready_to_talk =dist_to_actor_le(5) -rad_c4_dialog_done} rad_c2_dialog, nil
+meet_dialog = {+rad_c4_actor_is_ready_to_talk -rad_c4_start_moving} rad_c4_1_dialog, {+rad_c4_max_is_available_to_talk +rad_c4_task_is_taken -rad_c4_task_done} rad_c4_dialog, {+rad_c2_actor_is_ready_to_talk =dist_to_actor_le(5) -rad_c4_dialog_done} rad_c2_dialog, nil
 
 ;;;;;;;;;;;;;;;;;;;;;STALKER 1 WALKERS;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -135,7 +136,7 @@ corpse_detection_enabled = false
 gather_items_enabled = false
 use_camp = false
 invulnerable = true
-on_info = {+rad_c2_military_squad_is_dead} walker@stalker1_2
+on_info = {+rad_c4_task_done} animpoint@stalker1, {+rad_c4_wait_for_actor} remark@stalker1_wait_actor, {+rad_c4_start_moving} walker@stalker1_5, {+rad_c4_teleport_of_max_squad_is_ready} walker@stalker1_4, {+rad_c2_military_squad_is_dead} walker@stalker1_2
 on_info2 = {=actor_enemy} %=actor_neutral%
 
 [walker@stalker1_2]
@@ -185,13 +186,13 @@ def_state_moving2 = assault
 def_state_moving3 = assault
 path_walk = stalker_1_walker_5_walk
 path_look = stalker_1_walker_5_look
-combat_ignore_cond = {=fighting_dist_ge(40)} true, false
+combat_ignore_cond = {+rad_c4_military_smart_squad} true, {=fighting_dist_ge(40)} true, false
 meet = no_meet
 invulnerable = true
 corpse_detection_enabled = false
 gather_items_enabled = false
 use_camp = false
-on_info = {+rad_c4_task_done} animpoint@stalker1
+on_info = {+rad_c4_task_done} animpoint@stalker1, {+rad_c4_wait_for_actor} remark@stalker1_wait_actor
 on_info2 = {=actor_enemy} %=actor_neutral%
 
 [animpoint@stalker1]
@@ -212,7 +213,7 @@ corpse_detection_enabled = false
 gather_items_enabled = false
 use_camp = false
 invulnerable = true
-on_info = {+rad_c2_military_squad_is_dead} walker@stalker2_2
+on_info = {+rad_c4_task_done} animpoint@stalker2, {+rad_c4_wait_for_actor} remark@stalker2_wait_actor, {+rad_c4_start_moving} walker@stalker2_5, {+rad_c4_teleport_of_max_squad_is_ready} walker@stalker2_4, {+rad_c2_military_squad_is_dead} walker@stalker2_2
 
 [walker@stalker2_2]
 def_state_moving1 = assault
@@ -261,13 +262,13 @@ def_state_moving2 = assault
 def_state_moving3 = assault
 path_walk = stalker_2_walker_5_walk
 path_look = stalker_2_walker_5_look
-combat_ignore_cond = {=fighting_dist_ge(40)} true, false
+combat_ignore_cond = {+rad_c4_military_smart_squad} true, {=fighting_dist_ge(40)} true, false
 meet = no_meet
 invulnerable = true
 corpse_detection_enabled = false
 gather_items_enabled = false
 use_camp = false
-on_info = {+rad_c4_task_done} animpoint@stalker2
+on_info = {+rad_c4_task_done} animpoint@stalker2, {+rad_c4_wait_for_actor} remark@stalker2_wait_actor
 on_info2 = {=actor_enemy} %=actor_neutral%
 
 [animpoint@stalker2]
@@ -288,7 +289,7 @@ corpse_detection_enabled = false
 gather_items_enabled = false
 use_camp = false
 invulnerable = true
-on_info = {+rad_c2_military_squad_is_dead} walker@stalker3_2
+on_info = {+rad_c4_task_done} walker@stalker3_6, {+rad_c4_wait_for_actor} remark@stalker3_wait_actor, {+rad_c4_start_moving} walker@stalker3_5, {+rad_c4_teleport_of_max_squad_is_ready} walker@stalker3_4, {+rad_c2_military_squad_is_dead} walker@stalker3_2
 on_info2 = {=actor_enemy} %=actor_neutral%
 
 [walker@stalker3_2]
@@ -338,13 +339,13 @@ def_state_moving2 = assault
 def_state_moving3 = assault
 path_walk = stalker_3_walker_5_walk
 path_look = stalker_3_walker_5_look
-combat_ignore_cond = {=fighting_dist_ge(40)} true, false
+combat_ignore_cond = {+rad_c4_military_smart_squad} true, {=fighting_dist_ge(40)} true, false
 meet = no_meet
 invulnerable = true
 corpse_detection_enabled = false
 gather_items_enabled = false
 use_camp = false
-on_info = {+rad_c4_task_done} walker@stalker3_6
+on_info = {+rad_c4_task_done} walker@stalker3_6, {+rad_c4_wait_for_actor} remark@stalker3_wait_actor
 on_info2 = {=actor_enemy} %=actor_neutral%
 
 [walker@stalker3_6]
@@ -361,3 +362,48 @@ use_camp = false
 cover_name = rad_c4_stalker_3_animpoint
 avail_animations = animpoint_sit_ass
 meet = meet
+
+; Wait in place until the actor returns to the escort.
+[remark@max_wait_actor]
+anim = guard_na
+meet = no_meet
+invulnerable = true
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+corpse_detection_enabled = false
+gather_items_enabled = false
+on_info = {+rad_c4_task_done} animpoint@max, {-rad_c4_wait_for_actor +rad_c4_military_smart_squad} walker@max6, {-rad_c4_wait_for_actor} walker@max5
+on_info2 = {=actor_enemy} %=actor_neutral%
+
+[remark@stalker1_wait_actor]
+anim = guard_na
+meet = no_meet
+invulnerable = true
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+corpse_detection_enabled = false
+gather_items_enabled = false
+on_info = {+rad_c4_task_done} animpoint@stalker1, {-rad_c4_wait_for_actor} walker@stalker1_5
+on_info2 = {=actor_enemy} %=actor_neutral%
+
+[remark@stalker2_wait_actor]
+anim = guard_na
+meet = no_meet
+invulnerable = true
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+corpse_detection_enabled = false
+gather_items_enabled = false
+on_info = {+rad_c4_task_done} animpoint@stalker2, {-rad_c4_wait_for_actor} walker@stalker2_5
+on_info2 = {=actor_enemy} %=actor_neutral%
+
+[remark@stalker3_wait_actor]
+anim = guard_na
+meet = no_meet
+invulnerable = true
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+corpse_detection_enabled = false
+gather_items_enabled = false
+on_info = {+rad_c4_task_done} walker@stalker3_6, {-rad_c4_wait_for_actor} walker@stalker3_5
+on_info2 = {=actor_enemy} %=actor_neutral%

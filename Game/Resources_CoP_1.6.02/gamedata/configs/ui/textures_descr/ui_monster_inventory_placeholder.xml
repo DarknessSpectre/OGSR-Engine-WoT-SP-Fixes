@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<w>
+    <file name="ui\ui_monster_inv">
+        <texture id="ui_monster_inventory_placeholder" x="0" y="0" width="187" height="131" />
+    </file>
+</w>
