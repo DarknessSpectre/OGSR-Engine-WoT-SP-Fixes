@@ -116,18 +116,3 @@ scale_y   = 1.0
 ```
 
 В двух XML настроек только для `list_snd_device/list_font` указан `font="ui_font_utf"`.
-
-## Сборка из исходников
-
-Нужны Git, Visual Studio 2022 или 2026 с компонентами **Desktop development with C++** и Windows SDK.
-
-```powershell
-git clone --branch main_cop_cs_wot_sp_fixes https://github.com/DarknessSpectre/OGSR-Engine-WoT-SP-Fixes.git
-cd OGSR-Engine-WoT-SP-Fixes
-powershell -ExecutionPolicy Bypass -File .\Restore_Build_3.597_Dependencies.ps1
-powershell -ExecutionPolicy Bypass -File .\Build_3.597_x64.ps1
-```
-
-Скрипт восстановления получает точные коммиты зависимостей из [Build_3.597_dependencies.json](../Build_3.597_dependencies.json). Скрипт сборки выполняет полную пересборку `Engine.sln`, `Release | x64`, задаёт версию `3.597 (X64) WoT&SP Fixes` и копирует x64 OpenMP runtime в `bin_x64`.
-
-Используйте короткий путь к исходникам или временный диск `subst`: имена генерируемых файлов FidelityFX длинные. Исходный `Update_Components.cmd` сохранён, но может загрузить другие версии плавающих зависимостей.
