@@ -20,12 +20,11 @@ OGSR адаптация сохраняет оригинальный сюжет �
 
 Единая сборка OGSR для адаптаций **Wind of Time** и **Spectrum Project (SP)** на «S.T.A.L.K.E.R.: Зов Припяти».
 
-**Ветка: `main_cop_cs_wot_sp_fixes`**
-
 Основа — официальная ветка [OGSR/OGSR-Engine:main_cop_cs](https://github.com/OGSR/OGSR-Engine/tree/main_cop_cs)
-## Добавленные исправления в движок
 
 Ссылка на на скомпилированную версию: https://github.com/DarknessSpectre/OGSR-Engine-WoT-SP-Fixes/releases/tag/3.597_CoP_WoT_SP
+
+## Добавленные исправления в движок
 
 ### 1. Русские названия звуковых устройств
 
