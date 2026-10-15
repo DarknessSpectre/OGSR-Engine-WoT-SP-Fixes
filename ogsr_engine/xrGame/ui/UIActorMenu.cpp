@@ -682,6 +682,37 @@ void CUIActorMenu::highlight_weapons_for_ammo(PIItem ammo_item, CUIDragDropListE
     } // for i
 }
 
+// WoT/Shoker addons are usable items installed by script, not CScope objects.
+// Keep this a UI compatibility check; attachment is still handled by the mod.
+static bool IsScriptWeaponAddon(PIItem item)
+{
+    return item && pSettings->section_exist("mod_addons_list") &&
+        pSettings->line_exist("mod_addons_list", item->object().cNameSect());
+}
+
+static bool IsScriptAddonCompatible(PIItem weapon_item, PIItem addon_item)
+{
+    if (!weapon_item || !smart_cast<CWeapon*>(weapon_item) || !IsScriptWeaponAddon(addon_item))
+        return false;
+
+    const shared_str& section = weapon_item->object().cNameSect();
+    const shared_str& addon = addon_item->object().cNameSect();
+    for (LPCSTR key : {"scopes", "magazines"})
+    {
+        if (!pSettings->line_exist(section, key))
+            continue;
+        LPCSTR list = pSettings->r_string(section, key);
+        for (int i = 0, count = _GetItemCount(list); i < count; ++i)
+        {
+            string256 name;
+            _GetItem(list, i, name);
+            if (xr_strcmp(name, addon.c_str()) == 0)
+                return true;
+        }
+    }
+    return false;
+}
+
 bool CUIActorMenu::highlight_addons_for_weapon(PIItem weapon_item, CUICellItem* ci)
 {
     PIItem item = (PIItem)ci->m_pData;
@@ -701,6 +732,12 @@ bool CUIActorMenu::highlight_addons_for_weapon(PIItem weapon_item, CUICellItem* 
     if (SelectArmament(smart_cast<CSilencer*>(item))) return true;
     if (SelectArmament(smart_cast<CGrenadeLauncher*>(item))) return true;
 
+    if (IsScriptAddonCompatible(weapon_item, item))
+    {
+        ci->m_select_armament = true;
+        return true;
+    }
+
     return false;
 }
 
@@ -713,7 +750,7 @@ void CUIActorMenu::highlight_weapons_for_addon(PIItem addon_item, CUIDragDropLis
     CSilencer* pSilencer = smart_cast<CSilencer*>(addon_item);
     CGrenadeLauncher* pGrenadeLauncher = smart_cast<CGrenadeLauncher*>(addon_item);
 
-    if (!pScope && !pSilencer && !pGrenadeLauncher)
+    if (!pScope && !pSilencer && !pGrenadeLauncher && !IsScriptWeaponAddon(addon_item))
     {
         return;
     }
@@ -733,6 +770,11 @@ void CUIActorMenu::highlight_weapons_for_addon(PIItem addon_item, CUIDragDropLis
             continue;
         }
 
+        if (IsScriptAddonCompatible(weapon, addon_item))
+        {
+            ci->m_select_armament = true;
+            continue;
+        }
         if (pScope && weapon->CanAttach(pScope))
         {
             ci->m_select_armament = true;

@@ -11,8 +11,8 @@ LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
 #pragma code_page(1251)
 
 VS_VERSION_INFO VERSIONINFO
-// FILEVERSION 1,6,0,2
-// PRODUCTVERSION 1,6,0,2
+ FILEVERSION 3,597,0,0
+ PRODUCTVERSION 3,597,0,0
  FILEFLAGSMASK 0x17L
  FILEFLAGS 0x0L
  FILEOS 0x4L
@@ -26,9 +26,10 @@ BEGIN
             VALUE "CompanyName", "https://github.com/OGSR"
             VALUE "LegalCopyright", "OGSR © " BUILD_YEAR
 #ifdef APPVEYOR_BUILD_VERSION
-            VALUE "FileDescription", "OGSR Engine (CoP Edition) x64 v." APPVEYOR_BUILD_VERSION " (" CONFIGURATION_GA ") from repo: " APPVEYOR_REPO_NAME ". Build date: " BUILD_DATE " " BUILD_TIME
-            VALUE "ProductName", "OGSR Engine x64 (" CONFIGURATION_GA ")"
-            VALUE "ProductVersion", APPVEYOR_BUILD_VERSION
+            VALUE "FileDescription", "OGSR Engine (CoP Edition) " APPVEYOR_BUILD_VERSION " (X64) " APPVEYOR_REPO_NAME
+            VALUE "ProductName", "OGSR Engine " APPVEYOR_REPO_NAME
+            VALUE "FileVersion", APPVEYOR_BUILD_VERSION " (X64) " APPVEYOR_REPO_NAME
+            VALUE "ProductVersion", APPVEYOR_BUILD_VERSION " (X64) " APPVEYOR_REPO_NAME
 #else
             VALUE "FileDescription", "OGSR Engine (CoP Edition) x64 (build: " BUILD_DATE " " BUILD_TIME ")"
             VALUE "ProductName", "OGSR Engine x64"

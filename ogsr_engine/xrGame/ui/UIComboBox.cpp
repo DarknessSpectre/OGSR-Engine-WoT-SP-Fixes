@@ -111,6 +111,12 @@ void CUIComboBox::SetText(LPCSTR text)
     m_text.SetText(text);
 }
 
+void CUIComboBox::SetFont(CGameFont* pFont)
+{
+    m_text.SetFont(pFont);
+    m_list_box.SetFont(pFont);
+}
+
 void CUIComboBox::disable_id(int id)
 {
     if (m_disabled.end() == std::find(m_disabled.begin(), m_disabled.end(), id))

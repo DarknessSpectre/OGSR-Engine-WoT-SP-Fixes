@@ -16,6 +16,7 @@ CUIArtefactParams::~CUIArtefactParams()
 {
     delete_data(m_immunity_item);
     delete_data(m_restore_item);
+    delete_data(m_physical_immunity_item);
     xr_delete(m_additional_weight);
     xr_delete(m_Prop_line);
 }
@@ -33,6 +34,15 @@ LPCSTR af_immunity_section_names[] = // ALife::EInfluenceType
         //	"explosion_immunity",
         //	"fire_wound_immunity",
 };
+
+namespace
+{
+constexpr LPCSTR physical_immunity_names[] = {
+    "strike_immunity", "wound_immunity", "explosion_immunity", "fire_wound_immunity"};
+constexpr LPCSTR physical_immunity_captions[] = {
+    "ui_inv_outfit_strike_protection", "ui_inv_outfit_wound_protection",
+    "ui_inv_outfit_explosion_protection", "ui_inv_outfit_fire_wound_protection"};
+}
 
 LPCSTR af_restore_section_names[] = // ALife::EConditionRestoreType
     {
@@ -104,6 +114,23 @@ void CUIArtefactParams::InitFromXml(CUIXml& xml)
         xml.SetLocalRoot(base_node);
     }
 
+    static_assert(std::size(physical_immunity_names) == physical_immunity_count);
+    static_assert(std::size(physical_immunity_captions) == physical_immunity_count);
+    for (u32 i = 0; i < physical_immunity_count; ++i)
+    {
+        // Older UI layouts may omit these optional rows.
+        xml.SetLocalRoot(base_node);
+        if (!xml.NavigateToNode(physical_immunity_names[i]))
+            continue;
+
+        auto* item = xr_new<UIArtefactParamItem>();
+        item->Init(xml, physical_immunity_names[i]);
+        item->SetAutoDelete(false);
+        item->SetCaption(CStringTable().translate(physical_immunity_captions[i]).c_str());
+        m_physical_immunity_item[i] = item;
+    }
+    xml.SetLocalRoot(base_node);
+
     for (u32 i = 0; i < ALife::eRestoreTypeMax; ++i)
     {
         const char* xml_node_name = af_restore_section_names[i];
@@ -174,6 +201,27 @@ void CUIArtefactParams::SetInfo(shared_str const& af_section)
 
         h += m_immunity_item[i]->GetWndSize().y;
         AttachChild(m_immunity_item[i]);
+    }
+
+    for (u32 i = 0; i < physical_immunity_count; ++i)
+    {
+        auto* item = m_physical_immunity_item[i];
+        if (!item)
+            continue;
+
+        LPCSTR section = pSettings->r_string(af_section, "hit_absorbation_sect");
+        val = READ_IF_EXISTS(pSettings, r_float, section, physical_immunity_names[i], 0.0f);
+        if (fis_zero(val))
+            continue;
+
+        // These are flat hit absorption values, not environmental influence indices.
+        // Preserve the presentation scale supplied by the XML row.
+        item->SetValue(val);
+        pos.set(item->GetWndPos());
+        pos.y = h;
+        item->SetWndPos(pos);
+        h += item->GetWndSize().y;
+        AttachChild(item);
     }
 
     {

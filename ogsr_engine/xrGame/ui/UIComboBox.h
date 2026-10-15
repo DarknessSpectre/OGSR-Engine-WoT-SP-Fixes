@@ -33,6 +33,7 @@ public:
     LPCSTR GetText();
     LPCSTR GetTextOf(int index);
     void SetText(LPCSTR text);
+    void SetFont(CGameFont* pFont);
 
     void SetListLength(int length);
     void SetVertScroll(bool bVScroll = true) { m_list_box.SetFixedScrollBar(bVScroll); };

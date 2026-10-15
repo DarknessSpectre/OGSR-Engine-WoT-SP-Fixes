@@ -18,6 +18,8 @@ public:
 
 protected:
     UIArtefactParamItem* m_immunity_item[ALife::infl_max_count]{};
+    static constexpr u32 physical_immunity_count = 4;
+    UIArtefactParamItem* m_physical_immunity_item[physical_immunity_count]{};
     UIArtefactParamItem* m_restore_item[ALife::eRestoreTypeMax]{};
     UIArtefactParamItem* m_additional_weight{};
 

@@ -130,8 +130,13 @@ void xrCore::_destroy()
 const char* xrCore::GetEngineVersion()
 {
     static string256 buff;
+#ifdef _M_X64
+    constexpr const char* architecture = "X64";
+#else
+    constexpr const char* architecture = "X86";
+#endif
     if (strlen(APPVEYOR_BUILD_VERSION))
-        std::snprintf(buff, sizeof(buff), APPVEYOR_BUILD_VERSION " (%s) from repo: [" APPVEYOR_REPO_NAME "]", GetBuildConfiguration());
+        std::snprintf(buff, sizeof(buff), APPVEYOR_BUILD_VERSION " (%s) " APPVEYOR_REPO_NAME, architecture);
     else
         std::snprintf(buff, sizeof(buff), "[OGSR Engine (CoP Edition) %s (build: " __DATE__ " " __TIME__ ")]", GetBuildConfiguration());
     return buff;

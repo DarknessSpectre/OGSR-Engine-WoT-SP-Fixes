@@ -1093,6 +1093,30 @@ void CSE_ALifeCar::load(NET_Packet& tNetPacket)
 {
     inherited1::load(tNetPacket);
     inherited2::load(tNetPacket);
+
+    // CPHSkeleton::SaveNetState now synchronizes bones directly with the server.
+    // CCar::SaveNetState still appends these car-specific fields to the packet.
+    // Read only that tail here; data_load() also expects serialized bones and
+    // therefore cannot be used for this client-to-server save message.
+    tNetPacket.r_vec3(o_Position);
+    tNetPacket.r_vec3(o_Angle);
+    door_states.clear();
+    const u16 doors_number = tNetPacket.r_u16();
+    for (u16 i = 0; i < doors_number; ++i)
+    {
+        SDoorState state;
+        state.read(tNetPacket);
+        door_states.push_back(state);
+    }
+    wheel_states.clear();
+    const u16 wheels_number = tNetPacket.r_u16();
+    for (u16 i = 0; i < wheels_number; ++i)
+    {
+        SWheelState state;
+        state.read(tNetPacket);
+        wheel_states.push_back(state);
+    }
+    health = tNetPacket.r_float();
 }
 
 void CSE_ALifeCar::data_load(NET_Packet& tNetPacket)

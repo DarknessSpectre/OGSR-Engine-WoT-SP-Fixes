@@ -1,76 +1,144 @@
+# OGSR Engine — WoT&SP Fixes
 
-![logo](https://github.com/OGSR/OGSR-Engine/assets/16670637/980c7b2c-03cb-4c89-b132-424254faa398)
+Единая сборка OGSR для адаптаций **Wind of Time** и **Spectrum Project (SP)** на «S.T.A.L.K.E.R.: Зов Припяти».
 
-<p align="center">
-  <a href="https://discord.com/servers/ogsr-508530704674455562"><img src="https://img.shields.io/discord/508530704674455562.svg?style=for-the-badge&label=Official%20OGSR%20community%20in%20Discord&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2)" alt="Discord"></a>
+**Версия: `3.597 (X64) WoT&SP Fixes`**
 
-## Supported games: / Поддерживаемые игры: ##
-| _**Игра / Game**_ | Source code branch | Latest Release / Свежий релиз |
-| :---         |     :---:      |          ---: |
-| **_S.T.A.L.K.E.R.: Shadow of Chernobyl_** | [**main**](https://github.com/OGSR/OGSR-Engine/tree/main) | [**>>RELEASES<<**](https://github.com/OGSR/OGSR-Engine/releases) |
-| **_S.T.A.L.K.E.R.: Call of Pripyat_** | [**main_cop_cs**](https://github.com/OGSR/OGSR-Engine/tree/main_cop_cs) | [**>>RELEASES<<**](https://github.com/OGSR/OGSR-Engine/releases) |
-| **_S.T.A.L.K.E.R.: Clear Sky_** | [**main_cop_cs**](https://github.com/OGSR/OGSR-Engine/tree/main_cop_cs) | _...TBD..._ |
+**Ветка: `main_cop_cs_wot_sp_fixes`**
 
-<h3 align="center"> <a href="#english"><b>English</b></a>/<a href="#русский"><b>Русский</b></a></h3>
+Основа — официальная ветка [OGSR/OGSR-Engine:main_cop_cs](https://github.com/OGSR/OGSR-Engine/tree/main_cop_cs), коммит [`9d0021c`](https://github.com/OGSR/OGSR-Engine/commit/9d0021ce63249bacbc8294ea7ae51e8571848c87). Внесены четыре исправления и необходимые им ресурсы интерфейса.
 
-## English ##
+## Добавленные исправления в движок
 
-### Aim of the project: ###
-* Fix original engine errors
-* Improve and optimize graphics
-* Update engine components
-* Implement new features for developers
+### 1. Русские названия звуковых устройств
 
-### [>>Wiki, changelog and more<<](https://github.com/OGSR/OGSR-Engine/wiki) ###
-### [Write here](https://github.com/OGSR/OGSR-Engine/issues) to report bugs ###
-### [Write here](https://github.com/OGSR/OGSR-Engine/discussions) your suggestions, questions and everything else ###
+Исправлено отображение кириллицы в списке устройств и в поле выбранного значения `snd_device`. Unicode-шрифт назначается обоим элементам выпадающего списка.
 
-### Build requirements:
-* Latest version of Visual Studio 2022 or 2026 with Desktop C++ workload setup
-* [Git](https://git-scm.com/)
-### Build instructions: ###
-* Clone repository locally
-* Run `Update_Components.cmd` to get pinned versions of engine dependencies
-* Open `Engine.sln` in Visual Studio
-* Set the platform to `x64` and the configuration to `Release`, then select `Build` -> `Build solution`
+Названия OpenAL и токены выбора сохраняются в исходной кодировке. Для отображения используется шрифт `ui_font_utf` на основе Bender-Bold из официальной ветки `main`. Размер 18 согласован с высотой поля настроек CoP.
 
-## Русский ##
+Файлы: [UIComboBox.h](../ogsr_engine/xrGame/ui/UIComboBox.h), [UIComboBox.cpp](../ogsr_engine/xrGame/ui/UIComboBox.cpp), [UIXmlInit.cpp](../ogsr_engine/xrGame/ui/UIXmlInit.cpp).
 
-### Цели проекта: ###
-* Исправление ошибок оригинального движка
-* Улучшение графики и оптимизация
-* Обновление компонентов движка
-* Внедрение новых возможностей для разработчиков
+### 2. Подсветка скриптовых обвесов WoT/Shoker
 
-### [>>Wiki, cписок изменений и прочая информация<<](https://github.com/OGSR/OGSR-Engine/wiki) ###
-### Баги можно присылать [сюда](https://github.com/OGSR/OGSR-Engine/issues) ###
-### Предложения, вопросы и прочее можно писать [сюда](https://github.com/OGSR/OGSR-Engine/discussions) ###
+Добавлена подсветка совместимых предметов оружейной системы WoT/Shoker. Скриптовый обвес определяется по наличию его секции в `mod_addons_list`. Совместимость проверяется по точным именам секций в `scopes` и `magazines` оружия.
 
-### Требования для сборки:
-* Актуальная версия Visual Studio 2022 или 2026 с рабочей нагрузкой "Разработка классических приложений на C++"
-* [**Git**](https://git-scm.com/)
+- При наведении на оружие подсвечиваются подходящие обвесы.
+- При наведении на обвес подсвечивается подходящее оружие.
+- Штатная проверка обычных прицелов, глушителей и подствольников сохранена.
 
-### Инструкции по сборке: ###
-* Склонировать репозиторий локально
-* Запустить `Update_Components.cmd`
-* Открыть `Engine.sln` в Visual Studio
-* Выбрать пункт `Сборка` -> `Собрать решение`, предварительно выставив платформу `x64` и конфигурацию `Release`
+Это изменение интерфейса. Установка обвесов остаётся в скриптах оружейной системы мода. Если соответствующих секций нет, дополнительная проверка не применяется.
 
+Файл: [UIActorMenu.cpp](../ogsr_engine/xrGame/ui/UIActorMenu.cpp).
 
-## Thanks to: / Благодарим: ##
-* [Im-dex](https://github.com/Im-dex)
-* [SkyLoader](https://github.com/SkyLoaderr)
-* [Shoker](https://github.com/ShokerStlk)
-* [OpenXRay](https://github.com/OpenXRay/xray-16)
-* [vTurbine](https://github.com/vTurbine)
-* [solbjorn](https://github.com/solbjorn)
-* [abramcumner](https://github.com/abramcumner)
-* [ForserX](https://github.com/ForserX)
-* [Xottab-DUTY](https://github.com/Xottab-DUTY)
-* [morrey](https://github.com/morrey)
-* [S.T.A.L.K.E.R. Anomaly Engine](https://bitbucket.org/anomalymod/xray-monolith)
-* [X-Ray Engine by Alpet & KD](https://github.com/joye-ramone/xray_xp_dev)
-* [CoC-Xray](https://github.com/revolucas/CoC-Xray)
-* [SCREEN SPACE SHADERS](https://www.moddb.com/mods/stalker-anomaly/addons/screen-space-shaders)
-* [ENHANCED SHADERS AND COLOR GRADING](https://www.moddb.com/mods/stalker-anomaly/addons/enhanced-shaders-and-color-grading-for-151)
-* [Shader 3D Scopes](https://www.moddb.com/mods/stalker-anomaly/addons/shader-3d-scopes)
+### 3. Физические защиты в карточке артефакта
+
+Добавлено отображение четырёх параметров из `hit_absorbation_sect`:
+
+| Параметр | Подпись в русском интерфейсе |
+| --- | --- |
+| `strike_immunity` | Удар |
+| `wound_immunity` | Гашение удара |
+| `explosion_immunity` | Взрыв |
+| `fire_wound_immunity` | Броня |
+
+Выводятся ненулевые значения, если соответствующие строки предусмотрены внутри `af_params` в XML. Знак, цвет и масштаб задаются штатным `UIArtefactParamItem` и настройками строки.
+
+В комплектных XML добавлены только четыре новых узла. Используются существующие иконки и оформление. Коэффициент отображения — 100, без обозначения «%»: выводится исходное поглощение, умноженное на 100. Подписи удара и взрыва добавлены для русского, английского и украинского языков.
+
+Расчёт урона, характеристики артефактов и баланс этим исправлением не меняются.
+
+Файлы: [ui_af_params.cpp](../ogsr_engine/xrGame/ui/ui_af_params.cpp), [ui_af_params.h](../ogsr_engine/xrGame/ui/ui_af_params.h).
+
+### 4. Сохранение состояния машин, включая БТР
+
+Исправлено чтение данных, которые машина передаёт серверному объекту при сохранении. `CSE_ALifeCar::load()` теперь считывает записанный `CCar::SaveNetState()` хвост пакета:
+
+- позицию и углы;
+- состояния дверей и колёс;
+- здоровье машины.
+
+Кости физической модели по-прежнему синхронизируются штатным способом напрямую. Чтение пакета машин не вызывает `data_load()`, который предназначен для другого потока и дополнительно ожидает сериализованные кости.
+
+Правка применяется ко всем объектам `CSE_ALifeCar`, включая сюжетный БТР SP. Формат записи сохранений не изменяется. Урон, который уже был потерян в старом сохранении, восстановить невозможно — исправление нужно проверять на новом сохранении нужного состояния машины.
+
+Физическое восстановление дверей и колёс в `CCar::RestoreNetState()` остаётся в состоянии исходного OGSR: эта правка исправляет чтение данных и не включает отключённые в базе участки восстановления заново.
+
+Файл: [xrServer_Objects_ALife.cpp](../ogsr_engine/xrServerEntities/xrServer_Objects_ALife.cpp).
+
+## Геймдата
+
+За основу взята `Game/Resources_CoP_1.6.02/gamedata` из официального OGSR. Изменения ресурсов относятся только к трём UI-правкам. Нативное исправление БТР дополнительных ресурсов не требует.
+
+Изменены:
+
+```text
+gamedata/configs/external.ltx
+gamedata/configs/ui/ui_mm_opt.xml
+gamedata/configs/ui/ui_mm_opt_16.xml
+```
+
+Добавлены:
+
+```text
+gamedata/textures/ui/fonts/Bender-Bold.dds
+gamedata/textures/ui/fonts/Bender-Bold.ini
+gamedata/configs/ui/af_params.xml
+gamedata/configs/ui/af_params_16.xml
+gamedata/configs/text/rus/wot_artefact_protection_labels.xml
+gamedata/configs/text/eng/wot_artefact_protection_labels.xml
+gamedata/configs/text/ukr/wot_artefact_protection_labels.xml
+```
+
+Секция шрифта в `external.ltx`:
+
+```ini
+[ui_font_utf]
+skip_prefix = true
+shader    = font
+texture   = ui\fonts\Bender-Bold
+size      = 18
+scale_x   = 0.35
+scale_y   = 1.0
+```
+
+В двух XML настроек только для `list_snd_device/list_font` указан `font="ui_font_utf"`. Для подсветки скриптовых обвесов дополнительные ресурсы не нужны.
+
+## Установка
+
+Архив движка содержит `bin_x64`, базовую геймдату OGSR, инструкции, сведения о сборке и контрольные суммы. Он требует ресурсов самой игры и не является полной standalone-версией мода.
+
+Для установки поверх WoT, SP или другого мода **объединяйте конфиги с файлами мода**. Полная замена модифицированных `external.ltx`, XML настроек или `af_params` базовыми файлами может убрать настройки и оформление мода. В существующие `af_params` можно перенести только четыре новых узла.
+
+Рядом с `xrEngine.exe` поставляется x64 `vcomp140.dll` — библиотека OpenMP, требуемая штатным DirectXTex в этой сборке.
+
+### Если ранее установлен скриптовый обход БТР
+
+Перед проверкой нативной правки верните оригинальные `city_btr_scene.script` и `bind_stalker.script` из архива отката скриптового обхода. Он отдельно хранит здоровье и может подменять состояние уже после штатной загрузки движка.
+
+Для проверки предпочтительно сохранение до установки обхода. Если обход уже удалил объект и это записано в сохранении, замена движка или скриптов сама по себе его не восстановит.
+
+## Сборка из исходников
+
+Нужны Git, Visual Studio 2022 или 2026 с компонентами **Desktop development with C++** и Windows SDK.
+
+```powershell
+git clone --branch main_cop_cs_wot_sp_fixes https://github.com/DarknessSpectre/OGSR-Engine-WoT-SP-Fixes.git
+cd OGSR-Engine-WoT-SP-Fixes
+powershell -ExecutionPolicy Bypass -File .\Restore_Build_3.597_Dependencies.ps1
+powershell -ExecutionPolicy Bypass -File .\Build_3.597_x64.ps1
+```
+
+Скрипт восстановления получает точные коммиты зависимостей из [Build_3.597_dependencies.json](../Build_3.597_dependencies.json). Скрипт сборки выполняет полную пересборку `Engine.sln`, `Release | x64`, задаёт версию `3.597 (X64) WoT&SP Fixes` и копирует x64 OpenMP runtime в `bin_x64`.
+
+Используйте короткий путь к исходникам или временный диск `subst`: имена генерируемых файлов FidelityFX длинные. Исходный `Update_Components.cmd` сохранён, но может загрузить другие версии плавающих зависимостей.
+
+Подробности: [Build_3.597_README.md](../Build_3.597_README.md).
+
+## Исходный проект и происхождение правок
+
+- Движок: [OGSR/OGSR-Engine](https://github.com/OGSR/OGSR-Engine), ветка `main_cop_cs`.
+- Unicode-шрифт: официальная ветка `main`, коммит `0a88379c886b3551de1ab9a7249938f8143cf1bc`.
+- Подсветка обвесов и карточка артефактов: коммит `ae90aac38335c4fb6bce1a9fe58b47d1ea55f378` данного репозитория.
+- Исправление чтения состояния машин: коммит `1429726592ad92a0f5f8887d22c8b7d57ee589e5` данного репозитория.
+
+Исходная лицензия проекта сохранена: [LICENSE.md](../LICENSE.md).
